@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://octaloop.com/wp-content/themes/octaloop/assets/images/video-poster.jpg","20260124214257","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1769290977");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta name="robots" content="noindex, follow"/>
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="en_US"/>
+	<meta property="og:title" content="Page not found - Octaloop"/>
+	<meta property="og:site_name" content="Octaloop"/>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://web.archive.org/web/20260124214257/https://schema.org","@graph":[{"@type":"WebSite","@id":"https://web.archive.org/web/20260124214257/https://octaloop.com/#website","url":"https://web.archive.org/web/20260124214257/https://octaloop.com/","name":"Octaloop","description":"Just another WordPress site","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://web.archive.org/web/20260124214257/https://octaloop.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{
+  --wp-block-synced-color:#7a00df;
+  --wp-block-synced-color--rgb:122, 0, 223;
+  --wp-bound-block-color:var(--wp-block-synced-color);
+  --wp-editor-canvas-background:#ddd;
+  --wp-admin-theme-color:#007cba;
+  --wp-admin-theme-color--rgb:0, 124, 186;
+  --wp-admin-theme-color-darker-10:#006ba1;
+  --wp-admin-theme-color-darker-10--rgb:0, 107, 160.5;
+  --wp-admin-theme-color-darker-20:#005a87;
+  --wp-admin-theme-color-darker-20--rgb:0, 90, 135;
+  --wp-admin-border-width-focus:2px;
+}
+@media (min-resolution:192dpi){
+  :root{
+    --wp-admin-border-width-focus:1.5px;
+  }
+}
+.wp-element-button{
+  cursor:pointer;
+}
+
+:root .has-very-light-gray-background-color{
+  background-color:#eee;
+}
+:root .has-very-dark-gray-background-color{
+  background-color:#313131;
+}
+:root .has-very-light-gray-color{
+  color:#eee;
+}
+:root .has-very-dark-gray-color{
+  color:#313131;
+}
+:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{
+  background:linear-gradient(135deg, #00d084, #0693e3);
+}
+:root .has-purple-crush-gradient-background{
+  background:linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe);
+}
+:root .has-hazy-dawn-gradient-background{
+  background:linear-gradient(135deg, #faaca8, #dad0ec);
+}
+:root .has-subdued-olive-gradient-background{
+  background:linear-gradient(135deg, #fafae1, #67a671);
+}
+:root .has-atomic-cream-gradient-background{
+  background:linear-gradient(135deg, #fdd79a, #004a59);
+}
+:root .has-nightshade-gradient-background{
+  background:linear-gradient(135deg, #330968, #31cdcf);
+}
+:root .has-midnight-gradient-background{
+  background:linear-gradient(135deg, #020381, #2874fc);
+}
+:root{
+  --wp--preset--font-size--normal:16px;
+  --wp--preset--font-size--huge:42px;
+}
+
+.has-regular-font-size{
+  font-size:1em;
+}
+
+.has-larger-font-size{
+  font-size:2.625em;
+}
+
+.has-normal-font-size{
+  font-size:var(--wp--preset--font-size--normal);
+}
+
+.has-huge-font-size{
+  font-size:var(--wp--preset--font-size--huge);
+}
+
+.has-text-align-center{
+  text-align:center;
+}
+
+.has-text-align-left{
+  text-align:left;
+}
+
+.has-text-align-right{
+  text-align:right;
+}
+
+.has-fit-text{
+  white-space:nowrap !important;
+}
+
+#end-resizable-editor-section{
+  display:none;
+}
+
+.aligncenter{
+  clear:both;
+}
+
+.items-justified-left{
+  justify-content:flex-start;
+}
+
+.items-justified-center{
+  justify-content:center;
+}
+
+.items-justified-right{
+  justify-content:flex-end;
+}
+
+.items-justified-space-between{
+  justify-content:space-between;
+}
+
+.screen-reader-text{
+  border:0;
+  clip-path:inset(50%);
+  height:1px;
+  margin:-1px;
+  overflow:hidden;
+  padding:0;
+  position:absolute;
+  width:1px;
+  word-wrap:normal !important;
+}
+
+.screen-reader-text:focus{
+  background-color:#ddd;
+  clip-path:none;
+  color:#444;
+  display:block;
+  font-size:1em;
+  height:auto;
+  left:5px;
+  line-height:normal;
+  padding:15px 23px 14px;
+  text-decoration:none;
+  top:5px;
+  width:auto;
+  z-index:100000;
+}
+html :where(.has-border-color){
+  border-style:solid;
+}
+
+html :where([style*=border-top-color]){
+  border-top-style:solid;
+}
+
+html :where([style*=border-right-color]){
+  border-right-style:solid;
+}
+
+html :where([style*=border-bottom-color]){
+  border-bottom-style:solid;
+}
+
+html :where([style*=border-left-color]){
+  border-left-style:solid;
+}
+
+html :where([style*=border-width]){
+  border-style:solid;
+}
+
+html :where([style*=border-top-width]){
+  border-top-style:solid;
+}
+
+html :where([style*=border-right-width]){
+  border-right-style:solid;
+}
+
+html :where([style*=border-bottom-width]){
+  border-bottom-style:solid;
+}
+
+html :where([style*=border-left-width]){
+  border-left-style:solid;
+}
+html :where(img[class*=wp-image-]){
+  height:auto;
+  max-width:100%;
+}
+:where(figure){
+  margin:0 0 1em;
+}
+
+html :where(.is-position-sticky){
+  --wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height, 0px);
+}
+
+@media screen and (max-width:600px){
+  html :where(.is-position-sticky){
+    --wp-admin--admin-bar--position-offset:0px;
+  }
+}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id="wp-block-heading-inline-css" type="text/css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{
+  padding:1.25em 2.375em;
+}
+h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){
+  rotate:180deg;
+}
+/*# sourceURL=https://octaloop.com/wp-includes/blocks/heading/style.css */
+</style>
+<style id="wp-block-paragraph-inline-css" type="text/css">
+.is-small-text{
+  font-size:.875em;
+}
+
+.is-regular-text{
+  font-size:1em;
+}
+
+.is-large-text{
+  font-size:2.25em;
+}
+
+.is-larger-text{
+  font-size:3em;
+}
+
+.has-drop-cap:not(:focus):first-letter{
+  float:left;
+  font-size:8.4em;
+  font-style:normal;
+  font-weight:100;
+  line-height:.68;
+  margin:.05em .1em 0 0;
+  text-transform:uppercase;
+}
+
+body.rtl .has-drop-cap:not(:focus):first-letter{
+  float:none;
+  margin-left:.1em;
+}
+
+p.has-drop-cap.has-background{
+  overflow:hidden;
+}
+
+:root :where(p.has-background){
+  padding:1.25em 2.375em;
+}
+
+:where(p.has-text-color:not(.has-link-color)) a{
+  color:inherit;
+}
+
+p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{
+  rotate:180deg;
+}
+/*# sourceURL=https://octaloop.com/wp-includes/blocks/paragraph/style.css */
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="core-block-supports-inline-css" type="text/css">
+/**
+ * Core styles: block-supports
+ */
+
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*# sourceURL=/wp-includes/css/classic-themes.css */
+</style>
+<style id="fsdpcfl-styles-inline-css" type="text/css">
+
+    .fsdpcfl-iframe {
+        position: relative;
+    }
+    .fsdpcfl-loader.active {
+        display: block;
+        position: absolute;
+        left: calc(50% - 25px);
+        top: calc(50% - 25px);
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid #000000;
+        animation:
+                fsdpcfl-loader-spin-1 0.8s infinite linear alternate,
+                fsdpcfl-loader-spin-2 1.6s infinite linear;
+    }
+    @keyframes fsdpcfl-loader-spin-1 {
+        0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+        12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+        25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+        50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+        62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+        75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+        100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+    }
+    @keyframes fsdpcfl-loader-spin-2 {
+        0%    {transform:scaleY(1)  rotate(0deg)}
+        49.99%{transform:scaleY(1)  rotate(135deg)}
+        50%   {transform:scaleY(-1) rotate(0deg)}
+        100%  {transform:scaleY(-1) rotate(-135deg)}
+    }
+
+/*# sourceURL=fsdpcfl-styles-inline-css */
+</style>
+<link rel="stylesheet" id="uacf7-frontend-style-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css?ver=6.9" type="text/css" media="all"/>
+<link rel="stylesheet" id="uacf7-form-style-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/form-style.css?ver=6.9" type="text/css" media="all"/>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-includes/js/jquery/jquery.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://octaloop.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://octaloop.com/xmlrpc.php?rsd"/>
+<meta name="generator" content="WordPress 6.9"/>
+			<link rel="preload" href="https://web.archive.org/web/20260124214257/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/fonts/hustle-icons-font.woff2" as="font" type="font/woff2" crossorigin>
+		<style id="hustle-module-4-0-styles" class="hustle-module-styles hustle-module-styles-4">@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-popup-content {max-width: 455px;max-height: none;max-height: unset;overflow-y: initial;}}@media screen and (min-width: 783px) { .hustle-layout {max-height: none;max-height: unset;}} .hustle-ui.module_id_4  {padding-right: 15px;padding-left: 15px;}.hustle-ui.module_id_4  .hustle-popup-content .hustle-info,.hustle-ui.module_id_4  .hustle-popup-content .hustle-optin {padding-top: 15px;padding-bottom: 15px;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4  {padding-right: 15px;padding-left: 15px;}.hustle-ui:not(.hustle-size--small).module_id_4  .hustle-popup-content .hustle-info,.hustle-ui:not(.hustle-size--small).module_id_4  .hustle-popup-content .hustle-optin {padding-top: 15px;padding-bottom: 15px;}} .hustle-ui.module_id_4 .hustle-layout .hustle-layout-body {margin: 0px 0px 40px 0px;padding: 127px 0px 127px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 10px 10px 10px 10px;overflow: hidden;background-color: #0d0d0d;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);background-image: url(https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2025/11/ExitBackground.jpeg);background-repeat: no-repeat;background-size: cover;background-position: center center;background-clip: padding-box;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-layout-body {margin: 0px 0px 40px 0px;padding: 20px 30px 30px 30px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 10px 10px 10px 10px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);background-repeat: no-repeat;background-size: auto;background-position: center center;}} .hustle-ui.module_id_4 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui.module_id_4 .hustle-main-wrapper {position: relative;padding:32px 0 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-main-wrapper {padding: 0;}}  .hustle-ui.module_id_4 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui.module_id_4 .hustle-layout .hustle-content .hustle-content-wrap {padding: 0px 0 0px 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-content .hustle-content-wrap {padding: 0px 0 0px 0;}} .hustle-ui.module_id_4 .hustle-layout .hustle-title {display: block;margin: 0px 0px 0px 0px;padding: 0px 0px 10px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #ffffff;font: 700 40px/57px Montserrat;font-style: normal;letter-spacing: 7.9px;text-transform: none;text-decoration: none;text-align: center;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-title {margin: 0px 0px 0px 0px;padding: 0px 0px 10px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 30px/35px Montserrat;font-style: normal;letter-spacing: 1px;text-transform: none;text-decoration: none;text-align: center;}} .hustle-ui.module_id_4 .hustle-layout .hustle-subtitle {display: block;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: 700 14px/18px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-subtitle {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: normal 20px/18px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: center;}} .hustle-ui.module_id_4 .hustle-layout .hustle-group-content {margin: 10px 0px 20px 0px;padding: 0px 20px 0px 20px;border-color: rgba(0,0,0,0);border-width: 0px 0px 0px 0px;border-style: solid;color: #ffffff;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content b,.hustle-ui.module_id_4 .hustle-layout .hustle-group-content strong {font-weight: bold;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content a,.hustle-ui.module_id_4 .hustle-layout .hustle-group-content a:visited {color: #38C5B5;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content a:hover {color: #2DA194;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content a:focus,.hustle-ui.module_id_4 .hustle-layout .hustle-group-content a:active {color: #2DA194;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content {margin: 10px 0px 20px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content {color: #ffffff;font-size: 14px;line-height: 20px;font-family: Roboto;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content {font-size: 14px;line-height: 20px;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 400 14px/20px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;font: normal 14px/20px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;color: #ffffff;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 10px;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;display: flex;align-items: flex-start;color: #ffffff;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]) li:before {color: #ADB5B7;flex-shrink: 0;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) li:before {color: #ADB5B7;content: "\2022";font-size: 16px;flex-shrink: 0;}@media screen and (min-width: 783px) {.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 20px;}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_4 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin: 0;}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_4 .hustle-layout .hustle-group-content blockquote {margin-right: 0;margin-left: 0;}button.hustle-button-close .hustle-icon-close:before {font-size: inherit;}.hustle-ui.module_id_4 button.hustle-button-close {color: rgb(255,255,255);background: transparent;border-radius: 0;position: absolute;z-index: 1;display: block;width: 32px;height: 32px;right: 0;left: auto;top: 0;bottom: auto;transform: unset;}.hustle-ui.module_id_4 button.hustle-button-close .hustle-icon-close {font-size: 12px;}.hustle-ui.module_id_4 button.hustle-button-close:hover {color: rgb(255,255,255);}.hustle-ui.module_id_4 button.hustle-button-close:focus {color: rgb(255,255,255);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 button.hustle-button-close .hustle-icon-close {font-size: 16px;}.hustle-ui:not(.hustle-size--small).module_id_4 button.hustle-button-close {background: transparent;border-radius: 0;display: block;width: 36px;height: 36px;right: 0;left: auto;top: 0;bottom: auto;transform: unset;}}.hustle-ui.module_id_4 .hustle-popup-mask {background-color: rgba(7,6,6,0.9);} .hustle-ui.module_id_4 .hustle-layout .hustle-layout-form {margin: 0px 0px 0px 0px;padding: 20px 20px 40px 20px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 10px 10px 10px 10px;background-color: rgb(255,255,255);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-layout-form {margin: 0px 0px 0px 0px;padding: 20px 20px 40px 20px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 10px 10px 10px 10px;}}.hustle-ui.module_id_4 .hustle-form .hustle-form-fields {display: block;}.hustle-ui.module_id_4 .hustle-form .hustle-form-fields .hustle-field {margin-bottom: 5px;}.hustle-ui.module_id_4 .hustle-form .hustle-form-fields .hustle-button {width: 100%;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-form-fields .hustle-field {margin-bottom: 5px;}} .hustle-ui.module_id_4 .hustle-field .hustle-input {margin: 0;padding: 10px 19px 10px 19px;border-width: 1px 1px 1px 1px;border-style: solid;border-color: rgb(0,0,0);border-radius: 10px 10px 10px 10px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #000000;font: 400 13px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-align: left;}.hustle-ui.module_id_4 .hustle-field .hustle-input:hover {border-color: rgb(0,0,0);background-color: rgba(0,0,0,0);}.hustle-ui.module_id_4 .hustle-field .hustle-input:focus {border-color: rgb(0,0,0);background-color: rgba(0,0,0,0);}.hustle-ui.module_id_4  .hustle-field-error.hustle-field .hustle-input {border-color: #e12e2e !important;background-color: rgba(0,0,0,0) !important;}.hustle-ui.module_id_4 .hustle-field .hustle-input + .hustle-input-label [class*="hustle-icon-"] {color: #0d0d0d;}.hustle-ui.module_id_4 .hustle-field .hustle-input:hover + .hustle-input-label [class*="hustle-icon-"] {color: #0d0d0d;}.hustle-ui.module_id_4 .hustle-field .hustle-input:focus + .hustle-input-label [class*="hustle-icon-"] {color: #0d0d0d;}.hustle-ui.module_id_4  .hustle-field-error.hustle-field .hustle-input + .hustle-input-label [class*="hustle-icon-"] {color: #e12e2e;}.hustle-ui.module_id_4 .hustle-field .hustle-input + .hustle-input-label {padding: 10px 19px 10px 19px;border-width: 1px 1px 1px 1px;border-style: solid;border-color: transparent;color: #666666;font: 400 13px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-align: left;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-field .hustle-input {padding: 10px 19px 10px 19px;border-width: 1px 1px 1px 1px;border-style: solid;border-radius: 10px 10px 10px 10px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: normal 14px/22px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-align: left;}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-field .hustle-input + .hustle-input-label {padding: 10px 19px 10px 19px;border-width: 1px 1px 1px 1px;font: normal 14px/22px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-align: left;}} .hustle-ui.module_id_4 .hustle-select2 + .select2 {box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui.module_id_4 .hustle-select2 + .select2 .select2-selection--single {margin: 0;padding: 0 19px 0 19px;border-width: 1px 1px 1px 1px;border-style: solid;border-color: #B0BEC6;border-radius: 10px 10px 10px 10px;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-select2 + .select2 .select2-selection--single .select2-selection__rendered {padding: 10px 0 10px 0;color: #5D7380;font: 400 13px/22px Roboto;font-style: normal;}.hustle-ui.module_id_4 .hustle-select2 + .select2 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {color: #AAAAAA;}.hustle-ui.module_id_4 .hustle-select2 + .select2:hover .select2-selection--single {border-color: #4F5F6B;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-select2 + .select2.select2-container--open .select2-selection--single {border-color: #4F5F6B;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-select2.hustle-field-error + .select2 .select2-selection--single {border-color: #D43858 !important;background-color: #FFFFFF !important;}.hustle-ui.module_id_4 .hustle-select2 + .select2 + .hustle-input-label {color: #AAAAAA;font: 400 13px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-align: left;}.hustle-ui.module_id_4 .hustle-select2 + .select2 .select2-selection--single .select2-selection__arrow {color: #38C5B5;}.hustle-ui.module_id_4 .hustle-select2 + .select2:hover .select2-selection--single .select2-selection__arrow {color: #49E2D1;}.hustle-ui.module_id_4 .hustle-select2 + .select2.select2-container--open .select2-selection--single .select2-selection__arrow {color: #49E2D1;}.hustle-ui.module_id_4 .hustle-select2.hustle-field-error + .select2 .select2-selection--single .select2-selection__arrow {color: #D43858 !important;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-select2 + .select2 {box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-select2 + .select2 .select2-selection--single {padding: 0 19px 0 19px;border-width: 1px 1px 1px 1px;border-style: solid;border-radius: 10px 10px 10px 10px;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-select2 + .select2 .select2-selection--single .select2-selection__rendered {padding: 10px 0 10px 0;font: normal 14px/22px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-align: left;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-select2 + .select2 + .hustle-input-label {font: normal 14px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-align: left;}}.hustle-module-4.hustle-dropdown {background-color: #FFFFFF;}.hustle-module-4.hustle-dropdown .select2-results .select2-results__options .select2-results__option {color: #5D7380;background-color: transparent;}.hustle-module-4.hustle-dropdown .select2-results .select2-results__options .select2-results__option.select2-results__option--highlighted {color: #FFFFFF;background-color: #ADB5B7;}.hustle-module-4.hustle-dropdown .select2-results .select2-results__options .select2-results__option[aria-selected="true"] {color: #FFFFFF;background-color: #38C5B5;}.hustle-ui.module_id_4 .hustle-timepicker .ui-timepicker {background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-timepicker .ui-timepicker .ui-timepicker-viewport a {color: #5D7380;background-color: transparent;}.hustle-ui.module_id_4 .hustle-timepicker .ui-timepicker .ui-timepicker-viewport a:hover,.hustle-ui.module_id_4 .hustle-timepicker .ui-timepicker .ui-timepicker-viewport a:focus {color: #FFFFFF;background-color: #ADB5B7;} .hustle-ui.module_id_4 .hustle-form .hustle-radio span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;border-color: #B0BEC6;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-form .hustle-radio span:not([aria-hidden]) {color: #FFFFFF;font: 400 12px/20px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}.hustle-ui.module_id_4 .hustle-form .hustle-radio input:checked + span[aria-hidden] {border-color: #4F5F6B;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-form .hustle-radio input:checked + span[aria-hidden]:before {background-color: #38C5B5;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-radio span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-radio span:not([aria-hidden]) {font: 400 12px/20px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}} .hustle-ui.module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;border-color: #B0BEC6;border-radius: 0px 0px 0px 0px;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) span:not([aria-hidden]) {color: #FFFFFF;font: 400 12px/20px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}.hustle-ui.module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) input:checked + span[aria-hidden] {border-color: #4F5F6B;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) input:checked + span[aria-hidden]:before {color: #38C5B5;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-checkbox:not(.hustle-gdpr) span:not([aria-hidden]) {font: 400 12px/20px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}}.hustle-module-4.hustle-calendar:before {background-color: #FFFFFF;}.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-datepicker-title {color: #35414A;}.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-corner-all,.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-corner-all:visited {color: #5D7380;}.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-corner-all:hover {color: #5D7380;}.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-corner-all:focus,.hustle-module-4.hustle-calendar .ui-datepicker-header .ui-corner-all:active {color: #5D7380;}.hustle-module-4.hustle-calendar .ui-datepicker-calendar thead th {color: #35414A;}.hustle-module-4.hustle-calendar .ui-datepicker-calendar tbody tr td a,.hustle-module-4.hustle-calendar .ui-datepicker-calendar tbody tr td a:visited {background-color: #FFFFFF;color: #5D7380;}.hustle-module-4.hustle-calendar .ui-datepicker-calendar tbody tr td a:hover {background-color: #38C5B5;color: #FFFFFF;}.hustle-module-4.hustle-calendar .ui-datepicker-calendar tbody tr td a:focus,.hustle-module-4.hustle-calendar .ui-datepicker-calendar tbody tr td a:active {background-color: #38C5B5;color: #FFFFFF;} .hustle-ui.module_id_4 .hustle-form button.hustle-button-submit {padding: 9px 34px 9px 34px;border-width: 2px 2px 2px 2px;border-style: solid;border-color: rgb(0,0,0);border-radius: 30px 30px 30px 30px;background-color: rgb(0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #ffffff;font: bold 16px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui.module_id_4 .hustle-form button.hustle-button-submit:hover {border-color: rgb(0,0,0);background-color: rgb(0,0,0);color: #ffffff;}.hustle-ui.module_id_4 .hustle-form button.hustle-button-submit:focus {border-color: rgb(0,0,0);background-color: rgb(0,0,0);color: #ffffff;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form button.hustle-button-submit {padding: 9px 34px 9px 34px;border-width: 2px 2px 2px 2px;border-style: solid;border-radius: 30px 30px 30px 30px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 16px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}} .hustle-ui.module_id_4 .hustle-form .hustle-form-options {margin: 0px 0px 0px 0px;padding: 20px 20px 20px 20px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 30px 30px 30px 30px;background-color: #35414A;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-form-options {margin: 0px 0px 0px 0px;padding: 20px 20px 20px 20px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 30px 30px 30px 30px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}} .hustle-ui.module_id_4 .hustle-form .hustle-form-options .hustle-group-title {display: block;margin: 0 0 20px;padding: 0;border: 0;color: #FFFFFF;font: bold 13px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-form .hustle-form-options .hustle-group-title {font: bold 13px/22px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}} .hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr {margin: 0px 0px 0px 0px;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;border-color: #B0BEC6;border-radius: 0px 0px 0px 0px;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span[aria-hidden]:before {color: #38C5B5;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span:not([aria-hidden]) {color: #FFFFFF;font: 400 12px/1.7em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span:not([aria-hidden]) a {color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span:not([aria-hidden]) a:hover {color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span:not([aria-hidden]) a:focus {color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr input:checked + span[aria-hidden] {border-color: #4F5F6B;background-color: #FFFFFF;}.hustle-ui.module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr.hustle-field-error + span[aria-hidden] {border-color: #D43858 !important;background-color: #FFFFFF !important;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr {margin: 0px 0px 0px 0px;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span[aria-hidden] {border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout-form .hustle-checkbox.hustle-gdpr span:not([aria-hidden]) {font: 400 12px/1.7em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}} .hustle-ui.module_id_4 .hustle-layout .hustle-error-message {margin: 40px 0px 0px 0px;background-color: #FFFFFF;box-shadow: inset 4px 0 0 0 #e12e2e;-moz-box-shadow: inset 4px 0 0 0 #e12e2e;-webkit-box-shadow: inset 4px 0 0 0 #e12e2e;}.hustle-ui.module_id_4 .hustle-layout .hustle-error-message p {color: #e12e2e;font: 400 12px/20px Open Sans;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-error-message {margin: 40px 0px 0px 0px;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-layout .hustle-error-message p {font: normal 12px/20px Open Sans;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}} .hustle-ui.module_id_4 .hustle-success {padding: 90px 30px 90px 30px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);background-color: #0d0d0d;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #eaeaea;}.hustle-ui.module_id_4 .hustle-success [class*="hustle-icon-"] {color: #dfa161;}.hustle-ui.module_id_4 .hustle-success a,.hustle-ui.module_id_4 .hustle-success a:visited {color: #38C5B5;}.hustle-ui.module_id_4 .hustle-success a:hover {color: #2DA194;}.hustle-ui.module_id_4 .hustle-success a:focus,.hustle-ui.module_id_4 .hustle-success a:active {color: #2DA194;}.hustle-ui.module_id_4 .hustle-success-content b,.hustle-ui.module_id_4 .hustle-success-content strong {font-weight: bold;}.hustle-ui.module_id_4 .hustle-success-content blockquote {margin-right: 0;margin-left: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success {padding: 90px 90px 90px 90px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}}.hustle-ui.module_id_4 .hustle-success-content {color: #eaeaea;font-size: 14px;line-height: 1.45em;font-family: Roboto;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content {font-size: 16px;line-height: 26px;}}.hustle-ui.module_id_4 .hustle-success-content p:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 400 14px/1.45em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content p:not([class*="forminator-"]) {margin-bottom: 20px;font: normal 16px/26px Roboto;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content p:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h1:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 28px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h1:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 28px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h2:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 22px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h2:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 22px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h3:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 18px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h3:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 18px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h4:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 16px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h4:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 16px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h5:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 14px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h5:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 14px/1.4em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content h6:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 12px/1.4em Roboto;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h6:not([class*="forminator-"]) {margin-bottom: 20px;font: 700 12px/1.4em Roboto;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0}}.hustle-ui.module_id_4 .hustle-success-content ol:not([class*="forminator-"]),.hustle-ui.module_id_4 .hustle-success-content ul:not([class*="forminator-"]) {margin: 0 0 10px;}.hustle-ui.module_id_4 .hustle-success-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_4 .hustle-success-content ul:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_4 .hustle-success-content li:not([class*="forminator-"]) {margin: 0 0 5px;color: #eaeaea;font: 400 14px/1.45em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_4 .hustle-success-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_4 .hustle-success-content ol:not([class*="forminator-"]) li:before {color: #ADB5B7}.hustle-ui.module_id_4 .hustle-success-content ul:not([class*="forminator-"]) li:before {background-color: #ADB5B7}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_4 .hustle-success-content li:not([class*="forminator-"]) {font: 400 14px/1.45em Roboto;letter-spacing: 0px;text-transform: none;text-decoration: none;}}@media screen and (min-width: 783px) {.hustle-ui.module_id_4 .hustle-success-content ol:not([class*="forminator-"]),.hustle-ui.module_id_4 .hustle-success-content ul:not([class*="forminator-"]) {margin: 0 0 20px;}.hustle-ui.module_id_4 .hustle-success-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_4 .hustle-success-content ul:not([class*="forminator-"]):last-child {margin-bottom: 0;}} .hustle-ui.module_id_4 .hustle-layout .hustle-group-content blockquote {border-left-color: #38C5B5;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* body{ background: #f3f3f3; font-family:  Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* body{ background: #f3f3f3; font-family:  Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* .form-container{ width: 390px; background: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05);}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* body{ background: #f3f3f3; font-family:  Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* .form-container{ width: 390px; background: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05);}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* label{ display: block; margin-bottom: -14px; font-size: 14px; color: #222;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* body{ background: #f3f3f3; font-family:  Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* .form-container{ width: 390px; background: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05);}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* label{ display: block; margin-bottom: -14px; font-size: 14px; color: #222;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* input,.hustle-ui.hustle_module_id_4[data-id="4"] select{*/ /* display: block;*/ /* width: 100%;*/ /* padding: 12px 14px;*/ /* border-radius: 12px;*/ /* border: 1px solid;*/ /* margin-bottom: 16px;*/ /* font-size: 15px;*/ /* background: #fff;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form .hustle-button-submit{ background:  #0b0b0b; color:  #fff; padding:  10px 10px; border-radius:  30px; font-size:  16px; cursor:  pointer;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-button-cta{ background:  #fff; color:  #0b0b0b; /*padding:  10px 10px;*/ /*border-radius:  28px;*/ border:  none; font-size:  16px; cursor:  pointer; width:  10px; position:  absolute; bottom:  50px; left:  155px; z-index:  30;}.hustle-ui.hustle_module_id_4[data-id="4"] .hustle-layout .hustle-layout-body .hustle-layout-form{ position:  relative;}.hustle-ui.hustle_module_id_4[data-id="4"] /**,.hustle-ui.hustle_module_id_4[data-id="4"] *::before,.hustle-ui.hustle_module_id_4[data-id="4"] *::after{ box-sizing:  border-box;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* body{ background: #f3f3f3; font-family:  Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* .form-container{ width: 390px; background: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05);}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* label{ display: block; margin-bottom: -14px; font-size: 14px; color: #222;}.hustle-ui.hustle_module_id_4[data-id="4"] */ /* input,.hustle-ui.hustle_module_id_4[data-id="4"] select{*/ /* display: block;*/ /* width: 100%;*/ /* padding: 12px 14px;*/ /* border-radius: 12px;*/ /* border: 1px solid;*/ /* margin-bottom: 16px;*/ /* font-size: 15px;*/ /* background: #fff;}.hustle-ui.hustle_module_id_4[data-id="4"] */{}</style><link rel="icon" href="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/09/cropped-Favicon-150x150.png" sizes="32x32"/>
+<link rel="icon" href="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/09/cropped-Favicon-300x300.png" sizes="192x192"/>
+<link rel="apple-touch-icon" href="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/09/cropped-Favicon-300x300.png"/>
+<meta name="msapplication-TileImage" content="https://octaloop.com/wp-content/uploads/2023/09/cropped-Favicon-300x300.png"/>
+
+	
+
+	<meta name="facebook-domain-verification" content="5kinj4rxik8dmp8p2r4801f9d8v0zx"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/Favicon.png"/>
+	<title>Page not found - Octaloop</title>
+	<link rel="stylesheet" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/themes/octaloop/style.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/themes/octaloop/assets/css/bootstrap-4.5.3/css/bootstrap.min.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/themes/octaloop/assets/css/fontawesome/css/all.min.css" type="text/css" media="all"/>
+	<link rel="preconnect" href="https://web.archive.org/web/20260124214257/https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://web.archive.org/web/20260124214257/https://fonts.gstatic.com/" crossorigin>
+	<link href="https://web.archive.org/web/20260124214257cs_/https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="https://web.archive.org/web/20260124214257cs_/https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+	<link href="https://web.archive.org/web/20260124214257cs_/https://fonts.googleapis.com/css2?family=Prata:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://web.archive.org/web/20260124214257cs_/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+	<!-- Added GTM ID:GTM-545PXFSX - 12/11/2025 -->
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://web.archive.org/web/20260124214257/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-545PXFSX');</script>
+	<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" id="hustle_icons-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-icons.min.css?ver=7.8.7" type="text/css" media="all"/>
+<link rel="stylesheet" id="hustle_global-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-global.min.css?ver=7.8.7" type="text/css" media="all"/>
+<link rel="stylesheet" id="hustle_optin-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-optin.min.css?ver=7.8.7" type="text/css" media="all"/>
+<link rel="stylesheet" id="hustle_popup-css" href="https://web.archive.org/web/20260124214257cs_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-popup.min.css?ver=7.8.7" type="text/css" media="all"/>
+<link rel="stylesheet" id="hustle-fonts-css" href="https://web.archive.org/web/20260124214257cs_/https://fonts.bunny.net/css?family=Montserrat%3A700%7CRoboto%3Aregular%2C700%7COpen+Sans%3Aregular&amp;display=swap&amp;ver=1.0" type="text/css" media="all"/>
+</head>
+<body>
+	<!-- Added GTM No Script ID:GTM-545PXFSX - 12/11/2025 -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://web.archive.org/web/20260124214257if_/https://www.googletagmanager.com/ns.html?id=GTM-545PXFSX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<div class="container-fluid top-bar">
+		
+	</div>
+	<!-- <div id="startModal" class="popupModal d-none">
+		<div class="modal-content">
+			<div class="closeBtn">&times;</div>
+			<h6>Join us for Metamorphosis 2024!</h6>
+			<div class="row justify-content-center"><a class="button mt-3 popupButton" onclick='window.open("https://metamorphosis.octaloop.com/","_blank")'>More Details</a></div>
+		</div>
+	</div> -->
+
+<div class="container-fluid"><div class="navbar pb-3">
+	<div class="nav row justify-content-between px-4">
+		<div class="nav-logo">
+			<a href="/web/20260124214257/https://octaloop.com/" class="logo">
+				<img alt="octaloop" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/Logo.png">
+			</a>
+		</div>
+		<div class="">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<label class="show-menu" for="show-menu">
+					<div class="ham-icon"></div>
+					<div class="ham-icon"></div>
+					<div class="ham-icon"></div>
+				</label>
+			</a>
+			<ul class="navbar-nav navbar-nav-white">
+				<!-- <div class="dropdown">
+					<li class="nav-item dropbtn">Our Product</li>
+					<div class="dropdown-content">
+						<a href="https://binamite.com">Binamite</a>
+					</div>
+				</div> -->
+				<!-- <li class="nav-item"><a href="https://binamite.com"class="nav-link">Our Product-Binamite</a></li> -->
+ <li class="nav-item dropdown">
+          <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Person of the Year
+          </button>
+          <ul class="dropdown-menu" style="position: absolute; left: 25px;">
+            <li><a class="dropdown-item" href="/web/20260124214257/https://octaloop.com/person-of-the-year">2024</a></li>
+          </ul>
+        </li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/journal" class="nav-link">Journal</a></li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/services" class="nav-link">Services</a></li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/about-us" class="nav-link">About Us</a></li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/careers" class="nav-link">Careers</a></li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/events" class="nav-link">Events</a></li>
+				<li class="nav-item"><a href="/web/20260124214257/https://octaloop.com/contact-us" class="nav-link button-contact">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="topnav" id="myLinks">
+		<!-- <a href="https://binamite.com">OUR PRODUCT-BINAMITE</a>
+		<hr style="width:90%"> -->
+		<a href="javascript:void()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Person of the Year</a>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+		</div>
+		<a href="/web/20260124214257/https://octaloop.com/journal">JOURNAL</a>
+		<hr style="width:90%">
+		<a href="/web/20260124214257/https://octaloop.com/services">SERVICES</a>
+		<hr style="width:90%">
+		<a href="/web/20260124214257/https://octaloop.com/about-us">ABOUT US</a>
+		<hr style="width:90%">
+		<a href="/web/20260124214257/https://octaloop.com/careers">CAREERS</a>
+		<hr style="width:90%">
+		<a href="/web/20260124214257/https://octaloop.com/events">EVENTS</a>
+		<hr style="width:90%">
+		<a href="/web/20260124214257/https://octaloop.com/contact-us">CONTACT US</a>
+		<hr style="width:90%">
+	</div>
+</div></div>
+<div class="container-fluid blogs-slider">
+    <div class="owl-carousel blogs-carousel owl-theme">
+                <div class="slide">
+            <img width="1968" height="1312" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience.jpg 1968w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience-300x200.jpg 300w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience-1024x683.jpg 1024w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience-768x512.jpg 768w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience-1536x1024.jpg 1536w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/06/MM-audience-595xh.jpg 595w" sizes="(max-width: 1968px) 100vw, 1968px"/>            <div class="info">
+                <div class="author-info">
+                    <div>
+                        <img alt="" src="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=32&amp;d=mm&amp;r=g" srcset="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" decoding="async"/>                    </div>
+                    <div>
+                        <span class="author-name">admin</span>
+                        <span class="date-published">June 6, 2023</span>
+                    </div>
+                </div>
+                <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/crypto-events-why-you-shouldnt-attend/">
+                    Crypto Events: Why You Shouldn&#8217;t Attend                </a>
+                <p>There are a million reasons why you should attend crypto events, but you only need one reason to skip them. [&hellip;]</p>
+ <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/crypto-events-why-you-shouldnt-attend/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                <!-- <button class="prevBtn">Prev</button>
+                <button class="nextBtn">Next</button> -->
+                <div id="dots" class="dots">
+                    <div class="item active item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                </div>
+            </div>
+        </div>
+                <div class="slide">
+            <img width="1228" height="720" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Metamorphosis 2022" decoding="async" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549.png 1228w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549-300x176.png 300w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549-1024x600.png 1024w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549-768x450.png 768w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549-595xh.png 595w" sizes="(max-width: 1228px) 100vw, 1228px"/>            <div class="info">
+                <div class="author-info">
+                    <div>
+                        <img alt="" src="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=32&amp;d=mm&amp;r=g" srcset="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" loading="lazy" decoding="async"/>                    </div>
+                    <div>
+                        <span class="author-name">admin</span>
+                        <span class="date-published">May 2, 2023</span>
+                    </div>
+                </div>
+                <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/metamorphosis-2022-and-the-india-blockchain-tour/">
+                    Metamorphosis 2022 and the India Blockchain Tour                </a>
+                <p>Corporate events are a dime a dozen, but blockchain wasn’t built by corporations – it was built by communities. So last year when we decided to host Metamorphosis 2022, India’s biggest crypto gala, we knew we needed to focus on&#8230;</p>
+ <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/metamorphosis-2022-and-the-india-blockchain-tour/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                <!-- <button class="prevBtn">Prev</button>
+                <button class="nextBtn">Next</button> -->
+                <div id="dots" class="dots">
+                    <div class="item active item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                </div>
+            </div>
+        </div>
+                <div class="slide">
+            <img width="1920" height="1080" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Decentral Hacks" decoding="async" loading="lazy" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks.png 1920w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks-300x169.png 300w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks-1024x576.png 1024w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks-768x432.png 768w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks-1536x864.png 1536w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/Decentral-Hacks-595xh.png 595w" sizes="auto, (max-width: 1920px) 100vw, 1920px"/>            <div class="info">
+                <div class="author-info">
+                    <div>
+                        <img alt="" src="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=32&amp;d=mm&amp;r=g" srcset="https://web.archive.org/web/20260124214257im_/https://secure.gravatar.com/avatar/0d41686ab2d09656917ad7180f7befacdc64dce4ffa030bb6c12405c0e7cf1cc?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" loading="lazy" decoding="async"/>                    </div>
+                    <div>
+                        <span class="author-name">admin</span>
+                        <span class="date-published">April 11, 2023</span>
+                    </div>
+                </div>
+                <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/metamorphosis-three/">
+                    DecentralHacks 2021 &#038; The Road to Metamorphosis 3.0                </a>
+                <p>Blockchain is complicated, but it&#8217;s simple to see why it&#8217;s worth talking about. Think about it like this: people used to send letters to communicate long-distance; now video calls are free. Necessity is&#8230;</p>
+ <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/metamorphosis-three/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                <!-- <button class="prevBtn">Prev</button>
+                <button class="nextBtn">Next</button> -->
+                <div id="dots" class="dots">
+                    <div class="item active item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
+<main class="container blogs">
+    <section class="row justify-content-between section-2">
+        <div class="col-lg-8 col-md-8 col-12">
+                        <div class="blog">
+                <img width="709" height="545" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/mm4.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/mm4.png 709w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/mm4-300x231.png 300w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2023/04/mm4-595xh.png 595w" sizes="auto, (max-width: 709px) 100vw, 709px"/>                <div>
+                    <div class="blog-info">
+                        <span class="author-name">admin</span>
+                        <span class="date"><img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/calendar-outline.png"/>
+                            April 11, 2023</span>
+                    </div>
+                    <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/road-to-metamorphosis-two-and-decentralhacks/">
+                        The Road to Metamorphosis II &#038; DecentralHacks                    </a>
+                    <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/road-to-metamorphosis-two-and-decentralhacks/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                </div>
+            </div>
+                        <div class="blog">
+                <img width="512" height="288" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/blockchain-ideas1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="blockchain ideas" decoding="async" loading="lazy" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/blockchain-ideas1.jpg 512w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/blockchain-ideas1-300x169.jpg 300w" sizes="auto, (max-width: 512px) 100vw, 512px"/>                <div>
+                    <div class="blog-info">
+                        <span class="author-name">admin</span>
+                        <span class="date"><img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/calendar-outline.png"/>
+                            April 10, 2023</span>
+                    </div>
+                    <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/blockchain-ideas-from-the-decentralhacks-hackathon/">
+                        4 Brilliant Blockchain Ideas from the DecentralHacks Hackathon                    </a>
+                    <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/blockchain-ideas-from-the-decentralhacks-hackathon/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                </div>
+            </div>
+                        <div class="blog">
+                <img width="1920" height="1080" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Unblock-2021" decoding="async" loading="lazy" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021.png 1920w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021-300x169.png 300w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021-1024x576.png 1024w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021-768x432.png 768w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021-1536x864.png 1536w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/Unblock-2021-595xh.png 595w" sizes="auto, (max-width: 1920px) 100vw, 1920px"/>                <div>
+                    <div class="blog-info">
+                        <span class="author-name">admin</span>
+                        <span class="date"><img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/calendar-outline.png"/>
+                            September 28, 2022</span>
+                    </div>
+                    <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/unblock-2021/">
+                        Unblock 2021’s Winning Blockchain Hackathon DApps                    </a>
+                    <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/unblock-2021/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                </div>
+            </div>
+                        <div class="blog">
+                <img width="512" height="288" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/content-marketing-in-blockchain-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="content marketing in blockchain" decoding="async" loading="lazy" srcset="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/content-marketing-in-blockchain-2.jpg 512w, https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/uploads/2022/09/content-marketing-in-blockchain-2-300x169.jpg 300w" sizes="auto, (max-width: 512px) 100vw, 512px"/>                <div>
+                    <div class="blog-info">
+                        <span class="author-name">admin</span>
+                        <span class="date"><img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/calendar-outline.png"/>
+                            April 11, 2022</span>
+                    </div>
+                    <a class="blog-name" href="https://web.archive.org/web/20260124214257/https://octaloop.com/content-marketing-in-blockchain/">
+                        Content Marketing in Blockchain: Building a Community                    </a>
+                    <a class="read-more" href="https://web.archive.org/web/20260124214257/https://octaloop.com/content-marketing-in-blockchain/">Learn More <img class="icon" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/arrow-forward.png"/></a>
+                </div>
+            </div>
+                        <button id="load-more" onclick="showAllBlogs()">Load More Articles</button>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12">
+            <div class="categories">
+                <h5>Discover more of what matters to you</h5>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/bangalore/" rel="tag">bangalore</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/blockchain/" rel="tag">blockchain</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/blockchain-conference/" rel="tag">blockchain conference</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/blockchain-event/" rel="tag">blockchain event</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/crypto/" rel="tag">crypto</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/crypto-events/" rel="tag">crypto events</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/crypto-expo/" rel="tag">crypto expo</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/events/" rel="tag">events</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/future-blockchain-summit/" rel="tag">future blockchain summit</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/india/" rel="tag">india</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/india-blockchain-tour/" rel="tag">India Blockchain Tour</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/meetup/" rel="tag">meetup</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/metamorphosis/" rel="tag">Metamorphosis</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/metamorphosis-2022/" rel="tag">Metamorphosis 2022</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/nft/" rel="tag">nft</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/upcoming-crypto-events/" rel="tag">upcoming crypto events</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/web3/" rel="tag">web3</a>
+                                <a class="category" href="https://web.archive.org/web/20260124214257/https://octaloop.com/tag/world-blockchain-summit/" rel="tag">world blockchain summit</a>
+                            </div>
+        </div>
+    </section>
+</main>
+<script type="text/javascript">
+var blogs = document.getElementsByClassName("blog");
+var loadMore = document.getElementById("load-more");
+if (blogs.length < 10) {
+    loadMore.style.display = "none";
+}
+for (var i = 0; i < blogs.length; i++) {
+    if (i > 10) {
+        blogs[i].style.display = "none";
+    }
+}
+
+function showAllBlogs() {
+    for (var i = 0; i < blogs.length; i++) {
+        blogs[i].style.display = "flex";
+    }
+    loadMore.style.display = "none";
+}
+</script>
+<footer id="footer-call">
+    <div class="container-fluid">
+        
+
+        <div class="justify-content-center row">
+            <div class="col-11 section-1 col-lg-4 col-md-4">
+                <a href="/web/20260124214257/https://octaloop.com/" class="logo">
+                    <img alt="octaloop" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/Logo-white.png">
+                    <!-- <img alt="octaloop" src="https://assets.octaloop.com/homepage/Octaloop-Logo-dark.png"> -->
+                </a>
+            </div>
+
+            <!-- Added section - 04/09/2025 -->
+            <div class="col-11 section-1 col-lg-3 col-md-3">
+                <ul class="pages">
+                    <li><a href="/web/20260124214257/https://octaloop.com/termsandconditions">Terms and Condititions</a></li>
+                    <li><a href="/web/20260124214257/https://octaloop.com/privacypolicy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Added section - 04/09/2025 -->
+            <div class="col-11 section-1 col-lg-3 col-md-3">
+                <!-- <div class="justify-content-center row"> -->
+                    
+
+                    <ul class="pages">
+                    <li><a href="https://web.archive.org/web/20260124214257/https://octaloop.com/journal">Journal</a></li>
+                    <li><a href="https://web.archive.org/web/20260124214257/https://octaloop.com/about-us">About Us</a></li>
+                    <li><a href="https://web.archive.org/web/20260124214257/https://octaloop.com/services">Services</a></li>
+                    <li><a href="https://web.archive.org/web/20260124214257/https://octaloop.com/events">Events</a></li>
+                    <li><a href="https://web.archive.org/web/20260124214257/https://octaloop.com/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                
+            <div class="col-11 section-1 col-lg-1 col-md-1">
+                <ul class="social-media">
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://www.instagram.com/octaloop_hq/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://twitter.com/octaloopHQ" target="_blank">
+                            <img style="width:17px;height: 17px;" src="https://web.archive.org/web/20260124214257im_/https://octaloop.com/wp-content/themes/octaloop/assets/images/x-social-media-icon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://t.me/octaloophq" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://www.youtube.com/channel/UCOXSWSyY65YzU2kMV7A4s0w" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://www.linkedin.com/company/10387115/admin/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://web.archive.org/web/20260124214257/https://www.facebook.com/Octaloop-100192491368630" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+            </div></div>
+        
+    </div>
+</footer>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-content/themes/octaloop/assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-content/themes/octaloop/assets/js/slick-carousel/slick.js"></script>
+<script src="https://web.archive.org/web/20260124214257js_/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    if (document.cookie.indexOf("accepted_cookies=") < 0) {
+        $(".popupModal").removeClass("d-none").addClass("d-block");
+    }
+    $(".popupButton").on("click", function () {
+        document.cookie = "accepted_cookies=yes;";
+        $(".popupModal").removeClass("d-block").addClass("d-none");
+    });
+
+    // expand depending on your needs
+    $(".closeBtn").on("click", function () {
+        document.cookie = "accepted_cookies=yes;";
+        $(".popupModal").removeClass("d-block").addClass("d-none");
+    });
+</script>
+<script type="text/javascript">
+    function scrollto(o) {
+        $("html,body").animate({ scrollTop: $("#" + o).offset().top }, "slow");
+    }
+    function myFunction() {
+        var o = document.getElementById("myLinks");
+        "block" === o.style.display ? (o.style.display = "none") : (o.style.display = "block");
+    }
+</script>
+<script type="text/javascript">
+    (function () {
+  "use strict";
+
+  var carousels = function () {
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      center: true,
+      margin: 0,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 1,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    });
+
+    
+
+    $(".blogs-carousel").owlCarousel({
+        items: 1,
+        autoplay: false,
+        touchDrag  : false,
+        mouseDrag  : false,
+        dots: true,
+        dotsData:true,
+        dotsContainer: '#dots',
+        // nav: true,
+        dotsEach: true,
+        navText: ["<img src=''>", "<img src=''>"]
+    });
+
+    $('#dots .item').click(function() {
+        $('#dots .item').removeClass('active');
+        $('#dots .item').trigger('to.owl.carousel', [$(this).index(), 1000]);
+    });
+    $('#dots .item.item1').click(function() {
+        $('#dots .item.item1').addClass('active');
+    });
+    $('#dots .item.item2').click(function() {
+        $('#dots .item.item2').addClass('active');
+    });
+    $('#dots .item.item3').click(function() {
+        $('#dots .item.item3').addClass('active');
+    });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+</script>
+<script type="text/javascript">
+_linkedin_partner_id = "2999460";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://web.archive.org/web/20260124214257/https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://web.archive.org/web/20260124214257im_/https://px.ads.linkedin.com/collect/?pid=2999460&amp;fmt=gif"/>
+</noscript>
+<script src="https://web.archive.org/web/20260124214257js_/https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
+
+<script src="https://web.archive.org/web/20260124214257js_/https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/octaloop/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script type="text/javascript">
+		function setCookie(name, value, days) {
+			var expires = "";
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			document.cookie = name + "=" + (value || "") + expires + "; path=/";
+		}
+		function getCookie(cname) {
+			let name = cname + "=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		function eraseCookie(name) {
+			setCookie(name, "", -1);
+		}
+
+		document.addEventListener( 'wpcf7mailsent', function( event ) {
+			var cf7rgk_json = getCookie("cf7rgk_options");
+
+			if(typeof cf7rgk_json != 'undefined') {
+				var cf7rgk_opt = JSON.parse(decodeURIComponent(cf7rgk_json));
+
+				if (cf7rgk_opt != '') {
+					if(cf7rgk_opt.url != '') {
+						if (cf7rgk_opt.open_new == "on") {
+							window.open(cf7rgk_opt.url, '_blank');
+						} else {
+							window.open(cf7rgk_opt.url, '_self');
+						}
+					}
+				}
+
+				eraseCookie("cf7rgk_options");
+			}
+		});
+
+		</script>
+		<div id="hustle-popup-id-4" class="hustle-ui hustle-popup hustle-palette--gray_slate hustle_module_id_4 module_id_4  " data-id="4" data-render-id="0" data-tracking="enabled" role="dialog" aria-modal="true" data-intro="no_animation" data-outro="no_animation" data-overlay-close="1" data-close-delay="false" style="opacity: 0;" aria-label="Before You Go…  popup"><div class="hustle-popup-mask hustle-optin-mask" aria-hidden="true"></div><div class="hustle-popup-content"><div class="hustle-optin hustle-optin--default"><div class="hustle-success" data-close-delay="false" style="display: none;"><span class="hustle-icon-check" aria-hidden="true"></span><div class="hustle-success-content"></div></div><div class="hustle-layout"><div class="hustle-main-wrapper"><button class="hustle-button-icon hustle-button-close has-background">
+			<span class="hustle-icon-close" aria-hidden="true"></span>
+			<span class="hustle-screen-reader">Close this module</span>
+		</button><div class="hustle-layout-body"><div class="hustle-layout-content hustle-layout-position--left"><div class="hustle-content"><div class="hustle-content-wrap"><div class="hustle-group-title"><h3 class="hustle-title">Before You Go… </h3><h4 class="hustle-subtitle">want insider access?</h4></div><div class="hustle-group-content"><p style="text-align: center">IBT26 is dropping exclusive updates, early-bird tickets, and partner giveaways (merch, wallets etc.) - but only to our private list.</p>
+<p style="text-align: center;position: absolute;top: 470px;left: 140px;color: black;z-index: 30">And stay ahead of the crowd.</p>
+</div></div></div></div><form class="hustle-layout-form" novalidate="novalidate"><div class="hustle-form"><div class="hustle-form-fields hustle-proximity-separated"><div class="hustle-field hustle-field-required "><label for="hustle-field-name-module-4" id="hustle-field-name-module-4-label" class="hustle-screen-reader">Name</label><input id="hustle-field-name-module-4" type="name" class="hustle-input " name="name" value="" aria-labelledby="hustle-field-name-module-4-label" data-validate="" data-required-error="Your name is required."/><span class="hustle-input-label" aria-hidden="true" style="flex-flow: row nowrap;"><span>Full Name</span></span></div><div class="hustle-field hustle-field-required "><label for="hustle-field-email-module-4" id="hustle-field-email-module-4-label" class="hustle-screen-reader">Email</label><input id="hustle-field-email-module-4" type="email" class="hustle-input " name="email" value="" aria-labelledby="hustle-field-email-module-4-label" data-validate="1" data-required-error="Email field is required." data-validation-error="Please enter a valid email."/><span class="hustle-input-label" aria-hidden="true" style="flex-flow: row nowrap;"><span>Email</span></span></div><div class="hustle-field "><label for="hustle-field-telegram-module-4" id="hustle-field-telegram-module-4-label" class="hustle-screen-reader">Telegram</label><input id="hustle-field-telegram-module-4" type="text" class="hustle-input " name="telegram" value="" aria-labelledby="hustle-field-telegram-module-4-label" data-validate=""/><span class="hustle-input-label" aria-hidden="true" style="flex-flow: row nowrap;"><span>Telegram</span></span></div><div class="hustle-field hustle-field-required "><label for="hustle-field-phone-module-4" id="hustle-field-phone-module-4-label" class="hustle-screen-reader">Phone Number</label><input id="hustle-field-phone-module-4" type="text" class="hustle-input " name="phone" value="" aria-labelledby="hustle-field-phone-module-4-label" data-validate="" data-required-error="Your phone is required." data-type="phone"/><span class="hustle-input-label" aria-hidden="true" style="flex-flow: row nowrap;"><span>Phone Number</span></span></div><div class="hustle-field hustle-field-required "><label for="hustle-field-city-module-4" id="hustle-field-city-module-4-label" class="hustle-screen-reader">City</label><input id="hustle-field-city-module-4" type="text" class="hustle-input " name="city" value="" aria-labelledby="hustle-field-city-module-4-label" data-validate="" data-required-error="This field can't be empty."/><span class="hustle-input-label" aria-hidden="true" style="flex-flow: row nowrap;"><span>City</span></span></div><button class="hustle-button hustle-button-submit " aria-live="polite" data-loading-text="Form is being submitted, please wait a bit."><span class="hustle-button-text">JOIN THE INSIDERS</span><span class="hustle-icon-loader hustle-loading-icon" aria-hidden="true"></span></button></div></div><input type="hidden" name="hustle_module_id" value="4"><input type="hidden" name="post_id" value="0"><div class="hustle-error-message" style="display: none;" data-default-error="Something went wrong, please try again."></div></form></div></div></div></div></div></div><script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-content/plugins/fsdpcfl-contact-form-lazyload/build/index.js?ver=2.0.1" id="fsdpcfl-script-js"></script>
+<script type="text/javascript" id="hui_scripts-js-extra">
+/* <![CDATA[ */
+var hustleSettings = {"mobile_breakpoint":"782"};
+//# sourceURL=hui_scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js?ver=7.8.7" id="hui_scripts-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script type="text/javascript" id="hustle_front-js-extra">
+/* <![CDATA[ */
+var Modules = [{"settings":{"auto_close_success_message":"0","triggers":{"on_time_delay":"60","on_time_unit":"minutes","on_scroll":"scrolled","on_scroll_page_percent":20,"on_scroll_css_selector":"","enable_on_click_element":"1","on_click_element":"","enable_on_click_shortcode":"1","on_exit_intent_per_session":"1","on_exit_intent_delayed_time":"0","on_exit_intent_delayed_unit":"seconds","on_adblock_delay":"0","on_adblock_delay_unit":"seconds","trigger":["exit_intent","time"]},"animation_in":"no_animation","animation_out":"no_animation","after_close":"keep_show","expiration":365,"expiration_unit":"days","after_optin_expiration":365,"after_optin_expiration_unit":"days","after_cta_expiration":365,"after_cta2_expiration":365,"after_cta_expiration_unit":"days","after_cta2_expiration_unit":"days","on_submit":"nothing","on_submit_delay":"5","on_submit_delay_unit":"seconds","close_cta":"1","close_cta_time":"5","close_cta_unit":"seconds","hide_after_cta":"keep_show","hide_after_cta2":"keep_show","hide_after_subscription":"keep_show","is_schedule":"0","schedule":{"not_schedule_start":"1","start_date":"11/13/2025","start_hour":"12","start_minute":"00","start_meridiem_offset":"am","not_schedule_end":"1","end_date":"11/19/2025","end_hour":"11","end_minute":"59","end_meridiem_offset":"pm","active_days":"all","week_days":[],"is_active_all_day":"1","day_start_hour":"00","day_start_minute":"00","day_start_meridiem_offset":"am","day_end_hour":"11","day_end_minute":"59","day_end_meridiem_offset":"pm","time_to_use":"server","custom_timezone":"UTC"},"allow_scroll_page":"0","close_on_background_click":"1","auto_hide":"0","auto_hide_unit":"seconds","auto_hide_time":"5","after_close_trigger":["click_close_icon"]},"module_id":"4","blog_id":"0","module_name":"Exit","module_type":"popup","active":"1","module_mode":"optin"}];
+var incOpt = {"conditional_tags":{"is_single":false,"is_singular":false,"is_tag":false,"is_category":false,"is_author":false,"is_date":false,"is_post_type_archive":false,"is_404":true,"is_front_page":false,"is_search":false},"is_admin":"","real_page_id":"","thereferrer":"https://web.archive.org/web/20260124214257/https://octaloop.com/","actual_url":"octaloop.com/wp-content/themes/octaloop/assets/images/video-poster.jpg","full_actual_url":"https://web.archive.org/web/20260124214257/https://octaloop.com/wp-content/themes/octaloop/assets/images/video-poster.jpg","native_share_enpoints":{"facebook":"https://web.archive.org/web/20260124214257/https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","twitter":"https://web.archive.org/web/20260124214257/https://twitter.com/intent/tweet?url=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg&text=Crypto%20Events%3A%20Why%20You%20Shouldn%E2%80%99t%20Attend","pinterest":"https://web.archive.org/web/20260124214257/https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","reddit":"https://web.archive.org/web/20260124214257/https://www.reddit.com/submit?url=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","linkedin":"https://web.archive.org/web/20260124214257/https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","vkontakte":"https://web.archive.org/web/20260124214257/https://vk.com/share.php?url=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","whatsapp":"https://web.archive.org/web/20260124214257/https://api.whatsapp.com/send?text=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg","email":"mailto:?subject=Crypto%20Events%3A%20Why%20You%20Shouldn%E2%80%99t%20Attend&body=https%3A%2F%2Foctaloop.com%2Fwp-content%2Fthemes%2Foctaloop%2Fassets%2Fimages%2Fvideo-poster.jpg"},"ajaxurl":"https://web.archive.org/web/20260124214257/https://octaloop.com/wp-admin/admin-ajax.php","page_id":"0","page_slug":"wp-content-themes-octaloop-assets-images-video-poster-jpg","is_upfront":"","script_delay":"3000"};
+//# sourceURL=hustle_front-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20260124214257js_/https://octaloop.com/wp-content/plugins/wordpress-popup/assets/js/front.min.js?ver=7.8.7" id="hustle_front-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://web.archive.org/web/20260124214257/https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://web.archive.org/web/20260124214257/https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"wpemoji":"https://web.archive.org/web/20260124214257/https://octaloop.com/wp-includes/js/wp-emoji.js?ver=6.9","twemoji":"https://web.archive.org/web/20260124214257/https://octaloop.com/wp-includes/js/twemoji.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/* eslint-env es6 */
+
+// Note: This is loaded as a script module, so there is no need for an IIFE to prevent pollution of the global scope.
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ */
+
+const settings = /** @type {WPEmojiSettings} */ (
+	JSON.parse( document.getElementById( 'wp-emoji-settings' ).textContent )
+);
+
+// For compatibility with other scripts that read from this global, in particular wp-includes/js/wp-emoji.js (source file: js/_enqueues/wp/emoji.js).
+window._wpemojiSettings = settings;
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+const sessionStorageKey = 'wpEmojiSettingsSupports';
+const tests = [ 'flag', 'emoji' ];
+
+/**
+ * Checks whether the browser supports offloading to a Worker.
+ *
+ * @since 6.3.0
+ *
+ * @private
+ *
+ * @returns {boolean}
+ */
+function supportsWorkerOffloading() {
+	return (
+		typeof Worker !== 'undefined' &&
+		typeof OffscreenCanvas !== 'undefined' &&
+		typeof URL !== 'undefined' &&
+		URL.createObjectURL &&
+		typeof Blob !== 'undefined'
+	);
+}
+
+/**
+ * @typedef SessionSupportTests
+ * @type {object}
+ * @property {number} timestamp
+ * @property {SupportTests} supportTests
+ */
+
+/**
+ * Get support tests from session.
+ *
+ * @since 6.3.0
+ *
+ * @private
+ *
+ * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+ */
+function getSessionSupportTests() {
+	try {
+		/** @type {SessionSupportTests} */
+		const item = JSON.parse(
+			sessionStorage.getItem( sessionStorageKey )
+		);
+		if (
+			typeof item === 'object' &&
+			typeof item.timestamp === 'number' &&
+			new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+			typeof item.supportTests === 'object'
+		) {
+			return item.supportTests;
+		}
+	} catch ( e ) {}
+	return null;
+}
+
+/**
+ * Persist the supports in session storage.
+ *
+ * @since 6.3.0
+ *
+ * @private
+ *
+ * @param {SupportTests} supportTests Support tests.
+ */
+function setSessionSupportTests( supportTests ) {
+	try {
+		/** @type {SessionSupportTests} */
+		const item = {
+			supportTests: supportTests,
+			timestamp: new Date().valueOf()
+		};
+
+		sessionStorage.setItem(
+			sessionStorageKey,
+			JSON.stringify( item )
+		);
+	} catch ( e ) {}
+}
+
+/**
+ * Checks if two sets of Emoji characters render the same visually.
+ *
+ * This is used to determine if the browser is rendering an emoji with multiple data points
+ * correctly. set1 is the emoji in the correct form, using a zero-width joiner. set2 is the emoji
+ * in the incorrect form, using a zero-width space. If the two sets render the same, then the browser
+ * does not support the emoji correctly.
+ *
+ * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+ * scope. Everything must be passed by parameters.
+ *
+ * @since 4.9.0
+ *
+ * @private
+ *
+ * @param {CanvasRenderingContext2D} context 2D Context.
+ * @param {string} set1 Set of Emoji to test.
+ * @param {string} set2 Set of Emoji to test.
+ *
+ * @return {boolean} True if the two sets render the same.
+ */
+function emojiSetsRenderIdentically( context, set1, set2 ) {
+	// Cleanup from previous test.
+	context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+	context.fillText( set1, 0, 0 );
+	const rendered1 = new Uint32Array(
+		context.getImageData(
+			0,
+			0,
+			context.canvas.width,
+			context.canvas.height
+		).data
+	);
+
+	// Cleanup from previous test.
+	context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+	context.fillText( set2, 0, 0 );
+	const rendered2 = new Uint32Array(
+		context.getImageData(
+			0,
+			0,
+			context.canvas.width,
+			context.canvas.height
+		).data
+	);
+
+	return rendered1.every( ( rendered2Data, index ) => {
+		return rendered2Data === rendered2[ index ];
+	} );
+}
+
+/**
+ * Checks if the center point of a single emoji is empty.
+ *
+ * This is used to determine if the browser is rendering an emoji with a single data point
+ * correctly. The center point of an incorrectly rendered emoji will be empty. A correctly
+ * rendered emoji will have a non-zero value at the center point.
+ *
+ * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+ * scope. Everything must be passed by parameters.
+ *
+ * @since 6.8.2
+ *
+ * @private
+ *
+ * @param {CanvasRenderingContext2D} context 2D Context.
+ * @param {string} emoji Emoji to test.
+ *
+ * @return {boolean} True if the center point is empty.
+ */
+function emojiRendersEmptyCenterPoint( context, emoji ) {
+	// Cleanup from previous test.
+	context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+	context.fillText( emoji, 0, 0 );
+
+	// Test if the center point (16, 16) is empty (0,0,0,0).
+	const centerPoint = context.getImageData(16, 16, 1, 1);
+	for ( let i = 0; i < centerPoint.data.length; i++ ) {
+		if ( centerPoint.data[ i ] !== 0 ) {
+			// Stop checking the moment it's known not to be empty.
+			return false;
+		}
+	}
+
+	return true;
+}
+
+/**
+ * Determines if the browser properly renders Emoji that Twemoji can supplement.
+ *
+ * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+ * scope. Everything must be passed by parameters.
+ *
+ * @since 4.2.0
+ *
+ * @private
+ *
+ * @param {CanvasRenderingContext2D} context 2D Context.
+ * @param {string} type Whether to test for support of "flag" or "emoji".
+ * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+ * @param {Function} emojiRendersEmptyCenterPoint Reference to emojiRendersEmptyCenterPoint function, needed due to minification.
+ *
+ * @return {boolean} True if the browser can render emoji, false if it cannot.
+ */
+function browserSupportsEmoji( context, type, emojiSetsRenderIdentically, emojiRendersEmptyCenterPoint ) {
+	let isIdentical;
+
+	switch ( type ) {
+		case 'flag':
+			/*
+			 * Test for Transgender flag compatibility. Added in Unicode 13.
+			 *
+			 * To test for support, we try to render it, and compare the rendering to how it would look if
+			 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+			 */
+			isIdentical = emojiSetsRenderIdentically(
+				context,
+				'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+				'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+			);
+
+			if ( isIdentical ) {
+				return false;
+			}
+
+			/*
+			 * Test for Sark flag compatibility. This is the least supported of the letter locale flags,
+			 * so gives us an easy test for full support.
+			 *
+			 * To test for support, we try to render it, and compare the rendering to how it would look if
+			 * the browser doesn't render it correctly ([C] + [Q]).
+			 */
+			isIdentical = emojiSetsRenderIdentically(
+				context,
+				'\uD83C\uDDE8\uD83C\uDDF6', // as the sequence of two code points
+				'\uD83C\uDDE8\u200B\uD83C\uDDF6' // as the two code points separated by a zero-width space
+			);
+
+			if ( isIdentical ) {
+				return false;
+			}
+
+			/*
+			 * Test for English flag compatibility. England is a country in the United Kingdom, it
+			 * does not have a two letter locale code but rather a five letter sub-division code.
+			 *
+			 * To test for support, we try to render it, and compare the rendering to how it would look if
+			 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+			 */
+			isIdentical = emojiSetsRenderIdentically(
+				context,
+				// as the flag sequence
+				'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+				// with each code point separated by a zero-width space
+				'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+			);
+
+			return ! isIdentical;
+		case 'emoji':
+			/*
+			 * Is there a large, hairy, humanoid mythical creature living in the browser?
+			 *
+			 * To test for Emoji 17.0 support, try to render a new emoji: Hairy Creature.
+			 *
+			 * The hairy creature emoji is a single code point emoji. Testing for browser
+			 * support required testing the center point of the emoji to see if it is empty.
+			 *
+			 * 0xD83E 0x1FAC8 (\uD83E\u1FAC8) == 🫈 Hairy creature.
+			 *
+			 * When updating this test, please ensure that the emoji is either a single code point
+			 * or switch to using the emojiSetsRenderIdentically function and testing with a zero-width
+			 * joiner vs a zero-width space.
+			 */
+			const notSupported = emojiRendersEmptyCenterPoint( context, '\uD83E\u1FAC8' );
+			return ! notSupported;
+	}
+
+	return false;
+}
+
+/**
+ * Checks emoji support tests.
+ *
+ * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+ * scope. Everything must be passed by parameters.
+ *
+ * @since 6.3.0
+ *
+ * @private
+ *
+ * @param {string[]} tests Tests.
+ * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+ * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+ * @param {Function} emojiRendersEmptyCenterPoint Reference to emojiRendersEmptyCenterPoint function, needed due to minification.
+ *
+ * @return {SupportTests} Support tests.
+ */
+function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically, emojiRendersEmptyCenterPoint ) {
+	let canvas;
+	if (
+		typeof WorkerGlobalScope !== 'undefined' &&
+		self instanceof WorkerGlobalScope
+	) {
+		canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+	} else {
+		canvas = document.createElement( 'canvas' );
+	}
+
+	const context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+	/*
+	 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+	 * it doesn't work when the font is bolder than 500 weight. So, we
+	 * check for bold rendering support to avoid invisible emoji in Chrome.
+	 */
+	context.textBaseline = 'top';
+	context.font = '600 32px Arial';
+
+	const supports = {};
+	tests.forEach( ( test ) => {
+		supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically, emojiRendersEmptyCenterPoint );
+	} );
+	return supports;
+}
+
+/**
+ * Adds a script to the head of the document.
+ *
+ * @ignore
+ *
+ * @since 4.2.0
+ *
+ * @param {string} src The url where the script is located.
+ *
+ * @return {void}
+ */
+function addScript( src ) {
+	const script = document.createElement( 'script' );
+	script.src = src;
+	script.defer = true;
+	document.head.appendChild( script );
+}
+
+settings.supports = {
+	everything: true,
+	everythingExceptFlag: true
+};
+
+// Obtain the emoji support from the browser, asynchronously when possible.
+new Promise( ( resolve ) => {
+	let supportTests = getSessionSupportTests();
+	if ( supportTests ) {
+		resolve( supportTests );
+		return;
+	}
+
+	if ( supportsWorkerOffloading() ) {
+		try {
+			// Note that the functions are being passed as arguments due to minification.
+			const workerScript =
+				'postMessage(' +
+				testEmojiSupports.toString() +
+				'(' +
+				[
+					JSON.stringify( tests ),
+					browserSupportsEmoji.toString(),
+					emojiSetsRenderIdentically.toString(),
+					emojiRendersEmptyCenterPoint.toString()
+				].join( ',' ) +
+				'));';
+			const blob = new Blob( [ workerScript ], {
+				type: 'text/javascript'
+			} );
+			const worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+			worker.onmessage = ( event ) => {
+				supportTests = event.data;
+				setSessionSupportTests( supportTests );
+				worker.terminate();
+				resolve( supportTests );
+			};
+			return;
+		} catch ( e ) {}
+	}
+
+	supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically, emojiRendersEmptyCenterPoint );
+	setSessionSupportTests( supportTests );
+	resolve( supportTests );
+} )
+	// Once the browser emoji support has been obtained from the session, finalize the settings.
+	.then( ( supportTests ) => {
+		/*
+		 * Tests the browser support for flag emojis and other emojis, and adjusts the
+		 * support settings accordingly.
+		 */
+		for ( const test in supportTests ) {
+			settings.supports[ test ] = supportTests[ test ];
+
+			settings.supports.everything =
+				settings.supports.everything && settings.supports[ test ];
+
+			if ( 'flag' !== test ) {
+				settings.supports.everythingExceptFlag =
+					settings.supports.everythingExceptFlag &&
+					settings.supports[ test ];
+			}
+		}
+
+		settings.supports.everythingExceptFlag =
+			settings.supports.everythingExceptFlag &&
+			! settings.supports.flag;
+
+		// When the browser can not render everything we need to load a polyfill.
+		if ( ! settings.supports.everything ) {
+			const src = settings.source || {};
+
+			if ( src.concatemoji ) {
+				addScript( src.concatemoji );
+			} else if ( src.wpemoji && src.twemoji ) {
+				addScript( src.twemoji );
+				addScript( src.wpemoji );
+			}
+		}
+	} );
+//# sourceURL=https://octaloop.com/wp-includes/js/wp-emoji-loader.js
+/* ]]> */
+</script>
+<script defer src="https://web.archive.org/web/20260124214257js_/https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;1ea42d32b0114a4facb9e3d5d7ecaa83&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- Comet Cache is NOT caching this page, because the WordPress `is_404()` Conditional Tag says the current page is a 404 error. The current configuration says NOT to cache 404 errors. --><!--
+     FILE ARCHIVED ON 21:42:57 Jan 24, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:01:01 Mar 19, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.634
+  exclusion.robots: 0.062
+  exclusion.robots.policy: 0.051
+  esindex: 0.009
+  cdx.remote: 12.982
+  LoadShardBlock: 179.566 (3)
+  PetaboxLoader3.datanode: 86.238 (4)
+  PetaboxLoader3.resolve: 284.573 (3)
+  load_resource: 291.634
+-->
