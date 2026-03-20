@@ -773,33 +773,12 @@ html :where(.is-position-sticky){
     </div>
     <div class="container-fluid section-5">
         <div class="row justify-content-center">
-            <div class="col-11 col-lg-5 col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 image col-6"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section5-logo1.png"/ alt="Octaloop" loading="lazy" width="150" height="40"></div>
-                        <div class="col-12 col-lg-8 col-md-8">
-                            <div class="title">ChangeNOW</div>
-                            <div class="name">
-                                I'm very grateful for all the work that you have done for the NOWAcademy. The working process was very well structured and organized. Communication was smooth and full of positive emotion. The final results
-                                of your work are of high quality — the content is very clear and comprehensive. I'm sure it will help many people delve into the complicated world of crypto. Again, thank you sincerely for all the work!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-11 col-lg-5 col-md-6"></div>
-        </div>
-        <div class="row justify-content-center box-2">
-            <div class="col-11 col-lg-5 col-md-6"></div>
-            <div class="col-11 col-lg-5 col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-12 col-lg-8 col-md-8">
-                            <div class="title">BlockTEST</div>
-                            <div class="name">Great service and skills, with extensive marketing channels.</div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 image col-9"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo1.png"/ alt="Octaloop" loading="lazy" width="150" height="40"></div>
-                    </div>
+            <div class="col-11 col-lg-10 col-md-11">
+                <div class="owl-carousel testimonials-carousel owl-theme">
+                    <div class="item"><img src="assets/images/testimonials/testimonialD01.webp" alt="Vikas Gupta, Country Manager India at Bybit" loading="lazy" style="width:100%;border-radius:12px;"></div>
+                    <div class="item"><img src="assets/images/testimonials/testimonialD04.webp" alt="Jyotsna Hirdyani, Growth at Bitget" loading="lazy" style="width:100%;border-radius:12px;"></div>
+                    <div class="item"><img src="assets/images/testimonials/testimonialD05.webp" alt="Gaurav Sharma, CEO at io.net" loading="lazy" style="width:100%;border-radius:12px;"></div>
+                    <div class="item"><img src="assets/images/testimonials/testimonialD06.webp" alt="Tomas Vaic, Business Development Manager at Trezor" loading="lazy" style="width:100%;border-radius:12px;"></div>
                 </div>
             </div>
         </div>
@@ -925,6 +904,18 @@ html :where(.is-position-sticky){
   "use strict";
 
   var carousels = function () {
+    $(".testimonials-carousel").owlCarousel({
+      loop: true,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+      navText: ["&#8592;", "&#8594;"],
+      margin: 0,
+    });
+
     $(".owl-carousel1").owlCarousel({
       loop: true,
       center: true,
