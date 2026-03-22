@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Don't index utility/template files
+Disallow: /blog/post-template.html
+Disallow: /_site/
+Disallow: /_archived_posts/
+
 Sitemap: https://octaloop.com/sitemap.xml
