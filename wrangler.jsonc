@@ -8,6 +8,9 @@
   "assets": {
     "directory": "_site"
   },
+  "build": {
+    "command": "echo 'Using pre-built _site'"
+  },
   "compatibility_flags": [
     "nodejs_compat"
   ]
