@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Welcome to the Octaloop Blog | Octaloop Blog</title>
+  <meta name="description" content="We're relaunching the Octaloop Blog — a space for ideas, insights, and honest takes on India's tech ecosystem."/>
+  <link rel="icon" href="/octaloop/assets/images/wp-content/uploads/2023/09/cropped-Favicon-32x32.png"/>
+  <!-- Cayman theme CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css"/>
+  <!-- Tocbot -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #24292e; }
+
+    /* ── Cayman-style header ── */
+    .page-header {
+      background-color: #159957;
+      background-image: linear-gradient(120deg, #155799, #159957);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+    .page-header .back-link {
+      display: inline-block;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+    .page-header .back-link:hover { color: #fff; }
+    .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; margin: 0 0 0.75rem; line-height: 1.25; }
+    .page-header .post-meta { font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
+    .page-header .post-meta .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 2px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ── Two-column layout ── */
+    .page-body {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      gap: 0;
+    }
+
+    /* Left sidebar TOC */
+    .toc-sidebar {
+      width: 260px;
+      flex-shrink: 0;
+      padding: 2.5rem 1.5rem 2rem 0;
+    }
+    .toc-sidebar .toc-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    .toc-sidebar .toc {
+      position: sticky;
+      top: 24px;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+    /* Tocbot styles */
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list-item { margin-bottom: 2px; }
+    .toc-link {
+      display: block;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      color: #586069;
+      text-decoration: none;
+      border-radius: 4px;
+      border-left: 2px solid transparent;
+      line-height: 1.4;
+      transition: all 0.15s;
+    }
+    .toc-link:hover { color: #159957; background: #f6f8fa; }
+    .is-active-link {
+      color: #159957 !important;
+      border-left-color: #159957 !important;
+      font-weight: 600;
+      background: #f0fdf4;
+    }
+    .toc-list .toc-list { padding-left: 12px; }
+    .toc-list .toc-list .toc-link { font-size: 0.8rem; }
+
+    /* Right: post content */
+    .post-content-wrap {
+      flex: 1;
+      min-width: 0;
+      padding: 2.5rem 0 4rem 2.5rem;
+      border-left: 1px solid #e1e4e8;
+    }
+
+    /* Featured image */
+    .post-featured-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    /* Markdown content */
+    .markdown-body { font-size: 1rem; line-height: 1.8; }
+    .markdown-body h2 { margin-top: 2.5rem; padding-bottom: 0.4rem; border-bottom: 1px solid #e1e4e8; }
+    .markdown-body h3 { margin-top: 2rem; }
+    .markdown-body a { color: #159957; }
+    .markdown-body img { max-width: 100%; border-radius: 6px; margin: 1.5rem 0; }
+    .markdown-body blockquote {
+      border-left: 4px solid #159957;
+      padding: 0.5rem 1rem;
+      color: #586069;
+      background: #f6f8fa;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+
+    /* Site footer */
+    .site-footer {
+      background: #155799;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    .site-footer a { color: rgba(255,255,255,0.9); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .toc-sidebar { display: none; }
+      .post-content-wrap { border-left: none; padding: 1.5rem 0 3rem; }
+      .page-body { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cayman-style header -->
+<header class="page-header">
+  <a href="/octaloop/blog/" class="back-link">← Octaloop Blog</a>
+  <h1>Welcome to the Octaloop Blog</h1>
+  <div class="post-meta">
+    <span>Anupam Varshney</span>
+    <span>March 22, 2026</span>
+    <span class="badge">Community</span>
+    <span>2 min read</span>
+  </div>
+</header>
+
+<!-- Two-column body -->
+<div class="page-body">
+
+  <!-- Left: Table of Contents -->
+  <aside class="toc-sidebar">
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <div class="js-toc"></div>
+    </div>
+  </aside>
+
+  <!-- Right: Post content -->
+  <article class="post-content-wrap">
+    
+    <div class="markdown-body js-toc-content">
+      <p>We’re relaunching the Octaloop Blog — a space for ideas, insights, and honest takes on India’s tech ecosystem.</p>
+
+<h2 id="what-to-expect">What to expect</h2>
+
+<p>Every few days, we’ll be writing about things we’re seeing in the market, events we’re running, founders we’re meeting, and trends we think deserve more attention.</p>
+
+<p>No fluff. No press releases. Just what we actually think.</p>
+
+<h2 id="why-now">Why now</h2>
+
+<p>India’s blockchain and Web3 ecosystem has matured significantly since we started in 2013. The conversations are sharper, the builders are more serious, and the global interest is real.</p>
+
+<p>We want to document that — and be part of the conversation.</p>
+
+<h2 id="stay-tuned">Stay tuned</h2>
+
+<p>More posts coming soon. If you have a topic you’d like us to cover, write to us at <a href="mailto:contact@octaloop.com">contact@octaloop.com</a>.</p>
+
+    </div>
+  </article>
+
+</div>
+
+<footer class="site-footer">
+  <a href="/octaloop/">Octaloop</a> &nbsp;&middot;&nbsp;
+  <a href="/octaloop/blog/">Blog</a> &nbsp;&middot;&nbsp;
+  <a href="/octaloop/contact-us/">contact@octaloop.com</a>
+</footer>
+
+<script>
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.js-toc-content',
+    headingSelector: 'h2, h3',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollSmoothDuration: 200,
+  });
+</script>
+
+</body>
+</html>

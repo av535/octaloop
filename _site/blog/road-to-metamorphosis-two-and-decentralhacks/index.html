@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Road to Metamorphosis II & DecentralHacks | Octaloop Blog</title>
+  <meta name="description" content="[
+
+		]
+	
+	
+		[
+			
+				
+				
+				
+			
+		]
+
+
+
+  
+    [Events]
+  
+  
+    [Services]
+  
+  
+    [Journal]
+  
+  
+    [About Us]
+  
+  
+    [Contact Us]
+
+      [EVENTS]
+	
+  [JOURNAL]
+	
+  [SERVICES]
+	
+  [ABOUT US]
+	
+  [CONTACT US]
+    
+  
+
+
+"/>
+  <link rel="icon" href="/octaloop/assets/images/wp-content/uploads/2023/09/cropped-Favicon-32x32.png"/>
+  <!-- Cayman theme CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css"/>
+  <!-- Tocbot -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #24292e; }
+
+    /* ── Cayman-style header ── */
+    .page-header {
+      background-color: #159957;
+      background-image: linear-gradient(120deg, #155799, #159957);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+    .page-header .back-link {
+      display: inline-block;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+    .page-header .back-link:hover { color: #fff; }
+    .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; margin: 0 0 0.75rem; line-height: 1.25; }
+    .page-header .post-meta { font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
+    .page-header .post-meta .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 2px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ── Two-column layout ── */
+    .page-body {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      gap: 0;
+    }
+
+    /* Left sidebar TOC */
+    .toc-sidebar {
+      width: 260px;
+      flex-shrink: 0;
+      padding: 2.5rem 1.5rem 2rem 0;
+    }
+    .toc-sidebar .toc-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    .toc-sidebar .toc {
+      position: sticky;
+      top: 24px;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+    /* Tocbot styles */
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list-item { margin-bottom: 2px; }
+    .toc-link {
+      display: block;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      color: #586069;
+      text-decoration: none;
+      border-radius: 4px;
+      border-left: 2px solid transparent;
+      line-height: 1.4;
+      transition: all 0.15s;
+    }
+    .toc-link:hover { color: #159957; background: #f6f8fa; }
+    .is-active-link {
+      color: #159957 !important;
+      border-left-color: #159957 !important;
+      font-weight: 600;
+      background: #f0fdf4;
+    }
+    .toc-list .toc-list { padding-left: 12px; }
+    .toc-list .toc-list .toc-link { font-size: 0.8rem; }
+
+    /* Right: post content */
+    .post-content-wrap {
+      flex: 1;
+      min-width: 0;
+      padding: 2.5rem 0 4rem 2.5rem;
+      border-left: 1px solid #e1e4e8;
+    }
+
+    /* Featured image */
+    .post-featured-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    /* Markdown content */
+    .markdown-body { font-size: 1rem; line-height: 1.8; }
+    .markdown-body h2 { margin-top: 2.5rem; padding-bottom: 0.4rem; border-bottom: 1px solid #e1e4e8; }
+    .markdown-body h3 { margin-top: 2rem; }
+    .markdown-body a { color: #159957; }
+    .markdown-body img { max-width: 100%; border-radius: 6px; margin: 1.5rem 0; }
+    .markdown-body blockquote {
+      border-left: 4px solid #159957;
+      padding: 0.5rem 1rem;
+      color: #586069;
+      background: #f6f8fa;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+
+    /* Site footer */
+    .site-footer {
+      background: #155799;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    .site-footer a { color: rgba(255,255,255,0.9); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .toc-sidebar { display: none; }
+      .post-content-wrap { border-left: none; padding: 1.5rem 0 3rem; }
+      .page-body { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cayman-style header -->
+<header class="page-header">
+  <a href="/octaloop/blog/" class="back-link">← Octaloop Blog</a>
+  <h1>The Road to Metamorphosis II & DecentralHacks</h1>
+  <div class="post-meta">
+    <span>admin</span>
+    <span>December 1, 2022</span>
+    <span class="badge">Events</span>
+    <span>5 min read</span>
+  </div>
+</header>
+
+<!-- Two-column body -->
+<div class="page-body">
+
+  <!-- Left: Table of Contents -->
+  <aside class="toc-sidebar">
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <div class="js-toc"></div>
+    </div>
+  </aside>
+
+  <!-- Right: Post content -->
+  <article class="post-content-wrap">
+    
+    <img class="post-featured-img" src="/octaloop/assets/images/wp-content/uploads/2023/04/mm4.png" alt="The Road to Metamorphosis II & DecentralHacks"/>
+    
+    <div class="markdown-body js-toc-content">
+      <p>[</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		]
+	
+	
+		[
+			
+				
+				
+				
+			
+		]
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>[Events]</p>
+  </li>
+  <li>
+    <p>[Services]</p>
+  </li>
+  <li>
+    <p>[Journal]</p>
+  </li>
+  <li>
+    <p>[About Us]</p>
+  </li>
+  <li>
+    <p>[Contact Us]</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [EVENTS]
+	
+  [JOURNAL]
+	
+  [SERVICES]
+	
+  [ABOUT US]
+	
+  [CONTACT US]
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>[Home] &gt; 
+ [Journal] &gt; The Road to…</p>
+
+<p>admin</p>
+
+<p>April 11, 2023</p>
+
+<h1 id="the-road-to-metamorphosis-ii--decentralhacks">The Road to Metamorphosis II &amp; DecentralHacks</h1>
+
+<p>Earlier this year, Octaloop conducted The Road to [Metamorphosis], the first phase of our journey to Metamorphosis. The event consisted of renowned speakers in the world of blockchain, such as AVA Labs founder [Emin Gün Sirer], co-founder of CoinGecko, Bobby Ong, and Blockchain.com co-founder, Nicholas Cary.</p>
+
+<p>After initially being designed as a physical event, we shifted TRTM to an online conference model due to constraints related to the COVID-19 pandemic. Despite concerns around how the event would translate to an online audience, The Road to Metamorphosis was a resounding success, with over 400 members in attendance.</p>
+
+<p>The Road to Metamorphosis II was conducted in the days leading up to August 29, after the week-long blockchain-based hackathon, [DecentralHacks.] With nearly a thousand registrations for the summit, TRTM II was an enormous hit with the blockchain community, encouraging the development of a myriad of applications that are actively used in the real-world today.</p>
+
+<p>For any movement, a thriving community is crucial. To strengthen India’s blockchain community further, Octaloop has been actively conducting meetups, interviews, and events to keep our 5000+ member strong community up to speed.</p>
+
+<p>The goal of TRTM is to raise awareness about the potential of cryptocurrencies in the country. Armed with our broad experience educating the public and eradicating preconceived misconceptions about the technology, TRTM was devised to encourage India’s already gargantuan developer workforce to test the waters of the blockchain world.</p>
+
+<p>DecentralHacks not only incentivized the creation of new and innovative blockchain-based applications, but also provided participants with industry-standard tools, and included mentor sessions for novice and advanced developers alike. With a prize pool of $15,000, the event saw unprecedented participation through the hackathon’s ideation and development phases.</p>
+
+<p>During the three-day ideation phase, participants were asked to create a presentation to discuss their idea and the vision behind it and explain how the project could benefit society at large. The remaining four days of the hackathon were reserved for product development, as well as mentor sessions with veteran developers to ensure they were on the right track.</p>
+
+<p>Supporting DecentralHacks were various industry leaders such as the well-known development hosting platform GitHub, cryptocurrency data aggregator [CoinGecko], and Indian peer-to-peer exchange CXIHub. Other partners included the blockchain scalability platform, Matic, as well as the Harmony and Elastos blockchains. Further, the hackathon also had Track Prizes for categories like Healthcare, Education, FinTech, and Open Innovation.</p>
+
+<p>Blockchain-based education and career platform, Zubi.io, and cryptocurrency media company IBC Media joined us as Community Partners alongside Blockchained India, an enthusiast community in India, and solutions firm, BlockTEST. The event was hosted on the platform provided by our Virtual Event Partner, Airmeet.</p>
+
+<p>Other Media Partners included various cryptocurrency news-media agencies like CoinCrunch, Blockmanity, CoinGape, AMBCrypto, CryptoNewsZ, and CoinPedia. Further, marketing/PR agency for blockchain firms, Bit2Buzz, and learning platform Cointelligence also aided in community participation.</p>
+
+<p>The entire summit revolved around the theme of ‘Blockchain in India’ and ‘The Future of Money.’ Participants were tasked with creating applications on the blockchain that brought actual value to people and were given unfettered access to experienced mentors in the blockchain space. The mentor sessions involved topics like interoperable blockchain networks, decentralized finance, and tips for the hackathon.</p>
+
+<p>The highlight of TRTM II, however, was the speaker sessions. These insightful, in-depth discussions about various topics in the blockchain space were given by prominent members of the Indian cryptocurrency community.</p>
+
+<p>Arjun Krishnan Kalsy, VP of Growth at Matic, Nikolaos Kostopoulos, Community &amp; International Partnerships at Harmony, and Akshay Aggarwal, co-founder of Blocumen Studios, spoke about DApp development and evolving blockchain to a problem-solving narrative.</p>
+
+<p>Additionally, Bloque Labs founder Vikas Singh, and Mohammed Roshan, co-founder of GoSats, spoke about the adoption of blockchain in India and how decentralized finance could have revolutionary effects on the Indian national economy.</p>
+
+<p>As regulatory uncertainty continues to plague the nation in the realm of blockchain technology, we felt it was necessary to let our community’s thought leaders voice their opinions on subjects like regulation, decentralized finance, adoption, and market growth opportunities. Besides the prizes on offer, Octaloop collaborated with blockchain development company Bloque Labs to award participants with certificates registered on the blockchain.</p>
+
+<p>While the rest of the world has seen increasing adoption and developer engagement levels, India has lagged behind, mainly due to the lack of sound regulation. Startups have shut down because of low investor confidence, and exchanges have shifted operations due to the nation’s reluctance to address the space. However, with the Supreme Court’s rejection of the RBI’s crypto-ban proposal, there is hope still for this potential billion-user market.</p>
+
+<p>The surge in cryptocurrency transactions in the country post-Supreme Court verdict is the sigh of a country crying out for a blockchain revolution. Bitcoin has received an incredible amount of publicity from its use as a speculative investment vehicle, but our goal at Octaloop isn’t to show people how to make money from it, but rather to show them how it can change the way we make money.</p>
+
+<p>Though India is still new to the industry, the blockchain space as a whole is tiny. Though a ~$300 billion market capitalization sounds enormous at first glance, it is but a fraction of the money involved in the global financial services industry.</p>
+
+<p>Cryptocurrencies have a long way to go before mainstream adoption, but if we can encourage more people to innovate and find reasons beyond arbitrary profits to promote the technology, India could push the global blockchain industry to new heights in the years to come.</p>
+
+<p>Discover more of what matters to you
+ [bangalore]
+ [blockchain]
+ [blockchain conference]
+ [blockchain event]
+ [crypto]
+ [crypto events]
+ [crypto expo]
+ [events]
+ [future blockchain summit]
+ [india]
+ [India Blockchain Tour]
+ [meetup]
+ [Metamorphosis]
+ [Metamorphosis 2022]
+ [nft]
+ [upcoming crypto events]
+ [web3]
+ [world blockchain summit]</p>
+
+<p>More From Octaloop</p>
+
+<p>[</p>
+
+<p>by admin
+ Crypto Events: Why You Shouldn’t Attend</p>
+
+<p>]</p>
+
+<p>[</p>
+
+<p>by admin
+ Metamorphosis 2022 and the India Blockchain Tour</p>
+
+<p>]</p>
+
+<p>[</p>
+
+<p>by admin
+ DecentralHacks 2021 &amp; The Road to Metamorphosis 3.0</p>
+
+<p>]</p>
+
+<p>[</p>
+
+<p>by admin
+ The Road to Metamorphosis II &amp; DecentralHacks</p>
+
+<p>]</p>
+
+<p>[</p>
+
+<p>by admin
+ 4 Brilliant Blockchain Ideas from the DecentralHacks Hackathon</p>
+
+<p>]</p>
+
+<p>Share</p>
+
+<p>[
+ **
+ ]</p>
+
+<p>[
+ **
+ ]</p>
+
+<p>[
+ **
+ ]</p>
+
+<p>[
+ **
+ ]</p>
+
+<p>[]</p>
+
+<ul>
+  <li>
+    <p>[Journal]</p>
+  </li>
+  <li>
+    <p>[About Us]</p>
+  </li>
+  <li>
+    <p>[Services]</p>
+  </li>
+  <li>
+    <p>[Events]</p>
+  </li>
+  <li>
+    <p>[Contact Us]</p>
+  </li>
+  <li>
+    <p>[**]</p>
+  </li>
+  <li>
+    <p>[</p>
+  </li>
+</ul>
+
+<p>]</p>
+
+<ul>
+  <li>
+    <p>[**]</p>
+  </li>
+  <li>
+    <p>[**]</p>
+  </li>
+  <li>
+    <p>[**]</p>
+  </li>
+  <li>
+    <p>[**]</p>
+  </li>
+</ul>
+
+<p>if (document.cookie.indexOf(“accepted_cookies=”) &lt; 0) {
+ $(“.popupModal”).removeClass(“d-none”).addClass(“d-block”);
+ }
+ $(“.popupButton”).on(“click”, function () {
+ document.cookie = “accepted_cookies=yes;”;
+ $(“.popupModal”).removeClass(“d-block”).addClass(“d-none”);
+ });</p>
+
+<p>// expand depending on your needs
+ $(“.closeBtn”).on(“click”, function () {
+ document.cookie = “accepted_cookies=yes;”;
+ $(“.popupModal”).removeClass(“d-block”).addClass(“d-none”);
+ });</p>
+
+<p>function scrollto(o) {
+ $(“html,body”).animate({ scrollTop: $(“#” + o).offset().top }, “slow”);
+ }
+ function myFunction() {
+ var o = document.getElementById(“myLinks”);
+ “block” === o.style.display ? (o.style.display = “none”) : (o.style.display = “block”);
+ }</p>
+
+<p>(function () {
+ “use strict”;</p>
+
+<p>var carousels = function () {
+ $(“.owl-carousel1”).owlCarousel({
+ loop: true,
+ center: true,
+ margin: 0,
+ responsiveClass: true,
+ nav: false,
+ responsive: {
+ 0: {
+ items: 1,
+ nav: false
+ },
+ 680: {
+ items: 1,
+ nav: false,
+ loop: false
+ },
+ 1000: {
+ items: 1,
+ nav: true
+ }
+ }
+ });</p>
+
+<p>$(“.blogs-carousel”).owlCarousel({
+ items: 1,
+ autoplay: false,
+ touchDrag : false,
+ mouseDrag : false,
+ dots: true,
+ dotsData:true,
+ dotsContainer: ‘#dots’,
+ // nav: true,
+ dotsEach: true,
+ navText: [“<img src="" />”, “<img src="" />”]
+ });</p>
+
+<p>$(‘#dots .item’).click(function() {
+ $(‘#dots .item’).removeClass(‘active’);
+ $(‘#dots .item’).trigger(‘to.owl.carousel’, [$(this).index(), 1000]);
+ });
+ $(‘#dots .item.item1’).click(function() {
+ $(‘#dots .item.item1’).addClass(‘active’);
+ });
+ $(‘#dots .item.item2’).click(function() {
+ $(‘#dots .item.item2’).addClass(‘active’);
+ });
+ $(‘#dots .item.item3’).click(function() {
+ $(‘#dots .item.item3’).addClass(‘active’);
+ });
+ };</p>
+
+<p>(function ($) {
+ carousels();
+ })(jQuery);
+})();</p>
+
+<p>_linkedin_partner_id = “2999460”;
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);</p>
+
+<p>{“prefetch”:[{“source”:”document”,”where”:{“and”:[{“href_matches”:”\/<em>”},{“not”:{“href_matches”:[”\/wp-</em>.php”,”\/wp-admin\/<em>”,”\/wp-content\/uploads\/</em>”,”\/wp-content\/<em>”,”\/wp-content\/plugins\/</em>”,”\/wp-content\/themes\/octaloop\/<em>”,”\/</em>\?(.+)”]}},{“not”:{“selector_matches”:”a[rel~="nofollow"]”}},{“not”:{“selector_matches”:”.no-prefetch, .no-prefetch a”}}]},”eagerness”:”conservative”}]}</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	function setCookie(name, value, days) {
+		var expires = "";
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+			expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + (value || "") + expires + "; path=/";
+	}
+	function getCookie(cname) {
+		let name = cname + "=";
+		let decodedCookie = decodeURIComponent(document.cookie);
+		let ca = decodedCookie.split(';');
+		for (let i = 0; i &lt; ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	function eraseCookie(name) {
+		setCookie(name, "", -1);
+	}
+
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		var cf7rgk_json = getCookie("cf7rgk_options");
+
+		if(typeof cf7rgk_json != 'undefined') {
+			var cf7rgk_opt = JSON.parse(decodeURIComponent(cf7rgk_json));
+
+			if (cf7rgk_opt != '') {
+				if(cf7rgk_opt.url != '') {
+					if (cf7rgk_opt.open_new == "on") {
+						window.open(cf7rgk_opt.url, '_blank');
+					} else {
+						window.open(cf7rgk_opt.url, '_self');
+					}
+				}
+			}
+
+			eraseCookie("cf7rgk_options");
+		}
+	});
+</code></pre></div></div>
+
+    </div>
+  </article>
+
+</div>
+
+<footer class="site-footer">
+  <a href="/octaloop/">Octaloop</a> &nbsp;&middot;&nbsp;
+  <a href="/octaloop/blog/">Blog</a> &nbsp;&middot;&nbsp;
+  <a href="/octaloop/contact-us/">contact@octaloop.com</a>
+</footer>
+
+<script>
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.js-toc-content',
+    headingSelector: 'h2, h3',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollSmoothDuration: 200,
+  });
+</script>
+
+</body>
+</html>
