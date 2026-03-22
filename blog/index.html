@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Journal
+title: Blog
 description: Insights on India's AI, blockchain, and startup ecosystem from Octaloop.
 ---
 <style>
@@ -42,7 +42,7 @@ description: Insights on India's AI, blockchain, and startup ecosystem from Octa
 
 <div class="journal-page">
   <div class="journal-header">
-    <h1>Journal</h1>
+    <h1>Blog</h1>
     <p>Insights on India's AI, blockchain, and startup ecosystem.</p>
   </div>
 
@@ -72,7 +72,7 @@ description: Insights on India's AI, blockchain, and startup ecosystem from Octa
       {% for post in all_posts limit:4 offset:1 %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="post-card-row">
         {% if post.image %}<img class="row-thumb" src="{{ post.image }}" alt="{{ post.title }}"/>
-        {% else %}<div class="row-thumb-placeholder"><span>{{ post.category | default: "Journal" }}</span></div>{% endif %}
+        {% else %}<div class="row-thumb-placeholder"><span>{{ post.category | default: "Blog" }}</span></div>{% endif %}
         <div class="row-body">
           <div class="row-title">{{ post.title }}</div>
           <div class="row-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.read_time %} &middot; {{ post.read_time }} min read{% endif %}</div>

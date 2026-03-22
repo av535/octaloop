@@ -5,7 +5,7 @@ url: "https://av535.github.io"
 
 theme: cayman
 
-permalink: /journal/:slug/
+permalink: /blog/:slug/
 
 markdown: kramdown
 kramdown:

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Welcome to the Octaloop Journal"
+title: "Welcome to the Octaloop Blog"
 author: Anupam Varshney
 date: 2026-03-22
 category: Community
 read_time: 2
-excerpt: "We're relaunching the Octaloop Journal — a space for ideas, insights, and honest takes on India's tech ecosystem."
+excerpt: "We're relaunching the Octaloop Blog — a space for ideas, insights, and honest takes on India's tech ecosystem."
 ---
 
-We're relaunching the Octaloop Journal — a space for ideas, insights, and honest takes on India's tech ecosystem.
+We're relaunching the Octaloop Blog — a space for ideas, insights, and honest takes on India's tech ecosystem.
 
 ## What to expect
 
