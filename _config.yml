@@ -3,17 +3,6 @@ description: Insights on India's tech ecosystem
 baseurl: "/octaloop"
 url: "https://av535.github.io"
 
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
-
-permalink: /blog/:slug/
-
-markdown: kramdown
-kramdown:
-  input: GFM
-
-# Don't process these with Jekyll — leave as plain HTML
 exclude:
   - "*.py"
   - "*.pdf"
@@ -21,10 +10,7 @@ exclude:
   - hts-cache
   - hts-log.txt
   - cookies.txt
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
+  - Gemfile
+  - Gemfile.lock
+  - wrangler.jsonc
+  - _archived_posts
