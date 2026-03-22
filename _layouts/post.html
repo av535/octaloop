@@ -1,124 +1,205 @@
----
-layout: default
----
-<style>
-  .post-hero {
-    background: #111;
-    padding: 64px 32px 48px;
-    color: #fff;
-    text-align: center;
-  }
-  .post-hero .post-category {
-    display: inline-block;
-    background: #ffb001;
-    color: #111;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 100px;
-    margin-bottom: 20px;
-    text-decoration: none;
-  }
-  .post-hero h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(2.2rem, 5vw, 3.8rem);
-    line-height: 1.1;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    letter-spacing: 0.01em;
-  }
-  .post-hero .post-meta {
-    color: #aaa;
-    font-size: 0.9rem;
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .post-hero .post-meta span { display: flex; align-items: center; gap: 6px; }
-  .post-cover {
-    max-width: 860px;
-    margin: -32px auto 0;
-    padding: 0 24px;
-  }
-  .post-cover img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.15);
-    display: block;
-  }
-  .post-body {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 56px 24px 80px;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #222;
-  }
-  .post-body h2 { font-size: 1.7rem; font-weight: 700; margin: 2.5rem 0 1rem; color: #111; }
-  .post-body h3 { font-size: 1.3rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #111; }
-  .post-body p { margin: 0 0 1.4rem; }
-  .post-body a { color: #ffb001; text-decoration: underline; }
-  .post-body img { max-width: 100%; border-radius: 8px; margin: 24px 0; }
-  .post-body ul, .post-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
-  .post-body li { margin-bottom: 0.5rem; }
-  .post-body blockquote {
-    border-left: 4px solid #ffb001;
-    padding: 12px 24px;
-    margin: 32px 0;
-    background: #fff;
-    border-radius: 0 8px 8px 0;
-    font-style: italic;
-    color: #444;
-  }
-  .post-footer {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 24px 48px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 32px;
-  }
-  .post-footer .back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #111;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.95rem;
-  }
-  .post-footer .back-link:hover { color: #ffb001; }
-</style>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ page.title }} | Octaloop Journal</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 30 }}"/>
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/wp-content/uploads/2023/09/cropped-Favicon-32x32.png"/>
+  <!-- Cayman theme CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css"/>
+  <!-- Tocbot -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #24292e; }
 
-<article>
-  <div class="post-hero">
-    {% if page.category %}
-    <span class="post-category">{{ page.category }}</span>
-    {% endif %}
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      {% if page.author %}<span>&#9998; {{ page.author }}</span>{% endif %}
-      <span>&#128197; {{ page.date | date: "%B %-d, %Y" }}</span>
-      {% if page.read_time %}<span>&#9201; {{ page.read_time }} min read</span>{% endif %}
+    /* ── Cayman-style header ── */
+    .page-header {
+      background-color: #159957;
+      background-image: linear-gradient(120deg, #155799, #159957);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+    .page-header .back-link {
+      display: inline-block;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+    .page-header .back-link:hover { color: #fff; }
+    .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; margin: 0 0 0.75rem; line-height: 1.25; }
+    .page-header .post-meta { font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
+    .page-header .post-meta .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 2px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ── Two-column layout ── */
+    .page-body {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      gap: 0;
+    }
+
+    /* Left sidebar TOC */
+    .toc-sidebar {
+      width: 260px;
+      flex-shrink: 0;
+      padding: 2.5rem 1.5rem 2rem 0;
+    }
+    .toc-sidebar .toc-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+    .toc-sidebar .toc {
+      position: sticky;
+      top: 24px;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+    /* Tocbot styles */
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list-item { margin-bottom: 2px; }
+    .toc-link {
+      display: block;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      color: #586069;
+      text-decoration: none;
+      border-radius: 4px;
+      border-left: 2px solid transparent;
+      line-height: 1.4;
+      transition: all 0.15s;
+    }
+    .toc-link:hover { color: #159957; background: #f6f8fa; }
+    .is-active-link {
+      color: #159957 !important;
+      border-left-color: #159957 !important;
+      font-weight: 600;
+      background: #f0fdf4;
+    }
+    .toc-list .toc-list { padding-left: 12px; }
+    .toc-list .toc-list .toc-link { font-size: 0.8rem; }
+
+    /* Right: post content */
+    .post-content-wrap {
+      flex: 1;
+      min-width: 0;
+      padding: 2.5rem 0 4rem 2.5rem;
+      border-left: 1px solid #e1e4e8;
+    }
+
+    /* Featured image */
+    .post-featured-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    /* Markdown content */
+    .markdown-body { font-size: 1rem; line-height: 1.8; }
+    .markdown-body h2 { margin-top: 2.5rem; padding-bottom: 0.4rem; border-bottom: 1px solid #e1e4e8; }
+    .markdown-body h3 { margin-top: 2rem; }
+    .markdown-body a { color: #159957; }
+    .markdown-body img { max-width: 100%; border-radius: 6px; margin: 1.5rem 0; }
+    .markdown-body blockquote {
+      border-left: 4px solid #159957;
+      padding: 0.5rem 1rem;
+      color: #586069;
+      background: #f6f8fa;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+
+    /* Site footer */
+    .site-footer {
+      background: #155799;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    .site-footer a { color: rgba(255,255,255,0.9); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .toc-sidebar { display: none; }
+      .post-content-wrap { border-left: none; padding: 1.5rem 0 3rem; }
+      .page-body { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cayman-style header -->
+<header class="page-header">
+  <a href="{{ site.baseurl }}/journal/" class="back-link">← Octaloop Journal</a>
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    {% if page.author %}<span>{{ page.author }}</span>{% endif %}
+    <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+    {% if page.category %}<span class="badge">{{ page.category }}</span>{% endif %}
+    {% if page.read_time %}<span>{{ page.read_time }} min read</span>{% endif %}
+  </div>
+</header>
+
+<!-- Two-column body -->
+<div class="page-body">
+
+  <!-- Left: Table of Contents -->
+  <aside class="toc-sidebar">
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <div class="js-toc"></div>
     </div>
-  </div>
+  </aside>
 
-  {% if page.image %}
-  <div class="post-cover">
-    <img src="{{ page.image }}" alt="{{ page.title }}"/>
-  </div>
-  {% endif %}
+  <!-- Right: Post content -->
+  <article class="post-content-wrap">
+    {% if page.image %}
+    <img class="post-featured-img" src="{{ page.image }}" alt="{{ page.title }}"/>
+    {% endif %}
+    <div class="markdown-body js-toc-content">
+      {{ content }}
+    </div>
+  </article>
 
-  <div class="post-body">
-    {{ content }}
-  </div>
+</div>
 
-  <div class="post-footer">
-    <a href="{{ site.baseurl }}/journal/" class="back-link">← Back to Journal</a>
-  </div>
-</article>
+<footer class="site-footer">
+  <a href="{{ site.baseurl }}/">Octaloop</a> &nbsp;&middot;&nbsp;
+  <a href="{{ site.baseurl }}/journal/">Journal</a> &nbsp;&middot;&nbsp;
+  <a href="{{ site.baseurl }}/contact-us/">contact@octaloop.com</a>
+</footer>
+
+<script>
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.js-toc-content',
+    headingSelector: 'h2, h3',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollSmoothDuration: 200,
+  });
+</script>
+
+</body>
+</html>

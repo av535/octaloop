@@ -3,11 +3,14 @@ description: Insights on India's tech ecosystem
 baseurl: "/octaloop"
 url: "https://av535.github.io"
 
+theme: cayman
+
 permalink: /journal/:slug/
 
 markdown: kramdown
 kramdown:
   input: GFM
+  toc_levels: 2..3
 
 # Don't process these with Jekyll — leave as plain HTML
 exclude:
