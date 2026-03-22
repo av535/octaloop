@@ -5,7 +5,7 @@ author: Manu Naik
 date: 2022-09-28
 category: Community
 read_time: 5
-image: ../assets/images/wp-content/uploads/2022/09/blockchain-ideas1.jpg
+image: /octaloop/assets/images/wp-content/uploads/2022/09/blockchain-ideas1.jpg
 ---
 
 [Join our India Blockchain Tour in your city]

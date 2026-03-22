@@ -5,7 +5,7 @@ author: admin
 date: 2023-06-06
 category: Events
 read_time: 5
-image: ../assets/images/wp-content/uploads/2023/06/MM-audience.jpg
+image: /octaloop/assets/images/wp-content/uploads/2023/06/MM-audience.jpg
 ---
 
 [

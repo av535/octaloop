@@ -5,7 +5,7 @@ author: admin
 date: 2023-04-01
 category: Events
 read_time: 5
-image: ../assets/images/wp-content/uploads/2023/04/Decentral-Hacks.png
+image: /octaloop/assets/images/wp-content/uploads/2023/04/Decentral-Hacks.png
 ---
 
 [

@@ -5,7 +5,7 @@ author: admin
 date: 2022-09-01
 category: Marketing
 read_time: 5
-image: ../assets/images/wp-content/uploads/2022/09/content-marketing-in-blockchain-2.jpg
+image: /octaloop/assets/images/wp-content/uploads/2022/09/content-marketing-in-blockchain-2.jpg
 ---
 
 [

@@ -5,7 +5,7 @@ author: admin
 date: 2022-12-01
 category: Events
 read_time: 5
-image: ../assets/images/wp-content/uploads/2023/04/mm4.png
+image: /octaloop/assets/images/wp-content/uploads/2023/04/mm4.png
 ---
 
 [

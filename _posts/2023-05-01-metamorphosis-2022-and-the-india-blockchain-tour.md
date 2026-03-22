@@ -5,7 +5,7 @@ author: admin
 date: 2023-05-01
 category: Events
 read_time: 6
-image: ../assets/images/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549.png
+image: /octaloop/assets/images/wp-content/uploads/2023/04/adGX_Npg-Large-e1683014418549.png
 ---
 
 [
