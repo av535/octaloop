@@ -1,0 +1,26 @@
+title: Octaloop
+description: Insights on India's tech ecosystem
+baseurl: "/octaloop"
+url: "https://av535.github.io"
+
+permalink: /journal/:slug/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Don't process these with Jekyll — leave as plain HTML
+exclude:
+  - "*.py"
+  - "*.pdf"
+  - "*.gif"
+  - hts-cache
+  - hts-log.txt
+  - cookies.txt
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

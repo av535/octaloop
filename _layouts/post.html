@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<style>
+  .post-hero {
+    background: #111;
+    padding: 64px 32px 48px;
+    color: #fff;
+    text-align: center;
+  }
+  .post-hero .post-category {
+    display: inline-block;
+    background: #ffb001;
+    color: #111;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  .post-hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    letter-spacing: 0.01em;
+  }
+  .post-hero .post-meta {
+    color: #aaa;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .post-hero .post-meta span { display: flex; align-items: center; gap: 6px; }
+  .post-cover {
+    max-width: 860px;
+    margin: -32px auto 0;
+    padding: 0 24px;
+  }
+  .post-cover img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    display: block;
+  }
+  .post-body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #222;
+  }
+  .post-body h2 { font-size: 1.7rem; font-weight: 700; margin: 2.5rem 0 1rem; color: #111; }
+  .post-body h3 { font-size: 1.3rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #111; }
+  .post-body p { margin: 0 0 1.4rem; }
+  .post-body a { color: #ffb001; text-decoration: underline; }
+  .post-body img { max-width: 100%; border-radius: 8px; margin: 24px 0; }
+  .post-body ul, .post-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body blockquote {
+    border-left: 4px solid #ffb001;
+    padding: 12px 24px;
+    margin: 32px 0;
+    background: #fff;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #444;
+  }
+  .post-footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 32px;
+  }
+  .post-footer .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .post-footer .back-link:hover { color: #ffb001; }
+</style>
+
+<article>
+  <div class="post-hero">
+    {% if page.category %}
+    <span class="post-category">{{ page.category }}</span>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      {% if page.author %}<span>&#9998; {{ page.author }}</span>{% endif %}
+      <span>&#128197; {{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.read_time %}<span>&#9201; {{ page.read_time }} min read</span>{% endif %}
+    </div>
+  </div>
+
+  {% if page.image %}
+  <div class="post-cover">
+    <img src="{{ page.image }}" alt="{{ page.title }}"/>
+  </div>
+  {% endif %}
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <div class="post-footer">
+    <a href="{{ site.baseurl }}/journal/" class="back-link">← Back to Journal</a>
+  </div>
+</article>
