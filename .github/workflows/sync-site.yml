@@ -7,11 +7,16 @@ on:
       - '_site/**'
       - '.github/**'
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sync all HTML files to _site/
         run: |
