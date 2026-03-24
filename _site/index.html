@@ -1041,33 +1041,7 @@ html :where(.is-position-sticky){
         </div>
     </div>
 
-    <script>
-    (function(){
-        var done = false;
-        var poll = setInterval(function() {
-            var first = document.querySelector(‘.welg-num’);
-            if (!first) return;
-            var r = first.getBoundingClientRect();
-            if (r.top < window.innerHeight && r.bottom > 0) {
-                clearInterval(poll);
-                if (done) return;
-                done = true;
-                document.querySelectorAll(‘.welg-num’).forEach(function(el) {
-                    var target = parseInt(el.getAttribute(‘data-target’), 10);
-                    var suffix = el.getAttribute(‘data-suffix’) || ‘’;
-                    var step = 0, steps = 60;
-                    var iv = setInterval(function() {
-                        step++;
-                        var p = step / steps;
-                        var ease = 1 - Math.pow(1 - p, 3);
-                        el.textContent = Math.round(ease * target) + suffix;
-                        if (step >= steps) { el.textContent = target + suffix; clearInterval(iv); }
-                    }, 25);
-                });
-            }
-        }, 200);
-    })();
-    </script>
+    <!-- countup runs at end of file -->
     <div class="container-fluid section-4">
         <div class="col-12"><div class="heading">We’re not just marketers, we’re your biggest fans</div></div>
         <div class="row justify-content-center">
@@ -1362,6 +1336,43 @@ window.addEventListener('load', function() {
             ],
         });
     });
+</script>
+<script>
+window.addEventListener('load', function() {
+    var done = false;
+    function animate() {
+        if (done) return;
+        done = true;
+        var els = document.querySelectorAll('.welg-num');
+        for (var i = 0; i < els.length; i++) {
+            (function(el) {
+                var target = parseInt(el.getAttribute('data-target'), 10);
+                var suffix = el.getAttribute('data-suffix') || '';
+                var count = 0, total = 60;
+                var iv = setInterval(function() {
+                    count++;
+                    var p = count / total;
+                    var ease = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(ease * target) + suffix;
+                    if (count >= total) { el.textContent = target + suffix; clearInterval(iv); }
+                }, 25);
+            })(els[i]);
+        }
+    }
+    function inView() {
+        var el = document.querySelector('.welg-num');
+        if (!el) return false;
+        var r = el.getBoundingClientRect();
+        return r.top < window.innerHeight;
+    }
+    if (inView()) {
+        animate();
+    } else {
+        window.addEventListener('scroll', function onS() {
+            if (inView()) { animate(); window.removeEventListener('scroll', onS); }
+        });
+    }
+});
 </script>
 </body>
 
