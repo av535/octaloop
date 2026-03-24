@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "octaloop",
+  "account_id": "4ec1f0e100565db185c280ea8a149600",
   "compatibility_date": "2025-09-27",
   "observability": {
     "enabled": true
@@ -13,5 +14,9 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    { "pattern": "octaloop.com/*", "zone_name": "octaloop.com" },
+    { "pattern": "www.octaloop.com/*", "zone_name": "octaloop.com" }
   ]
 }

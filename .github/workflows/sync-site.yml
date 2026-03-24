@@ -37,3 +37,9 @@ jobs:
             git commit -m "Auto-sync _site/ from source [skip ci]"
             git push
           )
+
+      - name: Deploy to Cloudflare Workers
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 4ec1f0e100565db185c280ea8a149600
