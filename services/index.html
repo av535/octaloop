@@ -34,6 +34,8 @@
 		background: none !important;
 		padding: 0 !important;
 	}
+
+	
 </style>
 <style id="classic-theme-styles-inline-css" type="text/css">
 /*! This file is auto-generated */
@@ -53,6 +55,11 @@
 <link rel="icon" href="../assets/images/wp-content/uploads/2023/09/cropped-Favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" href="../assets/images/wp-content/uploads/2023/09/cropped-Favicon-192x192.png" sizes="192x192"/>
 <link rel="apple-touch-icon" href="../assets/images/wp-content/uploads/2023/09/cropped-Favicon-180x180.png"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <meta name="msapplication-TileImage" content="../assets/images/wp-content/uploads/2023/09/cropped-Favicon-270x270.png"/>
 	<!-- Google tag (gtag.js) -->
 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421803-1"></script>
@@ -91,6 +98,52 @@
 	<div class="container-fluid top-bar">
 		
 	</div>
+
+	<style>
+		/* Container must be relative for absolute positioning to work */
+.your-class {
+    position: relative;
+}
+
+/* Base button styling */
+.slick-prev, .slick-next {
+    position: absolute !important;
+    top: 50% !important; /* Move to middle */
+    transform: translateY(-50%) !important; /* Pull back by half height */
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+/* Positioning them on the sides */
+.slick-prev {
+    left: -20px; /* Adjust this to move icon further out */
+}
+
+.slick-next {
+    right: -20px; /* Adjust this to move icon further out */
+}
+
+/* Fixing the "Box" look: Remove default Slick arrows and borders */
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick'; /* or your icon font */
+    /* font-size: 30px; */
+    color: white;
+    opacity: 1;
+}
+
+/* Remove the white square background if it's coming from your 'box' class */
+.your-class button.slick-arrow {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+	</style>
+
+
 	<!-- <div id="startModal" class="popupModal d-none">
 		<div class="modal-content">
 			<div class="closeBtn">&times;</div>
@@ -431,12 +484,12 @@
 	</div>
 	<div class="container-fluid section-8" id="section-8">
 		<div class="container">
-			<div class="row">
+			<div class="row" >
 				<div class="col-xl-10 col-lg-11 col-md-11 col-11">
 					<h2 class="section-heading ml-5">Our work</h2>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" >
 				<div class="col-xl-10 col-lg-11 col-md-11 col-10 mt-5">
 					<div class="your-class">
 						<div class="box phemex">
@@ -470,7 +523,7 @@
 							</p>
 						</div>
 					</div>
-					<button class="yellow-button mt-4" onclick="window.location.href='../contact-us/index.html'">Get in Touch</button>
+					<button class="yellow-button mt-4"  onclick="window.location.href='../contact-us/index.html'">Get in Touch</button>
 				</div>
 			</div>
 		</div>
