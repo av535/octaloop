@@ -1027,15 +1027,15 @@ html :where(.is-position-sticky){
         </div>
         <div class="welg-stats">
             <div class="welg-stat">
-                <div class="welg-num" data-target="10" data-suffix="x">0x</div>
+                <div class="welg-num" data-target="10" data-suffix="x">10x</div>
                 <div class="welg-desc">ROI that our sponsors target — and hit. One enterprise conversion from a $10K sponsorship pays for itself ten times over.</div>
             </div>
             <div class="welg-stat">
-                <div class="welg-num" data-target="65" data-suffix="%">0%</div>
+                <div class="welg-num" data-target="65" data-suffix="%">65%</div>
                 <div class="welg-desc">Decision-makers in the room. Not passive scrollers — founders, CTOs, and CXOs who sign contracts and allocate budgets.</div>
             </div>
             <div class="welg-stat">
-                <div class="welg-num" data-target="10" data-suffix="">0</div>
+                <div class="welg-num" data-target="10" data-suffix="">10</div>
                 <div class="welg-desc">Indian cities covered in a single year. Tier 1 and Tier 2 — Delhi to Jaipur, Mumbai to Lucknow. No other platform does this.</div>
             </div>
         </div>
@@ -1338,41 +1338,33 @@ window.addEventListener('load', function() {
     });
 </script>
 <script>
-window.addEventListener('load', function() {
+(function() {
     var done = false;
-    function animate() {
+    function run() {
         if (done) return;
         done = true;
-        var els = document.querySelectorAll('.welg-num');
-        for (var i = 0; i < els.length; i++) {
-            (function(el) {
-                var target = parseInt(el.getAttribute('data-target'), 10);
-                var suffix = el.getAttribute('data-suffix') || '';
-                var count = 0, total = 60;
-                var iv = setInterval(function() {
-                    count++;
-                    var p = count / total;
-                    var ease = 1 - Math.pow(1 - p, 3);
-                    el.textContent = Math.round(ease * target) + suffix;
-                    if (count >= total) { el.textContent = target + suffix; clearInterval(iv); }
-                }, 25);
-            })(els[i]);
-        }
-    }
-    function inView() {
-        var el = document.querySelector('.welg-num');
-        if (!el) return false;
-        var r = el.getBoundingClientRect();
-        return r.top < window.innerHeight;
-    }
-    if (inView()) {
-        animate();
-    } else {
-        window.addEventListener('scroll', function onS() {
-            if (inView()) { animate(); window.removeEventListener('scroll', onS); }
+        document.querySelectorAll('.welg-num').forEach(function(el) {
+            var target = +el.getAttribute('data-target');
+            var suffix = el.getAttribute('data-suffix') || '';
+            el.textContent = '0' + suffix;
+            var count = 0, total = 60;
+            var iv = setInterval(function() {
+                count++;
+                var ease = 1 - Math.pow(1 - count / total, 3);
+                el.textContent = Math.round(ease * target) + suffix;
+                if (count >= total) clearInterval(iv);
+            }, 25);
         });
     }
-});
+    function check() {
+        var el = document.querySelector('.welg-num');
+        if (!el) return;
+        if (el.getBoundingClientRect().top < window.innerHeight) run();
+    }
+    requestAnimationFrame(check);
+    window.addEventListener('scroll', check, { passive: true });
+    setTimeout(run, 2000);
+})();
 </script>
 </body>
 
