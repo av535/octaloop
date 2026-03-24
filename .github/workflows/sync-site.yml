@@ -1,0 +1,39 @@
+name: Sync to _site/
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '_site/**'
+      - '.github/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync all HTML files to _site/
+        run: |
+          find . -name "*.html" \
+            -not -path "./_site/*" \
+            -not -path "./.git/*" \
+            -not -path "./_archived_posts/*" \
+            -not -path "./_layouts/*" \
+            -not -path "./_includes/*" \
+          | while read f; do
+            dest="_site/${f#./}"
+            mkdir -p "$(dirname "$dest")"
+            cp "$f" "$dest"
+            echo "Synced: $f → $dest"
+          done
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _site/
+          git diff --staged --quiet && echo "Nothing to sync." || (
+            git commit -m "Auto-sync _site/ from source [skip ci]"
+            git push
+          )

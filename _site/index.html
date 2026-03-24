@@ -23,7 +23,7 @@
 	<meta name="twitter:description" content="Octaloop builds India's leading emerging tech ecosystem through conferences, partnerships, and community. Organizers of India Blockchain Tour and Metamorphosis."/>
 	<meta name="twitter:image" content="assets/images/wp-content/themes/octaloop/assets/images/Logo-white.png"/><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="index.htmlwp-json/oembed/1.0/embed?url=https%3A%2F%2Foctaloop.com%2F"/>
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="index.htmlwp-json/oembed/1.0/embed?url=https%3A%2F%2Foctaloop.com%2F&amp;format=xml"/>
 <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
@@ -363,24 +363,32 @@ html :where(.is-position-sticky){
 				</label>
 			</a>
 			<ul class="navbar-nav navbar-nav-white">
-				<!-- <div class="dropdown">
-					<li class="nav-item dropbtn">Our Product</li>
-					<div class="dropdown-content">
-						<a href="https://binamite.com">Binamite</a>
-					</div>
-				</div> -->
-				<!-- <li class="nav-item"><a href="https://binamite.com"class="nav-link">Our Product-Binamite</a></li> -->
-				</ul>
-        </li>
-				
-				<li class="nav-item"><a href="events/index.html" class="nav-link">Events</a></li>
-				<li class="nav-item"><a href="services/index.html" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="/blog/" class="nav-link">Blog</a></li>
-				<li class="nav-item"><a href="about-us/index.html" class="nav-link">About Us</a></li>
-				
-				
-				<li class="nav-item"><a href="contact-us/index.html" class="nav-link button-contact">Contact Us</a></li>
-			</ul>
+<!-- <div class="dropdown">
+<li class="nav-item text-white dropbtn">Our Product</li>
+<div class="dropdown-content">
+<a href="https://binamite.com">Binamite</a>
+</div>
+</div> -->
+<!-- <li class="nav-item"><a href="https://binamite.com"class="nav-link">Our Product-Binamite</a></li> -->
+<li class="nav-item">
+<a href="../events/index.html" class="nav-link">Events</a>
+</li>
+<li class="nav-item">
+<a href="../services/index.html" class="nav-link">Services</a>
+</li>
+<li class="nav-item">
+<a href="../blog/index.html" class="nav-link">Blog</a>
+</li>
+<li class="nav-item">
+<a href="../about-us/index.html" class="nav-link">About Us</a>
+</li>
+<!-- <li class="nav-item">
+<a href="../careers/index.html" class="nav-link">Careers</a>
+</li> -->
+<li class="nav-item">
+<a href="../contact-us/index.html" class="nav-link button-contact" style="background-color: #ffb001;">Contact Us</a>
+</li>
+</ul>
 		</div>
 	</div>
 	<div class="topnav" id="myLinks">
@@ -881,25 +889,85 @@ html :where(.is-position-sticky){
         font-style: italic;
         line-height: 1.7;
     }
-    .ecip-illustration { flex: 0 1 340px; text-align: center; }
-    .ecip-stat-blob {
-        display: inline-flex; flex-direction: row; align-items: center;
-        justify-content: space-between; background: #f0f0f0;
-        border-radius: 100px; width: 320px; height: 160px;
-        padding: 0 22px; gap: 10px; box-sizing: border-box;
+    .ecip-illustration {
+        flex: 0 1 340px;
+        text-align: center;
     }
-    .ecip-hl-bad { text-align: center; opacity: 0.3; flex-shrink: 0; }
-    .ecip-num-bad { font-family: Bebas-Neue, sans-serif; font-size: 3.4rem; color: #555; line-height: 1; letter-spacing: 1px; }
-    .ecip-lbl-bad { font-size: .62rem; color: #888; line-height: 1.35; white-space: nowrap; margin-top: 4px; }
-    .ecip-tr { display: flex; flex-direction: row; align-items: center; flex-shrink: 0; }
-    .ecip-tr span { display: inline-block; border-radius: 50%; flex-shrink: 0; }
+    /* ── horizontal stat comparison blob ── */
+    .ecip-stat-blob {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #f0f0f0;
+        border-radius: 100px;
+        width: 320px;
+        height: 160px;
+        padding: 0 22px;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .ecip-hl-bad  { text-align: center; opacity: 0.3; flex-shrink: 0; }
+    .ecip-hl-good { text-align: center; flex-shrink: 0; }
+    .ecip-num-bad {
+        font-family: Bebas-Neue, sans-serif;
+        font-size: 3.4rem;
+        color: #555;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+    .ecip-lbl-bad {
+        font-size: .62rem;
+        color: #888;
+        line-height: 1.35;
+        white-space: nowrap;
+        margin-top: 4px;
+    }
+    /* transition dots — gray on left, orange on right, accelerating */
+    .ecip-tr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .ecip-tr span {
+        display: inline-block;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
     @keyframes ecip-pulse {
         0%, 100% { box-shadow: 0 0 0 0 rgba(255,176,1,.55); }
         55%       { box-shadow: 0 0 0 6px rgba(255,176,1,0); }
     }
     .ecip-tr-last { animation: ecip-pulse 2s ease-out infinite; }
-    .ecip-num-good { font-family: Bebas-Neue, sans-serif; font-size: 4.6rem; color: #ffb001; line-height: 1; letter-spacing: 2px; text-shadow: 0 0 24px rgba(255,176,1,.28); }
-    .ecip-lbl-good { font-size: .62rem; color: #ffb001; line-height: 1.35; white-space: nowrap; margin-top: 4px; opacity: 0.85; }
+    .ecip-num-good {
+        font-family: Bebas-Neue, sans-serif;
+        font-size: 4.6rem;
+        color: #ffb001;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-shadow: 0 0 24px rgba(255,176,1,.28);
+    }
+    .ecip-lbl-good {
+        font-size: .62rem;
+        color: #ffb001;
+        line-height: 1.35;
+        white-space: nowrap;
+        margin-top: 4px;
+        opacity: 0.85;
+    }
+    @media (max-width: 767px) {
+        .ecip-stat-blob {
+            flex-direction: column;
+            border-radius: 24px;
+            width: 200px;
+            height: auto;
+            padding: 22px 20px;
+            gap: 8px;
+        }
+        .ecip-tr { flex-direction: column; gap: 4px; }
+        .ecip-tr span { margin-right: 0 !important; margin-bottom: 2px; }
+    }
     .ecip-loop-deco {
         position: absolute;
         left: -18px;
@@ -913,9 +981,6 @@ html :where(.is-position-sticky){
         .ecip-row { flex-direction: column; gap: 28px; }
         .ecip-text, .ecip-illustration { flex: 0 1 100%; width: 100%; }
         .ecip-loop-deco { display: none; }
-        .ecip-stat-blob { flex-direction: column; border-radius: 24px; width: 200px; height: auto; padding: 22px 20px; gap: 8px; }
-        .ecip-tr { flex-direction: column; gap: 4px; }
-        .ecip-tr span { margin-right: 0 !important; margin-bottom: 2px; }
     }
     </style>
 
@@ -1047,7 +1112,43 @@ html :where(.is-position-sticky){
         <div class="row justify-content-center">
             <div class="col-9 col-lg-9 col-md-9">
                 <section class="customer-logos slider">
-                    <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo10.png" alt="Octaloop partner" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/1Inch.png" alt="1Inch" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/alephium.png" alt="alephium" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/bitcasino.png" alt="bitcasino" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/bitget.png" alt="bitget" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/Bybit.png" alt="Bybit" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/cleartax.png" alt="cleartax" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/coinex.png" alt="coinex" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/coinvault.png" alt="coinvault" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/ethElite.png" alt="ethElite" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/flock.png" alt="flock" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/github.png" alt="github" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/graphadvocatesdao.png" alt="graphadvocatesdao" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/guardian.png" alt="guardian" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/hedgex.png" alt="hedgex" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/interakt.png" alt="interakt" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/ionet.png" alt="ionet" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/kucoin.png" alt="kucoin" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/lampros.png" alt="lampros" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/metaborong.png" alt="metaborong" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/metaspace.png" alt="metaspace" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/mexc.png" alt="mexc" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/nano.png" alt="nano" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/near.png" alt="near" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/neo.png" alt="neo" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/neroChain.png" alt="neroChain" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/neurolov.png" alt="neurolov" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/outdefine.png" alt="outdefine" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/phalanetwork.png" alt="phalanetwork" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/poloniex.png" alt="poloniex" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/polygon.png" alt="polygon" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/sandbox.png" alt="sandbox" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/socrates.png" alt="socrates" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/taskOn.png" alt="taskOn" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/trezor.png" alt="trezor" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/trust.png" alt="trust" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/sponsorLogo/volcano.png" alt="volcano" loading="lazy"></div>
+                    <!-- <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo10.png" alt="Octaloop partner" loading="lazy"></div>
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo16.png" alt="Octaloop partner" loading="lazy"></div>
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo8.png" alt="Octaloop partner" loading="lazy"></div>
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/section4-logo6.png" alt="Octaloop partner" loading="lazy"></div>
@@ -1101,7 +1202,7 @@ html :where(.is-position-sticky){
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/client-volcano-smartdefi.png" alt="Volcano SmartDefi" loading="lazy"></div>
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/client-graph-advocatesdao.png" alt="Graph AdvocatesDAO" loading="lazy"></div>
                     <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/client-lampros-tech.png" alt="Lampros Tech" loading="lazy"></div>
-                    <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/client-neurolov.png" alt="Neurolov" loading="lazy"></div>
+                    <div class="box"><img src="assets/images/wp-content/themes/octaloop/assets/images/homepage/client-neurolov.png" alt="Neurolov" loading="lazy"></div> -->
                 </section>
             </div>
         </div>
@@ -1182,6 +1283,39 @@ html :where(.is-position-sticky){
                 
             <div class="col-11 section-1 col-lg-1 col-md-1">
                 <ul class="social-media">
+<li>
+<a href="https://www.linkedin.com/company/octaloop/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</li>
+<li>
+<li>
+<a href="https://x.com/IBTxOfficial" target="_blank"><i class="fab fa-x"></i></a>
+</li>
+</li>
+<li>
+<a href="https://www.instagram.com/indiablockchaintour" target="_blank"><i class="fab fa-instagram"></i></a>
+</li>
+<!-- <li>
+<a href="https://www.instagram.com/octaloop_hq/" target="_blank"><i class="fab fa-instagram"></i></a>
+</li>
+<li>
+<a href="https://twitter.com/octaloopHQ" target="_blank">
+<img style="width:17px;height: 17px;" src="../assets/images/wp-content/themes/octaloop/assets/images/x-social-media-icon.png"/ alt="Octaloop" loading="lazy" width="auto" height="auto">
+</a>
+</li>
+<li>
+<a href="https://t.me/octaloophq" target="_blank"><i class="fab fa-telegram"></i></a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCOXSWSyY65YzU2kMV7A4s0w" target="_blank"><i class="fab fa-youtube"></i></a>
+</li>
+<li>
+<a href="https://www.linkedin.com/company/10387115/admin/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</li>
+<li>
+<a href="https://www.facebook.com/Octaloop-100192491368630" target="_blank"><i class="fab fa-facebook-f"></i></a>
+</li> -->
+</ul>
+                <!-- <ul class="social-media">
                     <li>
                         <a href="https://www.instagram.com/octaloop_hq/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
@@ -1202,7 +1336,7 @@ html :where(.is-position-sticky){
                     <li>
                         <a href="https://www.facebook.com/Octaloop-100192491368630" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </li>
-                </ul>
+                </ul> -->
             </div></div>
         
     </div>
