@@ -527,6 +527,8 @@
             opacity: 0.8;
         }
 
+
+        /* Arrow Icon */
         /* Slick Custom Arrows */
         .slick-prev,
         .slick-next {
@@ -554,6 +556,7 @@
             color: #fff;
         }
 
+
         /* Hide arrows on mobile to avoid layout breaking */
         @media (max-width: 768px) {
             .slick-arrow {
@@ -564,6 +567,38 @@
                 padding: 40px 15px;
             }
         }
+
+        /* Position the slider container to allow absolute arrows */
+.customer-logos {
+    position: relative;
+    padding: 0 50px; /* Gives space for arrows on the sides */
+}
+
+/* The Black Circle Button */
+.custom-arrow {
+    background-color: #000 !important;
+    color: #fff !important; /* Forces the arrow to be white */
+    font-size: 20px !important; /* Makes the arrow character big enough to see */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px; /* Matches the slight curve in your image */
+    cursor: pointer;
+}
+
+/* This removes the default "dots" or "prev" text Slick adds automatically */
+.slick-prev:before, .slick-next:before {
+    content: '' !important;
+    display: none !important;
+}
+
+/* Hover effect */
+.custom-arrow:hover {
+    background-color: #333 !important;
+}
 
         /*# sourceURL=/wp-includes/css/classic-themes.css */
     </style>
@@ -1814,6 +1849,13 @@
                     display: none;
                 }
             }
+
+            
+
+            
+
+
+
         </style>
 
         <div class="container-fluid ecip-section">
@@ -2556,6 +2598,24 @@
                 ]
             });
         });
+
+
+
+
+        $('.customer-logos').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: true,
+    // Add these two lines exactly as shown:
+    prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fa fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fa fa-arrow-right"></i></button>',
+    responsive: [
+        { breakpoint: 768, settings: { slidesToShow: 4 } },
+        { breakpoint: 520, settings: { slidesToShow: 3 } }
+    ]
+});
     </script>
 </body>
 
