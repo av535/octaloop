@@ -310,7 +310,7 @@
 
         /* 24/03/2026 */
         .events-section {
-            background-color: #ffb001;
+            /* background-color: #ffb001; */
             padding: 80px 20px;
             font-family: 'Inter', sans-serif;
             /* Or your preferred font */
@@ -349,8 +349,8 @@
         }
 
         /* .event-card:hover {
-  transform: translateY(-5px);
-} */
+                transform: translateY(-5px);
+        } */
 
         /* Dark overlay for text readability */
         .event-card::after {
@@ -415,7 +415,7 @@
 
         .btn-outline:hover {
             /* background: var(--text-white);
-  color: #000; */
+            color: #000; */
             text-decoration: none;
             color: #fff;
         }
@@ -444,10 +444,10 @@
 
         /* Testimonial CSS */
 
-
         .testimonial-section {
+            margin-top: 60px;
             padding: 80px 0;
-            background-color: #fff;
+            background-color: #000;
             font-family: 'Inter', sans-serif;
         }
 
@@ -569,10 +569,10 @@
         }
 
         /* Position the slider container to allow absolute arrows */
-.customer-logos {
-    position: relative;
-    padding: 0 50px; /* Gives space for arrows on the sides */
-}
+        .customer-logos {
+            position: relative;
+            padding: 0 50px; /* Gives space for arrows on the sides */
+        }
 
 /* The Black Circle Button */
 .custom-arrow {
@@ -599,6 +599,116 @@
 .custom-arrow:hover {
     background-color: #333 !important;
 }
+
+/* New Testimonial  25/03/2026*/
+
+    .container-testimonial{
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .image-stack {
+      position: relative;
+      height: 350px;
+    }
+
+    .image-stack img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 20px;
+      transition: all 0.5s ease;
+      opacity: 0;
+      transform: scale(0.9) rotateY(10deg);
+    }
+
+    .image-stack img.active {
+      opacity: 1;
+      transform: scale(1) rotateY(0deg);
+      z-index: 10;
+    }
+
+    .text-section h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .designation {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .quote {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      min-height: 100px;
+    }
+
+    .word {
+      opacity: 0;
+      display: inline-block;
+      transform: translateY(5px);
+      filter: blur(10px);
+      animation: reveal 0.3s forwards;
+    }
+
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      background: #1e293b;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin-right: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    /* .buttons button:hover {
+      transform: rotate(10deg);
+    } */
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 440px) {
+        .container-testimonial{
+            padding: 0px 20px;
+            display: inherit;
+        }
+
+        .image-stack img{
+            object-fit: contain;
+            height: 100%;
+        }
+
+        .title{
+            margin-bottom: 0;
+        }
+    }
+
 
         /*# sourceURL=/wp-includes/css/classic-themes.css */
     </style>
@@ -2184,7 +2294,7 @@
 
         <!-- Testimonial -->
 
-        <section class="testimonial-section">
+        <!-- <section class="testimonial-section">
             <div class="container">
                 <h2 class="title">See What People Are Saying.</h2>
 
@@ -2261,8 +2371,29 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
+
+    <!-- New Testimonial Design -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="title" style="color: #fff; margin: auto; text-align: center;">See What People Are Saying.</h2>
+            <div class="container-testimonial">
+                    <div class="image-stack" id="imageStack"></div>
+
+                    <div class="text-section">
+                        <h3 id="name" style="color: #fff;"></h3>
+                        <p class="designation" id="designation" style="color: #fff;"></p>
+                        <div class="quote" id="quote" style="color: #fff;"></div>
+
+                        <div class="buttons">
+                        <button onclick="prev()"><i class="fa fa-arrow-left"></i></button>
+                        <button onclick="next()"><i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 
 
         <!-- Upcoming Events -->
@@ -2617,6 +2748,98 @@
     ]
 });
     </script>
+
+
+<!-- New Testimonial Design -->
+ <script>
+  const testimonials = [
+    {
+      quote: "The India Blockchain Tour perfectly aligns with Bybit’s vision, uniting builders, traders, and investors while showcasing exciting projects from emerging crypto hubs like Ahmedabad, Surat, and Bihar, and fostering collaboration across cities.",
+      name: "Vikas Gupta",
+      designation: "Country Manager - India at Bybit",
+      src: "assets/images/assets-octaloop/vikasgupta.png"
+    },
+    {
+      quote: "Metamorphosis was better than I could ever expect. The hall was full of people genuinely interested in learning about blockchain, and that hunger for knowledge is rare at conferences. As a speaker it was great, and as an attendee it was even better because of the welcoming Indian community.",
+      name: "Tomas Vaic",
+      designation: "Business Development Manager at Trezor",
+      src: "assets/images/assets-octaloop/tomasvaic.png"
+    },
+    {
+      quote: " I had a great time at the India Blockchain Tour, the Gujarat audience was mature and well-informed, and the event was smooth, professional, and truly set a new standard for blockchain conferences in India.",
+      name: "Jyotsna Hirdyani",
+      designation: "Growth at Bitget",
+      src: "assets/images/assets-octaloop/jyotsnahirdyani.png"
+    },
+    {
+      quote: "The event was extremely well managed and the crowd was great. What surprised me most was the number of builders in the room — it’s rare to see such a strong builder community at events like this.",
+      name: "Gaurav Sharma",
+      designation: "CEO at io.net",
+      src: "assets/images/assets-octaloop/gauravsharma.png"
+    },
+    {
+      quote: "There are countless cookie-cutter corporate crypto events out there. This, Metamorphosis 2022, is a crypto celebration.",
+      name: "Ajeet Khurana",
+      designation: "Founder, Reflexical, Ex-CEO, ZebPay",
+      src: "assets/images/assets-octaloop/ajeetkhurana.png"
+    }
+  ];
+
+  let active = 0;
+
+  const imageStack = document.getElementById("imageStack");
+  const nameEl = document.getElementById("name");
+  const designationEl = document.getElementById("designation");
+  const quoteEl = document.getElementById("quote");
+
+  // Create images
+  testimonials.forEach((t, i) => {
+    const img = document.createElement("img");
+    img.src = t.src;
+    if (i === 0) img.classList.add("active");
+    imageStack.appendChild(img);
+  });
+
+  const images = document.querySelectorAll(".image-stack img");
+
+  function render() {
+    // Update images
+    images.forEach((img, i) => {
+      img.classList.remove("active");
+      if (i === active) img.classList.add("active");
+    });
+
+    // Update text
+    nameEl.textContent = testimonials[active].name;
+    designationEl.textContent = testimonials[active].designation;
+
+    // Animate words
+    quoteEl.innerHTML = "";
+    const words = testimonials[active].quote.split(" ");
+    words.forEach((word, i) => {
+      const span = document.createElement("span");
+      span.innerHTML  = word + "&nbsp;";
+      span.classList.add("word");
+      span.style.animationDelay = `${i * 0.03}s`;
+      quoteEl.appendChild(span);
+    });
+  }
+
+  function next() {
+    active = (active + 1) % testimonials.length;
+    render();
+  }
+
+  function prev() {
+    active = (active - 1 + testimonials.length) % testimonials.length;
+    render();
+  }
+
+  // Optional autoplay (like original)
+  setInterval(next, 5000);
+
+  render();
+</script>
 </body>
 
 </html>
