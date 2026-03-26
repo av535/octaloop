@@ -363,7 +363,7 @@ html :where(.is-position-sticky){
 				</div> -->
 				<!-- <li class="nav-item"><a href="https://binamite.com"class="nav-link">Our Product-Binamite</a></li> -->
 				<li class="nav-item">
-          <a href="../events/index.html" class="nav-link" style="color: white !important;">Events</a>
+          <a href="../events/index.html" class="nav-link" style="color: white !important;">Past Events</a>
           </li>
           <li class="nav-item">
           <a href="../services/index.html" class="nav-link" style="color: white !important;">Services</a>
@@ -452,7 +452,7 @@ html :where(.is-position-sticky){
                     <!-- <li><a href="https://octaloop.com/journal">Blog</a></li> -->
                     <li><a href="https://octaloop.com/about-us">About Us</a></li>
                     <li><a href="https://octaloop.com/services">Services</a></li>
-                    <li><a href="https://octaloop.com/events">Events</a></li>
+                    <li><a href="https://octaloop.com/events">Past Events</a></li>
                     <li><a href="https://octaloop.com/contact-us">Contact Us</a></li>
                     </ul>
                 </div>
@@ -498,7 +498,15 @@ html :where(.is-position-sticky){
 			
 			<div class="col-lg-4 col-md-5 col-10"> -->
 
-
+<script type="text/javascript">
+    function scrollto(o) {
+        $("html,body").animate({ scrollTop: $("#" + o).offset().top }, "slow");
+    }
+    function myFunction() {
+        var o = document.getElementById("myLinks");
+        "block" === o.style.display ? (o.style.display = "none") : (o.style.display = "block");
+    }
+</script>
 
 <script>
 window.addEventListener('load', function() {
