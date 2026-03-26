@@ -15,8 +15,13 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
+  "main": "worker.js",
   "routes": [
     { "pattern": "octaloop.com/*", "zone_name": "octaloop.com" },
-    { "pattern": "www.octaloop.com/*", "zone_name": "octaloop.com" }
+    { "pattern": "www.octaloop.com/*", "zone_name": "octaloop.com" },
+    { "pattern": "metamorphosis.octaloop.com/*", "zone_name": "octaloop.com" },
+    { "pattern": "metamorphosis24.octaloop.com/*", "zone_name": "octaloop.com" },
+    { "pattern": "test.metamorphosis.octaloop.com/*", "zone_name": "octaloop.com" },
+    { "pattern": "g7.octaloop.com/*", "zone_name": "octaloop.com" }
   ]
 }
