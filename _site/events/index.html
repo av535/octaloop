@@ -459,10 +459,10 @@ html :where(.is-position-sticky){
         <div class="col-lg-8 col-11">
           <div class="buttons">
             <button class="active toggleBtn" onclick="showEvent(0)">All Events</button>
-            <button class="toggleBtn" onclick="showEvent(1)">Exclusive Blockchain Events</button>
-            <button class="toggleBtn" onclick="showEvent(2)">Flagship Event: Metamorphosis</button>
-            <button class="toggleBtn" onclick="showEvent(3)">Flagship Event: India Blockchain Tour</button>
-            <button class="toggleBtn" onclick="showEvent(4)">Hackathons</button>
+            <!-- <button class="toggleBtn" onclick="showEvent(1)">Exclusive Blockchain Events</button> -->
+            <button class="toggleBtn" onclick="showEvent(1)">Flagship Event: Metamorphosis</button>
+            <button class="toggleBtn" onclick="showEvent(2)">Flagship Event: India Blockchain Tour</button>
+            <!-- <button class="toggleBtn" onclick="showEvent(4)">Hackathons</button> -->
           </div>
         </div>
       </div>
@@ -800,7 +800,8 @@ html :where(.is-position-sticky){
         <div class="col-lg-2 col-11 timeline mt-5 mt-md-0">
 
                       <div class="timeline-element">
-              <p class="timeline-date">June 2025 onwards</p>
+              <!-- <p class="timeline-date">June 2025 onwards</p> -->
+              <p class="timeline-date">2025</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event32&quot;)"></div>
@@ -808,7 +809,8 @@ html :where(.is-position-sticky){
             </div>
 
                       <div class="timeline-element">
-              <p class="timeline-date">27-28th September, 2025</p>
+              <!-- <p class="timeline-date">27-28th September, 2025</p> -->
+              <p class="timeline-date">2025</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event33&quot;)"></div>
@@ -816,7 +818,8 @@ html :where(.is-position-sticky){
             </div>
 
                       <div class="timeline-element">
-              <p class="timeline-date">June 2024 onwards</p>
+              <!-- <p class="timeline-date">June 2024 onwards</p> -->
+              <p class="timeline-date">2024</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event30&quot;)"></div>
@@ -824,7 +827,8 @@ html :where(.is-position-sticky){
             </div>
                       
                       <div class="timeline-element">
-              <p class="timeline-date">6-7th December, 2024</p>
+              <!-- <p class="timeline-date">6-7th December, 2024</p> -->
+              <p class="timeline-date">2024</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event31&quot;)"></div>
@@ -832,7 +836,8 @@ html :where(.is-position-sticky){
             </div>
                       
                       <div class="timeline-element">
-              <p class="timeline-date">May 2023 onwards</p>
+              <!-- <p class="timeline-date">May 2023 onwards</p> -->
+              <p class="timeline-date">2023</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event28&quot;)"></div>
@@ -840,7 +845,8 @@ html :where(.is-position-sticky){
             </div>
 
                       <div class="timeline-element">
-              <p class="timeline-date">9th-10th December, 2023</p>
+              <!-- <p class="timeline-date">9th-10th December, 2023</p> -->
+              <p class="timeline-date">2023</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event29&quot;)"></div>
@@ -848,7 +854,8 @@ html :where(.is-position-sticky){
             </div>
 
                       <div class="timeline-element">
-              <p class="timeline-date">19th - 20th November, 2022</p>
+              <!-- <p class="timeline-date">19th - 20th November, 2022</p> -->
+              <p class="timeline-date">2022</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event20&quot;)"></div>
@@ -1127,51 +1134,42 @@ html :where(.is-position-sticky){
   // }
 
   function showEvent(seq) {
-  var events = document.getElementsByClassName("event");
-  var timelineElements = document.getElementsByClassName("timeline-element");
-  var btns = document.getElementsByClassName("toggleBtn");
+    var events = document.getElementsByClassName("event");
+    var timelineElements = document.getElementsByClassName("timeline-element");
+    var btns = document.getElementsByClassName("toggleBtn");
 
-  // Update button active states
-  for (let i = 0; i < btns.length; i++) {
-    if (i != seq) {
-      btns[i].classList.remove("active");
-    } else {
-      btns[i].classList.add("active");
-    }
-  }
-
-  // Loop through all event divs
-  for (let i = 0; i < events.length; i++) {
-    // THIS IS THE FIX: Get the actual number from the ID (e.g., "event32" -> 32)
-    var idNum = parseInt(events[i].id.replace("event", ""));
-    
-    var displayStyle = "none";
-
-    if (seq == 0) {
-      displayStyle = "block"; // Show all
-    } else if (seq == 1) {
-      if (idNum == 21 || idNum == 27) displayStyle = "block";
-    } else if (seq == 2) {
-      // Metamorphosis IDs
-      if ([31, 33, 29, 20, 13, 12].includes(idNum)) displayStyle = "block";
-    } else if (seq == 3) {
-      // IBT IDs
-      if (idNum == 32 || idNum == 30 || idNum == 28 || (idNum >= 22 && idNum <= 26) || (idNum >= 16 && idNum <= 19)) {
-        displayStyle = "block";
-      }
-    } else if (seq == 4) {
-      // Hackathon IDs
-      if (idNum == 14 || idNum == 15) displayStyle = "block";
+    // 1. Update Button Highlights
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].classList.toggle("active", i === seq);
     }
 
-    // Apply the display style to the event and its matching timeline dot
-    events[i].style.display = displayStyle;
-    
-    // Ensure the timeline element exists before styling it to avoid errors
-    if (timelineElements[i]) {
-      timelineElements[i].style.display = (displayStyle === "block") ? "flex" : "none";
+    // 2. Filter Content
+    for (let i = 0; i < events.length; i++) {
+        // Get the number from the ID (e.g., "event33" -> 33)
+        var idNum = parseInt(events[i].id.replace("event", ""));
+        var shouldShow = false;
+
+        if (seq == 0) {
+            // ALL EVENTS
+            shouldShow = true;
+        } else if (seq == 1) {
+            // METAMORPHOSIS (Using your IDs: 33, 31, 29, 20, etc.)
+            if ([33, 31, 29, 20, 13, 12].includes(idNum)) {
+                shouldShow = true;
+            }
+        } else if (seq == 2) {
+            // INDIA BLOCKCHAIN TOUR (Using your IDs: 32, 30, 28, etc.)
+            if (idNum == 32 || idNum == 30 || idNum == 28 || (idNum >= 22 && idNum <= 26) || (idNum >= 16 && idNum <= 19)) {
+                shouldShow = true;
+            }
+        }
+
+        // Apply styles
+        events[i].style.display = shouldShow ? "block" : "none";
+        if (timelineElements[i]) {
+            timelineElements[i].style.display = shouldShow ? "flex" : "none";
+        }
     }
-  }
 }
 </script>
 </main>
