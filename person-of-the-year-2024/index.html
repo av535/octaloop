@@ -696,6 +696,118 @@
             text-decoration: underline
         }
     </style>
+
+    <style>
+        :root {
+    --primary-yellow: #FFB800;
+    --bg-black: #000000;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-banner {
+    /* border: 5px solid var(--primary-yellow); */
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.hero-text-box {
+    border: 2px solid var(--primary-yellow);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.hero-text-box h1 {
+    color: var(--primary-yellow);
+    line-height: 1;
+    margin: 0;
+}
+
+.hero-image {
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+/* Section Header */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Grid */
+.nominee-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 10px;
+}
+
+.nominee-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.nominee-card p {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+/* Footer Description */
+.description {
+    margin-top: 60px;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+/* Responsive Tweak for Mobile */
+@media (max-width: 768px) {
+    .nominee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .nominee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        max-height: 150px;
+        border-radius: 5px;
+    }
+}
+    </style>
+
 </head>
 
 <body>
@@ -784,10 +896,6 @@
         <main class="container">
             <section class="hero-banner">
                 <div class="hero-content">
-                    <!-- <div class="hero-text-box">
-                        <h1>PERSON <br> OF THE <br> YEAR</h1>
-                        <p class="winner-name">ELON MUSK</p>
-                    </div> -->
                     <img src="../assets/images/person-of-the-year/Header-Image.png" alt="Elon Musk" class="hero-image">
                 </div>
             </section>
