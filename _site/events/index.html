@@ -321,6 +321,135 @@ html :where(.is-position-sticky){
 </style>
 
 <style>.seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style></head>
+
+<!-- Add style for Event -->
+<style>
+    .events-page .row {
+      /* width: 100%; */
+      max-width: 100%;
+    }
+
+    .events-page .nav-row {
+      max-width: 100%;
+    }
+
+    .col-11 {
+      flex: 0 0 100%;
+      /* max-width: 100%; */
+    }
+
+    .px-4{
+      padding-right: 0px !important;
+    }
+
+    .buttons{
+      width: 850px;
+      margin: auto;
+      padding-top: 0px;
+    }
+
+    @media screen and (max-width:450px){
+    .buttons{
+      width: 300px;
+      margin: auto;
+      padding-top: 0px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .timeline{
+        display: none;
+      }
+
+    .events-page .buttons {
+      margin-top: 0px !important;
+    }
+
+    .events-page .event {
+      margin-top: 40px !important;
+    }
+
+    /* footer - 27/03/2026 */
+    .pages{
+      padding-left: 0px;
+    }
+
+    .social-media{
+      margin-left: -30px;
+    }
+  }
+
+/* Timeline - 27/03/2026 */
+/* 75% 67% */
+.timeline {
+    position: -webkit-sticky;
+    position: fixed !important;
+    top: 120px !important;
+    right: 5%;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.timeline::-webkit-scrollbar {
+    width: 0px;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.timeline-line{
+  height: 35px !important;
+}
+
+/* .d-flex .flex-column .align-items-center{
+  height: 20px !important;
+} */
+
+.timeline-circle{
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* 100% */
+@media screen and (max-width:1300px){
+    .timeline-line{
+      height: 25px !important;
+    }
+
+    .timeline-circle{
+      width: 10px !important;
+      height: 10px !important;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 0px 0;
+    }  
+}
+
+/* 80% 90% */
+@media screen and (min-width: 1331px) and (max-width: 1600px){
+    .timeline-line{
+      height: 35px !important;
+    }
+
+    .timeline-circle{
+      width: 15px !important;
+      height: 15px !important;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 00px 0 !important;
+    }  
+}
+
+
+</style>
+
+
 <body>
 <h1 class="seo-h1">Octaloop Events — India Blockchain Tour & Metamorphosis</h1>
 	<!-- Added GTM No Script ID:GTM-545PXFSX - 12/11/2025 -->
@@ -359,7 +488,7 @@ html :where(.is-position-sticky){
 					<div class="ham-icon"></div>
 				</label>
 			</a>
-			<ul class="navbar-nav navbar-nav-white">
+			<ul class="navbar-nav navbar-nav-white" style="padding-right: -60px;">
 				<!-- <div class="dropdown">
 					<li class="nav-item text-white dropbtn">Our Product</li>
 					<div class="dropdown-content">
@@ -385,8 +514,17 @@ html :where(.is-position-sticky){
 				<li class="nav-item">
 					<a href="../contact-us/index.html" class="nav-link button-contact">Contact Us</a>
 				</li> -->
+                <li class="nav-item dropdown">
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="c1ijji" style="color: white !important;">
+                Person of the Year
+            </button>
+            <ul class="dropdown-menu" style="position: absolute; left: 15px;">
+                <li><a class="dropdown-item" href="../person-of-the-year-2024" style="color: black !important;">2024</a></li>
+                <li><a class="dropdown-item" href="../person-of-the-year-2025" style="color:  black !important;">2025</a></li>
+            </ul>
+        </li>
         <li class="nav-item">
-          <a href="../events/index.html" class="nav-link" style="color: white !important;">Events</a>
+          <a href="../events/index.html" class="nav-link" style="color: white !important;">Past Events</a>
           </li>
           <li class="nav-item">
           <a href="../services/index.html" class="nav-link" style="color: white !important;">Services</a>
@@ -404,198 +542,216 @@ html :where(.is-position-sticky){
 		</div>
 	</div>
 	<div class="topnav" id="myLinks">
-		<!-- <a href="https://binamite.com">OUR PRODUCT-BINAMITE</a>
-		<hr style="width:90%"> -->
-		<a href="../events/index.html">EVENTS</a>
-		<hr style="width:90%">
-		<hr style="width:90%">
-		<a href="../services/index.html">SERVICES</a>
-		<hr style="width:90%">
-		<a href="../about-us/index.html">ABOUT US</a>
-		<hr style="width:90%">
-		<a href="../contact-us/index.html">CONTACT US</a>
-		<hr style="width:90%">
-	</div>
+      <a href="../about-us/index.html">ABOUT US</a>
+      <hr style="width:90%">
+      <a href="../services/index.html">SERVICES</a>
+      <hr style="width:90%">
+      <a href="../events/index.html">PAST EVENTS</a>
+      <hr style="width:90%">
+      <a href="../contact-us/index.html">CONTACT US</a>
+      <hr style="width:90%">
+      <!-- <a href="/blog/">BLOG</a>
+      <hr style="width:90%"> -->
+  </div>
 </div>      </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 col-11">
           <div class="buttons">
             <button class="active toggleBtn" onclick="showEvent(0)">All Events</button>
-            <button class="toggleBtn" onclick="showEvent(1)">Exclusive Blockchain Events</button>
-            <button class="toggleBtn" onclick="showEvent(2)">Flagship Event: Metamorphosis</button>
-            <button class="toggleBtn" onclick="showEvent(3)">Flagship Event: India Blockchain Tour</button>
-            <button class="toggleBtn" onclick="showEvent(4)">Hackathons</button>
+            <!-- <button class="toggleBtn" onclick="showEvent(1)">Exclusive Blockchain Events</button> -->
+            <button class="toggleBtn" onclick="showEvent(1)">Flagship Event: Metamorphosis</button>
+            <button class="toggleBtn" onclick="showEvent(2)">Flagship Event: India Blockchain Tour</button>
+            <button class="toggleBtn" onclick="showEvent(3)">Hackathons</button>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-2 col-11">
-          
-        </div>
+      <div class="row justify-content-center mb-5" style="width: auto;">
+        <!-- <div class="col-lg-2 col-11"></div> -->
         <div class="col-lg-8 col-11">
-                      <div class="event" id="event33">
+                      <div class="event" id="event32">
+              <h6>India Blockchain Tour 2025</h6>
+              <p>
+                June 2025 onwards<br/>
+                              </p>
+                              <a href="https://x.com/IBTxOfficial/status/1945099506531623159">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/IBT25.jpg"/ alt="India Blockchain Tour 2025" loading="lazy" width="auto" height="450">
+                </a>
+                          </div>
+
+                           <div class="event" id="event33">
               <a href="https://metamorphosis.octaloop.com/"><h6>Metamorphosis 2025</h6></a>
               <p>
                 27-28th September, 2025<br/>
                 Le Meridien, Gurgaon - Delhi NCR, India              </p>
-                              <a href="https://metamorphosis.octaloop.com/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/MM25.png"/ alt="Metamorphosis 2025 conference" width="full" height="450">
+                              <a href="https://x.com/IBTxOfficial/status/1993321656568443213">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/MM25.png"/ alt="Metamorphosis 2025 conference" width="auto" height="450">
                 </a>
                           </div>
-                      <div class="event" id="event32">
-              <a href="../indiablockchaintour/index.html"><h6>India Blockchain Tour 2025</h6></a>
-              <p>
-                June 2025 onwards<br/>
-                              </p>
-                              <a href="../indiablockchaintour/index.html">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/IBT25.jpg"/ alt="India Blockchain Tour 2025" loading="lazy" width="full" height="450">
-                </a>
-                          </div>
-                      <div class="event" id="event31">
-              <a href="https://metamorphosis24.octaloop.com/"><h6>Metamorphosis 2024</h6></a>
-              <p>
-                6-7th December, 2024<br/>
-                Marriat, Bengaluru India              </p>
-                              <a href="https://metamorphosis24.octaloop.com/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/MM24.png"/ alt="Metamorphosis 2024 conference" loading="lazy" width="full" height="450">
-                </a>
-                          </div>
+
                       <div class="event" id="event30">
-              <a href="https://octaloop.com/indiablockchaintour2024/"><h6>India Blockchain Tour 2024</h6></a>
+              <h6>India Blockchain Tour 2024</h6>
               <p>
                 June 2024 onwards<br/>
                               </p>
-                              <a href="https://octaloop.com/indiablockchaintour2024/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/IBT2024.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                              <a href="https://x.com/octaloopHQ/status/1843341476769739265">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/IBT2024.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
-                      <div class="event" id="event29">
-              <a href="https://metamorphosis23.octaloop.com/bengaluru/"><h6>Metamorphosis 2023</h6></a>
+
+                          <div class="event" id="event31">
+              <h6>Metamorphosis 2024</h6>
+              <p>
+                6-7th December, 2024<br/>
+                Marriat, Bengaluru India              </p>
+                              <a href="https://x.com/IBTxOfficial/status/1878012542641123570?s=20/">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/MM24.png"/ alt="Metamorphosis 2024 conference" loading="lazy" width="auto" height="450">
+                </a>
+                          </div>
+
+                      <div class="event" id="event28">
+              <h6>India Blockchain Tour 2023</h6>
+              <!-- <p>
+                5th August, 2023<br/>
+                At Watson's, No.90, Gopathi Narayanaswami Chetty Rd, Chennai, Tamil Nadu              </p> -->
+                <p>
+                May 2023 onwards<br/>
+                              </p>
+                              <a href="https://x.com/octaloopHQ/status/1699756436753154208">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibt23.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
+                </a>
+                          </div>
+
+                          <div class="event" id="event29">
+              <h6>Metamorphosis 2023</h6>
               <p>
                 9th-10th December, 2023<br/>
                 Bengaluru, India              </p>
-                              <a href="https://metamorphosis23.octaloop.com/bengaluru/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/mm23.png"/ alt="Metamorphosis 2023 conference" loading="lazy" width="full" height="450">
+                              <a href="https://x.com/IBTxOfficial/status/1744662541752783236?s=20">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/mm23.png"/ alt="Metamorphosis 2023 conference" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
-                      <div class="event" id="event28">
-              <a href="https://metamorphosis23.octaloop.com/ibt/chennai/"><h6>India Blockchain Tour 2023-Chennai</h6></a>
-              <p>
-                5th August, 2023<br/>
-                At Watson's, No.90, Gopathi Narayanaswami Chetty Rd, Chennai, Tamil Nadu              </p>
-                              <a href="https://metamorphosis23.octaloop.com/ibt/chennai/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtChennai.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
-                </a>
-                          </div>
-                      <div class="event" id="event27">
+
+                      <!-- <div class="event" id="event27">
               <a href=""><h6>Blockchain4Youth - Bitget</h6></a>
               <p>
                 4th August, 2023<br/>
                               </p>
                               <a href="">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/Blockchain4Youth.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/Blockchain4Youth.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event26">
+                          </div> -->
+
+                      <!-- <div class="event" id="event26">
               <a href="https://metamorphosis23.octaloop.com/ibt/kolkata/"><h6>India Blockchain Tour 2023-Kolkata</h6></a>
               <p>
                 29th July 2023<br/>
                 At Ideapod, 5th Floor, Prasad House, Kolkata, West Bengal              </p>
                               <a href="https://metamorphosis23.octaloop.com/ibt/kolkata/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtKolkata.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtKolkata.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event25">
+                          </div> -->
+
+                      <!-- <div class="event" id="event25">
               <a href="https://metamorphosis23.octaloop.com/ibt/bengaluru/"><h6>India Blockchain Tour 2023-bengaluru</h6></a>
               <p>
                 15th July, 2023<br/>
                 At Gilly's 104, Koramangala, Bengaluru, Karnataka              </p>
                               <a href="https://metamorphosis23.octaloop.com/ibt/bengaluru/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtBengaluru.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtBengaluru.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event24">
+                          </div> -->
+
+                      <!-- <div class="event" id="event24">
               <a href="https://metamorphosis23.octaloop.com/ibt/hyderabad/"><h6>India Blockchain Tour 2023-Hyderabad</h6></a>
               <p>
                 24th June 2023<br/>
                 At Meta V Cafe, Hyderabad, Telangana              </p>
                               <a href="https://metamorphosis23.octaloop.com/ibt/hyderabad/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtHyderabad.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtHyderabad.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event23">
+                          </div> -->
+
+                      <!-- <div class="event" id="event23">
               <a href="https://metamorphosis23.octaloop.com/ibt/mumbai/"><h6>India Blockchain Tour 2023-Mumbai</h6></a>
               <p>
                 3rd June, 2023<br/>
                 At British Brewing Company, Marol, Mumbai              </p>
                               <a href="https://metamorphosis23.octaloop.com/ibt/mumbai/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtMumbai.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtMumbai.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event22">
+                          </div> -->
+
+                      <!-- <div class="event" id="event22">
               <a href="https://metamorphosis23.octaloop.com/ibt/delhi/"><h6>India Blockchain Tour 2023-Delhi</h6></a>
               <p>
                 27th May 2023<br/>
                 At Downtown Diner &amp; Fresh Beer, Gurugram, Haryana              </p>
                               <a href="https://metamorphosis23.octaloop.com/ibt/delhi/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtDelhi.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/ibtDelhi.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event21">
+                          </div> -->
+
+                      <!-- <div class="event" id="event21">
               <a href=""><h6>VIP Yacht Party - Bitcasino</h6></a>
               <p>
                 10th December, 2022<br/>
                               </p>
                               <a href="">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/YachtParty.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/YachtParty.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
+                          </div> -->
+
                       <div class="event" id="event20">
-              <a href="https://metamorphosis22.octaloop.com/"><h6>Metamorphosis 2022</h6></a>
+              <h6>Metamorphosis 2022</h6>
               <p>
                 19th - 20th November, 2022<br/>
                 The Den, Bengaluru, India              </p>
-                              <a href="https://metamorphosis22.octaloop.com/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/mm2022.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                              <a href="https://twitter.com/octaloopHQ/status/1602243426409332736">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/mm2022.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
-                      <div class="event" id="event19">
+
+                      <!-- <div class="event" id="event19">
               <a href="https://octaloop.com/metamorphosis2022/mumbai-chapter/"><h6>India Blockchain Tour 2022-Mumbai</h6></a>
               <p>
                 14th Aug 2022<br/>
                 At Anti Social, Lower Parel, Mumbai,India              </p>
                               <a href="https://octaloop.com/metamorphosis2022/mumbai-chapter/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Mumbai.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Mumbai.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event18">
+                          </div> -->
+
+                      <!-- <div class="event" id="event18">
               <a href="https://octaloop.com/metamorphosis2022/pune-meetup/"><h6>India Blockchain Tour 2022-Pune</h6></a>
               <p>
                 28th May 2022<br/>
                 At High Spirits Cafe, Koregaon, Pune              </p>
                               <a href="https://octaloop.com/metamorphosis2022/pune-meetup/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Pune.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Pune.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event17">
+                          </div> -->
+
+                      <!-- <div class="event" id="event17">
               <a href="https://octaloop.com/metamorphosis2022/bengaluru-chapter/"><h6>India Blockchain Tour 2022-Bengaluru</h6></a>
               <p>
                 22nd April 2022<br/>
                 At Gilly's 104 Bar, Koramangala, Bengaluru, India              </p>
                               <a href="https://octaloop.com/metamorphosis2022/bengaluru-chapter/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Bengaluru.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640-Bengaluru.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event16">
+                          </div> -->
+
+                      <!-- <div class="event" id="event16">
               <a href="https://octaloop.com/metamorphosis2022/delhi-chapter-2/"><h6>India Blockchain Tour 2022-Delhi 2</h6></a>
               <p>
                 16th April 2022<br/>
                 At The Beer Cafe, GK2, New Delhi              </p>
                               <a href="https://octaloop.com/metamorphosis2022/delhi-chapter-2/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640--delhi-2.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/mm/mm22-1280x640--delhi-2.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event15">
+                          </div> -->
+
+                      <!-- <div class="event" id="event15">
               <a href="https://octaloop.com/decentralhacks2021"><h6>DecentralHacks 2021</h6></a>
               <p>
                 13th Sept 2021<br/>
@@ -603,162 +759,247 @@ html :where(.is-position-sticky){
                               <a href="https://octaloop.com/decentralhacks2021">
                   <img src="../assets/images/wp-content/themes/octaloop/assets/images/decentralhacks2021/poster.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="auto">
                 </a>
-                          </div>
-                      <div class="event" id="event14">
+                          </div> -->
+
+                      <!-- <div class="event" id="event14">
               <a href="https://octaloop.com/unblock2021"><h6>unblock 2021</h6></a>
               <p>
                 5th-20th March 2021<br/>
                 Virtual Summit              </p>
                               <a href="https://octaloop.com/unblock2021">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/unblock2021.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/unblock2021.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event13">
+                          </div> -->
+
+                      <!-- <div class="event" id="event13">
               <a href="https://octaloop.com/trtm2"><h6>The Road to Metamorphosis II</h6></a>
               <p>
                 8th Aug 2020<br/>
                 A Virtual Summit              </p>
                               <a href="https://octaloop.com/trtm2">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/trtm2.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/trtm2.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
-                      <div class="event" id="event12">
+                          </div> -->
+
+                      <!-- <div class="event" id="event12">
               <a href="https://octaloop.com/theroadtometamorphosis"><h6>The Road to Metamorphosis 2020</h6></a>
               <p>
                 9th May 2020<br/>
                 Virtual Summit              </p>
                               <a href="https://octaloop.com/theroadtometamorphosis">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/trtm.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/trtm.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
-                          </div>
+                          </div> -->
+
                       <div class="event" id="event11">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/268260844/"><h6>U Turn Foundation Presents HEMP 2020 (X-Event)</h6></a>
               <p>
                 29th Feb 2020<br/>
                 At Radisson Blu Marina, Connaught Circus, New Delhi, Central Delhi, Delhi NCR, 110001              </p>
                           </div>
+
                       <div class="event" id="event10">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/252894758/"><h6>Bear-to-Bull Market Meetup</h6></a>
               <p>
                 1st Sept 2018<br/>
                 At Pebble Street, Community Center, 8, New Friends Colony, New Delhi              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/252894758/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-2.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-2.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event9">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/248663924/"><h6>Blockchain / Bitcoin over Beer / Coffee</h6></a>
               <p>
                 31st March 2018<br/>
                 At FLYP@MTV, N/57 N/60, 1st Floor, Outer Circle, Connaught Place, Delhi              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/248663924/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-3.png"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-3.png"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event8">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/245156910/"><h6>Satoshi Sundays: Bitcoin and Blockchain Networking Event</h6></a>
               <p>
                 26th Nov, 2017<br/>
                 At 91 Springboard E-43/1, Okhla Phase II, New Delhi, Delhi 110020              </p>
                           </div>
+
                       <div class="event" id="event7">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/243742862/"><h6>BlockShow Meetup: ICOscar powered by Cointelegraph</h6></a>
               <p>
                 6th Oct 2017<br/>
                 At The Classroom, Sector 29, Gurgaon              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/243742862/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-1.jpeg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-1.jpeg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event6">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/241682359/"><h6>Learn to invest in cryptocurrencies</h6></a>
               <p>
                 26th Aug 2017<br/>
                 At 91, Springboard E-43/1, Okhla Phase II, New Delhi, Delhi 110020              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/241682359/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-4.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-4.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event5">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/240391272/"><h6>Let's talk Bitcoin, Alts, Blockchain and more!</h6></a>
               <p>
                 25th June 2017<br/>
                 At ARDOR (Restaurant &amp; Lounge), N-55, 56 &amp; 88, 89, N Block, Outer Circle, Connaught Place, New Delhi              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/240391272/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-6.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-6.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event4">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/239394470/"><h6>Discuss Bitcoin And Blockchain</h6></a>
               <p>
                 22nd April 2017<br/>
                 At Cafe Coffee Day, N-11, Outer Circle, Connaught Place, New Delhi              </p>
                           </div>
+
                       <div class="event" id="event3">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/238090131/"><h6>Bitcoin for Businesses and Individuals</h6></a>
               <p>
                 25th March 2017<br/>
                 At Cafe Coffee Day, N-11, Outer Circle, Connaught Place, New Delhi              </p>
                           </div>
+
                       <div class="event" id="event2">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/234824513/"><h6>How to keep your Bitcoin and wallets secured</h6></a>
               <p>
                 26th Nov 2016<br/>
                 At Cafe Coffee Day, N-11, Outer Circle, Connaught Place, New Delhi              </p>
                               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/234824513/">
-                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-5.jpg"/ alt="Octaloop" loading="lazy" width="full" height="450">
+                  <img src="../assets/images/wp-content/themes/octaloop/assets/images/events-page/new/pe-5.jpg"/ alt="Octaloop" loading="lazy" width="auto" height="450">
                 </a>
                           </div>
+
                       <div class="event" id="event1">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/234036756/"><h6>Bitcoin Happy Hour</h6></a>
               <p>
                 25th Sept 2016<br/>
                 At Cafe MRP, Connaught Place, Delhi              </p>
                           </div>
+
                       <div class="event" id="event0">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/231862545/"><h6>Let's meetup and talk bitcoin!</h6></a>
               <p>
                 3rd July 2016<br/>
                 At Cafe Coffee Day, N-11, Outer Circle, Connaught Place, New Delhi              </p>
                           </div>
-                  </div>
-        <div class="col-lg-2 col-11 timeline mt-5 mt-md-0">
+                  
+                        </div>
+        <div class="col-lg-2 col-11 timeline mt-5 mt-md-0" >
+
                       <div class="timeline-element">
-              <p class="timeline-date">27-28th September, 2025</p>
-              <div class="d-flex flex-column align-items-center">
-                <div class="timeline-line"></div>
-                <div class="timeline-circle" onclick="scrollto(&quot;event33&quot;)"></div>
-              </div>
-            </div>
-                      <div class="timeline-element">
-              <p class="timeline-date">June 2025 onwards</p>
+              <!-- <p class="timeline-date">June 2025 onwards</p> -->
+              <p class="timeline-date">2025</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event32&quot;)"></div>
               </div>
             </div>
-                      <div class="timeline-element">
-              <p class="timeline-date">6-7th December, 2024</p>
+
+                      <!-- <div class="timeline-element">
+              <p class="timeline-date">27-28th September, 2025</p>
+              <p class="timeline-date">2025</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
-                <div class="timeline-circle" onclick="scrollto(&quot;event31&quot;)"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event33&quot;)"></div>
               </div>
-            </div>
+            </div> -->
+
                       <div class="timeline-element">
-              <p class="timeline-date">June 2024 onwards</p>
+              <!-- <p class="timeline-date">June 2024 onwards</p> -->
+              <p class="timeline-date">2024</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event30&quot;)"></div>
               </div>
             </div>
+                      
+                      <!-- <div class="timeline-element">
+              <p class="timeline-date">6-7th December, 2024</p>
+              <p class="timeline-date">2024</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event31&quot;)"></div>
+              </div>
+            </div> -->
+                      
                       <div class="timeline-element">
+              <!-- <p class="timeline-date">May 2023 onwards</p> -->
+              <p class="timeline-date">2023</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event28&quot;)"></div>
+              </div>
+            </div>
+
+                      <!-- <div class="timeline-element">
               <p class="timeline-date">9th-10th December, 2023</p>
+              <p class="timeline-date">2023</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event29&quot;)"></div>
               </div>
-            </div>
+            </div> -->
+
                       <div class="timeline-element">
+              <!-- <p class="timeline-date">19th - 20th November, 2022</p> -->
+              <p class="timeline-date">2022</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event20&quot;)"></div>
+              </div>
+            </div>
+
+                      <div class="timeline-element">
+              <p class="timeline-date">2020</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event11&quot;)"></div>
+              </div>
+            </div>
+
+                      <div class="timeline-element">
+              <p class="timeline-date">2018</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event10&quot;)"></div>
+              </div>
+            </div>
+
+                      <div class="timeline-element">
+              <p class="timeline-date">2017</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event8&quot;)"></div>
+              </div>
+            </div>
+
+                    <div class="timeline-element">
+              <p class="timeline-date">2016</p>
+              <div class="d-flex flex-column align-items-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-circle" onclick="scrollto(&quot;event2&quot;)"></div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+                      <!-- <div class="timeline-element">
               <p class="timeline-date">5th August, 2023</p>
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
@@ -960,7 +1201,7 @@ html :where(.is-position-sticky){
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event0&quot;)"></div>
               </div>
-            </div>
+            </div> -->
                   </div>
       </div>
     </div>
@@ -968,56 +1209,110 @@ html :where(.is-position-sticky){
   </div>
 </div>
 <script type="text/javascript">
+  // function showEvent(seq) {
+  //   var events = document.getElementsByClassName("event");
+  //   var timelineElements = document.getElementsByClassName(" timeline-element");
+  //   var btns = document.getElementsByClassName("toggleBtn");
+  //   for (let i = 0; i < btns.length; i++) {
+  //     if(i!=seq) {
+  //       btns[i].classList.remove("active");
+  //     } else {
+  //       btns[i].classList.add("active");
+  //     }
+  //   }
+  //   for (let i = events.length-1; i >=0 ; i--) {
+  //     if(seq==0) {
+  //       document.getElementById("event"+i).style.display = "block";
+  //       timelineElements[i].style.display = "flex";
+  //     } else if(seq==1) {
+  //       if (i==21 || i==27) {
+  //         document.getElementById("event"+i).style.display = "block";
+  //         timelineElements[i].style.display = "flex";
+  //       } else {
+  //         document.getElementById("event"+i).style.display = "none";
+  //         timelineElements[i].style.display = "none";
+  //       }
+  //     } else if(seq==2) {
+  //       if (i==31 || i==33 || i==29 || i==20 || i==13 || i==12) {
+  //         document.getElementById("event"+i).style.display = "block";
+  //         timelineElements[i].style.display = "flex";
+  //       } else {
+  //         document.getElementById("event"+i).style.display = "none";
+  //         timelineElements[i].style.display = "none";
+  //       }
+  //     } else if(seq==3) {
+  //       if (i== 32 || i==30||i==28||(i>=22 && i<=26)||(i>=16 && i<=19)) {
+  //         document.getElementById("event"+i).style.display = "block";
+  //         timelineElements[i].style.display = "flex";
+  //       } else {
+  //         document.getElementById("event"+i).style.display = "none";
+  //         timelineElements[i].style.display = "none";
+  //       }
+  //     } else if(seq==4) {
+  //       if (i==14||i==15) {
+  //         document.getElementById("event"+i).style.display = "block";
+  //         timelineElements[i].style.display = "flex";
+  //       } else {
+  //         document.getElementById("event"+i).style.display = "none";
+  //         timelineElements[i].style.display = "none";
+  //       }
+  //     }
+  //   }
+  // }
+
   function showEvent(seq) {
     var events = document.getElementsByClassName("event");
-    var timelineElements = document.getElementsByClassName(" timeline-element");
+    var timelineElements = document.getElementsByClassName("timeline-element");
     var btns = document.getElementsByClassName("toggleBtn");
+
+    // ✅ Active button fix (now index matches seq again)
     for (let i = 0; i < btns.length; i++) {
-      if(i!=seq) {
-        btns[i].classList.remove("active");
-      } else {
-        btns[i].classList.add("active");
-      }
+        btns[i].classList.toggle("active", i === seq);
     }
-    for (let i = events.length-1; i >=0 ; i--) {
-      if(seq==0) {
-        document.getElementById("event"+i).style.display = "block";
-        timelineElements[i].style.display = "flex";
-      } else if(seq==1) {
-        if (i==21 || i==27) {
-          document.getElementById("event"+i).style.display = "block";
-          timelineElements[i].style.display = "flex";
-        } else {
-          document.getElementById("event"+i).style.display = "none";
-          timelineElements[i].style.display = "none";
+
+    // ✅ Filtering logic
+    for (let i = 0; i < events.length; i++) {
+        var idNum = parseInt(events[i].id.replace("event", ""));
+        var shouldShow = false;
+
+        if (seq === 0) {
+            // All Events
+            shouldShow = true;
+        } 
+        else if (seq === 1) {
+            // Metamorphosis
+            if ([33, 31, 29, 20, 13, 12].includes(idNum)) {
+                shouldShow = true;
+            }
+        } 
+        else if (seq === 2) {
+            // India Blockchain Tour
+            if (
+                idNum == 32 ||
+                idNum == 30 ||
+                idNum == 28 ||
+                (idNum >= 22 && idNum <= 26) ||
+                (idNum >= 16 && idNum <= 19)
+            ) {
+                shouldShow = true;
+            }
+        } 
+        else if (seq === 3) {
+            // Hackathons
+            if ([10, 11, 9, 8, 6, 7, 5, 4, 3, 2, 1, 0].includes(idNum)) {
+                shouldShow = true;
+            }
         }
-      } else if(seq==2) {
-        if (i==31 || i==33 || i==29 || i==20 || i==13 || i==12) {
-          document.getElementById("event"+i).style.display = "block";
-          timelineElements[i].style.display = "flex";
-        } else {
-          document.getElementById("event"+i).style.display = "none";
-          timelineElements[i].style.display = "none";
+
+        // Apply display
+        events[i].style.display = shouldShow ? "block" : "none";
+
+        if (timelineElements[i]) {
+            timelineElements[i].style.display = shouldShow ? "flex" : "none";
         }
-      } else if(seq==3) {
-        if (i== 32 || i==30||i==28||(i>=22 && i<=26)||(i>=16 && i<=19)) {
-          document.getElementById("event"+i).style.display = "block";
-          timelineElements[i].style.display = "flex";
-        } else {
-          document.getElementById("event"+i).style.display = "none";
-          timelineElements[i].style.display = "none";
-        }
-      } else if(seq==4) {
-        if (i==14||i==15) {
-          document.getElementById("event"+i).style.display = "block";
-          timelineElements[i].style.display = "flex";
-        } else {
-          document.getElementById("event"+i).style.display = "none";
-          timelineElements[i].style.display = "none";
-        }
-      }
     }
-  }
+}
+
 </script>
 </main>
 <footer id="footer-call">
@@ -1049,7 +1344,7 @@ html :where(.is-position-sticky){
                     <!-- <li><a href="https://octaloop.com/journal">Blog</a></li> -->
                     <li><a href="https://octaloop.com/about-us">About Us</a></li>
                     <li><a href="https://octaloop.com/services">Services</a></li>
-                    <li><a href="https://octaloop.com/events">Events</a></li>
+                    <li><a href="https://octaloop.com/events">Past Events</a></li>
                     <li><a href="https://octaloop.com/contact-us">Contact Us</a></li>
                     </ul>
                 </div>
