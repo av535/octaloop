@@ -69,70 +69,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── Sticky Navbar ── */
-  .gtm-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(10,10,10,0.85);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--card-border);
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-  }
-  .gtm-nav .logo img { display: block; }
-  .gtm-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-  .gtm-nav ul li a {
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .gtm-nav ul li a:hover { color: var(--white); }
-  .gtm-nav ul li a.btn-contact {
-    background: var(--orange);
-    color: #000;
-    padding: 0.45rem 1.1rem;
-    border-radius: 6px;
-    font-weight: 600;
-  }
-  .gtm-nav ul li a.btn-contact:hover { background: #e6a000; color: #000; }
-
-  /* Mobile hamburger */
-  .gtm-ham { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
-  .gtm-ham span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s; }
-  .gtm-mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: var(--dark2);
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--card-border);
-  }
-  .gtm-mobile-menu a {
-    color: rgba(255,255,255,0.85);
-    text-decoration: none;
-    padding: 0.65rem 0;
-    border-bottom: 1px solid var(--card-border);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  .gtm-mobile-menu a:last-child { border-bottom: none; }
-  @media (max-width: 768px) {
-    .gtm-nav ul { display: none; }
-    .gtm-ham { display: flex; }
-  }
 
   /* ── Sections shared ── */
   section { width: 100%; }
@@ -661,8 +597,6 @@
   footer#footer-call ul.social-media li a { color: rgba(255,255,255,0.55); font-size: 1.1rem; }
   footer#footer-call ul.social-media li a:hover { color: #fff; }
 
-  /* ── Hamburger open state ── */
-  .gtm-mobile-menu.open { display: flex; }
 </style>
 <script type="application/ld+json">
 {
@@ -709,28 +643,71 @@
 <body>
 
 <!-- ── NAVBAR ── -->
-<nav class="gtm-nav">
-  <a href="../index.html" class="logo">
-    <img src="../assets/images/wp-content/themes/octaloop/assets/images/Logo-white.png" alt="Octaloop" width="140" height="38">
-  </a>
-  <ul>
-    <li><a href="../events/index.html">Events</a></li>
-    <li><a href="../services/index.html" style="color:#fff;">Services</a></li>
-    <li><a href="../blog/index.html">Blog</a></li>
-    <li><a href="../about-us/index.html">About Us</a></li>
-    <li><a href="../contact-us/index.html" class="btn-contact">Contact Us</a></li>
-  </ul>
-  <div class="gtm-ham" id="hamBtn" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-<div class="gtm-mobile-menu" id="mobileMenu">
-  <a href="../events/index.html">Events</a>
-  <a href="../services/index.html">Services</a>
-  <a href="../blog/index.html">Blog</a>
-  <a href="../about-us/index.html">About Us</a>
-  <a href="../contact-us/index.html">Contact Us</a>
-</div>
+        <div class="navbar pb-3">
+            <div class="nav row justify-content-between px-4">
+                <div class="nav-logo">
+                    <a href="../index.html" class="logo">
+                        <img alt="octaloop" src="../assets/images/wp-content/themes/octaloop/assets/images/Logo.png"
+                            width="150" height="40">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <label class="show-menu" for="show-menu">
+                            <div class="ham-icon"></div>
+                            <div class="ham-icon"></div>
+                            <div class="ham-icon"></div>
+                        </label>
+                    </a>
+                    <ul class="navbar-nav navbar-nav-white">
+                        <li class="nav-item dropdown">
+                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Person of the Year
+                            </button>
+                            <ul class="dropdown-menu" style="position: absolute; left: 15px;">
+                                <li><a class="dropdown-item" href="../person-of-the-year-2024">2024</a></li>
+                                <li><a class="dropdown-item" href="../person-of-the-year-2025">2025</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../events/index.html" class="nav-link">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../services/index.html" class="nav-link">India GTM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../blog/index.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about-us/index.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contact-us/index.html" class="nav-link button-contact"
+                                style="background-color: #ffb001;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topnav" id="myLinks">
+                <a href="../about-us/index.html">ABOUT US</a>
+                <hr style="width:90%">
+                <a href="../services/index.html">INDIA GTM</a>
+                <hr style="width:90%">
+                <a href="../events/index.html">PAST EVENTS</a>
+                <hr style="width:90%">
+                <a href="../contact-us/index.html">CONTACT US</a>
+                <hr style="width:90%">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" style="padding-left: 50%;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PERSON OF THE YEAR
+                    </button>
+                    <ul class="dropdown-menu" style="margin-left: 50%; width: 100%;">
+                        <li><a class="dropdown-item" style="width: 90%;" href="../person-of-the-year-2024">2024</a></li>
+                        <li><a class="dropdown-item" style="width: 90%;" href="../person-of-the-year-2025">2025</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 <!-- ── HERO ── -->
 <section class="hero">
@@ -1114,10 +1091,15 @@
   </div>
 </footer>
 
+<script src="../assets/js/bootstrap.bundle.min.js" defer></script>
 <script>
-  /* ── Mobile nav toggle ── */
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
 
   /* ── Count-up animation ── */
@@ -1194,4 +1176,3 @@
 
 </body>
 </html>
-
