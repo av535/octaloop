@@ -291,14 +291,17 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
-  .nominee-card {
+  a.nominee-card {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     background: #111;
     border: 1px solid var(--border);
     transition: border-color 0.2s, transform 0.2s;
-    cursor: default;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
   }
   .nominee-card:hover {
     border-color: rgba(255,176,1,0.4);
@@ -575,77 +578,77 @@
     <p class="nominees-intro">Eight names. One year. Each of these individuals left a mark on Web3 in 2025 that the community recognised and debated. Here's why they were on the list.</p>
     <div class="nominee-grid">
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Donald_Trump" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/DonaldTrump.png" alt="Donald Trump" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Donald Trump</div>
           <div class="nominee-card-role">47th President, USA</div>
           <p class="nominee-card-why">Signed executive orders protecting self-custody, established a Bitcoin strategic reserve, and turned the US into the most crypto-friendly major economy on earth.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Nirmala_Sitharaman" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/NirmalaSitharaman.png" alt="Nirmala Sitharaman" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Nirmala Sitharaman</div>
           <div class="nominee-card-role">Finance Minister, India</div>
           <p class="nominee-card-why">India's most powerful economic voice continued to shape the country's evolving stance on digital assets — walking the tightrope between regulation and growth.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Michael_Saylor" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/MichaelSaylor.png" alt="Michael Saylor" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Michael Saylor</div>
           <div class="nominee-card-role">Executive Chairman, MicroStrategy</div>
           <p class="nominee-card-why">Accumulated Bitcoin at a scale that no institution had attempted before, turning MicroStrategy into a proxy for Bitcoin and making corporate treasury adoption mainstream.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Changpeng_Zhao" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/CZ.png" alt="CZ — Changpeng Zhao" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">CZ</div>
           <div class="nominee-card-role">Founder, Binance</div>
           <p class="nominee-card-why">Served his sentence, walked free, and remained the most-watched figure in crypto — proof that in this industry, no one truly exits the stage.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Brian_Armstrong_(businessman)" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/BrianArmstrong.png" alt="Brian Armstrong" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Brian Armstrong</div>
           <div class="nominee-card-role">CEO, Coinbase</div>
           <p class="nominee-card-why">Fought the SEC in court and won. Coinbase's legal victory against the regulator marked a turning point for how crypto companies would defend themselves in America.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://en.wikipedia.org/wiki/Vitalik_Buterin" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/VitalikButerin.png" alt="Vitalik Buterin" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Vitalik Buterin</div>
           <div class="nominee-card-role">Co-founder, Ethereum</div>
           <p class="nominee-card-why">Continued to push Ethereum's technical roadmap forward — The Purge, The Splurge — keeping the network at the centre of global developer attention.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://x.com/smtgpt" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/SumitGupta.png" alt="Sumit Gupta" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Sumit Gupta</div>
           <div class="nominee-card-role">CEO, CoinDCX</div>
           <p class="nominee-card-why">Built and scaled India's largest crypto platform through one of the most difficult regulatory environments any exchange has faced, and kept the lights on for millions of Indian users.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="nominee-card">
+      <a class="nominee-card" href="https://x.com/NishchalShetty" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/person-of-the-year/NishchalShetty.png" alt="Nishchal Shetty" loading="lazy"/>
         <div class="nominee-card-body">
           <div class="nominee-card-name">Nishchal Shetty</div>
           <div class="nominee-card-role">CEO, WazirX</div>
           <p class="nominee-card-why">Navigated the aftermath of one of India's largest crypto exchange hacks with transparency and tenacity — a case study in crisis leadership in a trust-dependent industry.</p>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
