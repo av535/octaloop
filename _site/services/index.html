@@ -1146,7 +1146,7 @@
     const btn = form.querySelector('.submit-btn');
     const data = new FormData(form);
     const body = {
-      formType: "gtmForm",
+      // formType: "gtmForm",
 
       name: data.get('name'),
       company: data.get('company'),
@@ -1164,19 +1164,16 @@
     // GOOGLE SHEET STORAGE
     // =========================
 
-  fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
-    method: "POST",
-    // headers: {
-    //   "Content-Type": "application/json",
-    // },
-    body: JSON.stringify(body),
-  })
-    .then(() => {
-      console.log("Stored in Google Sheet");
-    })
-    .catch((err) => {
-      console.error("Sheet Error:", err);
-    });
+  // fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
+  //   method: "POST",
+  //   body: JSON.stringify(body),
+  //   })
+  //   .then(() => {
+  //     console.log("Stored in Google Sheet");
+  //   })
+  //   .catch((err) => {
+  //     console.error("Sheet Error:", err);
+  //   });
 
   // GOOGLE SHEET STORAGE - END
 
