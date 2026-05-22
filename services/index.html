@@ -43,6 +43,7 @@
   gtag('js', new Date());
   gtag('config', 'G-RS8JQ4EFNP');
 </script>
+<script src="./config.js"></script>
 
 <style>
   /* ── Design tokens ── */
@@ -1145,16 +1146,39 @@
     const btn = form.querySelector('.submit-btn');
     const data = new FormData(form);
     const body = {
+      formType: "gtmForm",
+
       name: data.get('name'),
       company: data.get('company'),
       email: data.get('email'),
       website: data.get('website'),
       service: data.get('service'),
+      budget: data.get('budget'),
       message: data.get('message'),
     };
 
     btn.disabled = true;
     btn.textContent = 'Sending…';
+
+    // =========================
+    // GOOGLE SHEET STORAGE
+    // =========================
+
+  fetch(config.GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
+    body: JSON.stringify(body),
+  })
+    .then(() => {
+      console.log("Stored in Google Sheet");
+    })
+    .catch((err) => {
+      console.error("Sheet Error:", err);
+    });
+
+  // GOOGLE SHEET STORAGE - END
 
     /* Mailto fallback — replace with your form endpoint if available */
     const subject = encodeURIComponent('India GTM Inquiry — ' + body.company);
