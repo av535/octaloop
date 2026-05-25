@@ -1016,7 +1016,7 @@
       <div class="contact-lede">
         <div class="section-label">Get In Touch</div>
         <h2>Ready to enter India?<br><span style="color: var(--orange);">Let's talk.</span></h2>
-        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible..</p>
+        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible...</p>
         <ul class="contact-bullets">
           <li>No commitment required for the first call</li>
           <li>Direct response from the founding team</li>
@@ -1146,7 +1146,7 @@
     const btn = form.querySelector('.submit-btn');
     const data = new FormData(form);
     const body = {
-      // formType: "gtmForm",
+      formType: "gtmForm",
 
       name: data.get('name'),
       company: data.get('company'),
@@ -1164,30 +1164,32 @@
     // GOOGLE SHEET STORAGE
     // =========================
 
-  // fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
-  //   method: "POST",
-  //   body: JSON.stringify(body),
-  //   })
-  //   .then(() => {
-  //     console.log("Stored in Google Sheet");
-  //   })
-  //   .catch((err) => {
-  //     console.error("Sheet Error:", err);
-  //   });
+  fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
+    method: "POST",
+    body: JSON.stringify(body),
+    })
+    .then(() => {
+      console.log("Stored in Google Sheet");
+    })
+    .catch((err) => {
+      console.error("Sheet Error:", err);
+    });
 
   // GOOGLE SHEET STORAGE - END
 
     /* Mailto fallback — replace with your form endpoint if available */
-    const subject = encodeURIComponent('India GTM Inquiry — ' + body.company);
-    const bodyText = encodeURIComponent(
-      'Name: ' + body.name + '\n' +
-      'Company: ' + body.company + '\n' +
-      'Email: ' + body.email + '\n' +
-      'Website: ' + body.website + '\n' +
-      'Looking for: ' + body.service + '\n\n' +
-      body.message
-    );
-    window.location.href = 'mailto:hello@octaloop.com?subject=' + subject + '&body=' + bodyText;
+    
+    // const subject = encodeURIComponent('India GTM Inquiry — ' + body.company);
+    // const bodyText = encodeURIComponent(
+    //   'Name: ' + body.name + '\n' +
+    //   'Company: ' + body.company + '\n' +
+    //   'Email: ' + body.email + '\n' +
+    //   'Website: ' + body.website + '\n' +
+    //   'Looking for: ' + body.service + '\n\n' +
+    //   body.message
+    // );
+    // window.location.href = 'mailto:hello@octaloop.com?subject=' + subject + '&body=' + bodyText;
+    
 
     setTimeout(function () {
       btn.disabled = false;
