@@ -289,6 +289,57 @@
     line-height: 1.65;
     margin: 0;
   }
+
+  .success-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 9999;
+  }
+
+  .success-popup.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .success-popup-content {
+    background: #fff;
+    padding: 30px 30px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    background: #4ade80;
+    color: white;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-popup-content h2 {
+    margin-bottom: 12px;
+    font-size: 42px;
+  }
+
+  .success-popup-content p {
+    font-size: 20px;
+    color: #4b5563;
+  }
+
   @media (max-width: 768px) {
     .timeline { grid-template-columns: 1fr; gap: 2rem; }
     .timeline::before { display: none; }
@@ -1016,13 +1067,13 @@
       <div class="contact-lede">
         <div class="section-label">Get In Touch</div>
         <h2>Ready to enter India?<br><span style="color: var(--orange);">Let's talk.</span></h2>
-        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible..</p>
+        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible...</p>
         <ul class="contact-bullets">
           <li>No commitment required for the first call</li>
           <li>Direct response from the founding team</li>
           <li>We'll tell you if we're not the right fit</li>
         </ul>
-      </div>
+      </div> 
       <form class="contact-form" id="gtmForm" onsubmit="handleFormSubmit(event)">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your name *" required>
@@ -1030,10 +1081,10 @@
         </div>
         <div class="form-row">
           <input type="email" name="email" placeholder="Work email *" required>
-          <input type="text" name="website" placeholder="Company website">
+          <input type="text" name="website" placeholder="Company website *" required>
         </div>
-        <select name="service">
-          <option value="" disabled selected>What are you looking for?</option>
+        <select name="service" required>
+          <option value="" disabled selected>What are you looking for? *</option>
           <option>Events &amp; Conferences</option>
           <option>PR &amp; Media</option>
           <option>Government Relations</option>
@@ -1043,8 +1094,8 @@
           <option>Full India GTM</option>
           <option>Other / Not sure yet</option>
         </select>
-        <select name="budget">
-          <option value="" disabled selected>What's your budget per month?</option>
+        <select name="budget" required>
+          <option value="" disabled selected>What's your budget per month? *</option>
           <option value="upto-10k">Up to $10k</option>
           <option value="10k-25k">$10k – $25k</option>
           <option value="25k-50k">$25k – $50k</option>
@@ -1164,8 +1215,8 @@
     // GOOGLE SHEET STORAGE
     // =========================
 
-  // fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
-  fetch("https://script.google.com/macros/s/AKfycbwWfIjrMNc6w03nPHv4Lw1EhaeWaKo1VlfvDmj3_UQ-cOd_w_uzy0QgtHI1yy_BCkbC/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
+  // fetch("https://script.google.com/macros/s/AKfycbwWfIjrMNc6w03nPHv4Lw1EhaeWaKo1VlfvDmj3_UQ-cOd_w_uzy0QgtHI1yy_BCkbC/exec", {
     method: "POST",
     body: JSON.stringify(body),
     })
@@ -1195,9 +1246,28 @@
     setTimeout(function () {
       btn.disabled = false;
       btn.innerHTML = 'Message sent! <i class="fa fa-check" style="font-size:0.85em; margin-left:4px;"></i>';
+
+      // Show popup
+      const popup = document.getElementById("successPopup");
+      popup.classList.add("show");
+
+      // Reset form
+      form.reset();
+
+      // Hide popup after 2 seconds
+      setTimeout(() => {
+        popup.classList.remove("show");
+      }, 2000);
     }, 1500);
   }
 </script>
 
+<div id="successPopup" class="success-popup">
+  <div class="success-popup-content">
+    <div class="success-icon">✅</div>
+    <h2>Congratulations!</h2>
+    <p>Your message has been submitted successfully.</p>
+  </div>
+</div>
 </body>
 </html>
