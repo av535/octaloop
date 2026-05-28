@@ -320,7 +320,7 @@
   .success-icon {
     width: 60px;
     height: 60px;
-    background: #4ade80;
+    /* background: #4ade80; */
     color: white;
     border-radius: 12px;
     margin: 0 auto 20px;
@@ -333,6 +333,7 @@
   .success-popup-content h2 {
     margin-bottom: 12px;
     font-size: 42px;
+    color: #4b5563;
   }
 
   .success-popup-content p {
@@ -1067,7 +1068,7 @@
       <div class="contact-lede">
         <div class="section-label">Get In Touch</div>
         <h2>Ready to enter India?<br><span style="color: var(--orange);">Let's talk.</span></h2>
-        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible.</p>
+        <p>Tell us about your company and what you're trying to accomplish in India. We'll come back to you within 48 hours with an honest assessment of what's possible..</p>
         <ul class="contact-bullets">
           <li>No commitment required for the first call</li>
           <li>Direct response from the founding team</li>
@@ -1215,8 +1216,8 @@
     // GOOGLE SHEET STORAGE
     // =========================
 
-  fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
-  // fetch("https://script.google.com/macros/s/AKfycbwWfIjrMNc6w03nPHv4Lw1EhaeWaKo1VlfvDmj3_UQ-cOd_w_uzy0QgtHI1yy_BCkbC/exec", {
+  // fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwWfIjrMNc6w03nPHv4Lw1EhaeWaKo1VlfvDmj3_UQ-cOd_w_uzy0QgtHI1yy_BCkbC/exec", {
     method: "POST",
     body: JSON.stringify(body),
     })
