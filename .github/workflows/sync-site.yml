@@ -18,7 +18,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sync all HTML files to _site/
+      - name: Sync published files to _site/
         run: |
           find . -name "*.html" \
             -not -path "./_site/*" \
@@ -31,6 +31,17 @@ jobs:
             mkdir -p "$(dirname "$dest")"
             cp "$f" "$dest"
             echo "Synced: $f → $dest"
+          done
+          # HTML-only sync left CSS/JS/images stale whenever assets changed.
+          if [ -d assets ]; then
+            rsync -a --delete assets/ _site/assets/
+            echo "Synced: assets/ → _site/assets/"
+          fi
+          for f in robots.txt sitemap.xml CNAME favicon.ico; do
+            if [ -f "$f" ]; then
+              cp "$f" "_site/$f"
+              echo "Synced: $f → _site/$f"
+            fi
           done
 
       - name: Commit and push if anything changed

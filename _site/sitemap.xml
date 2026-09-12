@@ -32,6 +32,16 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://octaloop.com/person-of-the-year-2025/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://octaloop.com/person-of-the-year-2024/</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 
   <!-- Blog -->
   <url>

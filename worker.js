@@ -20,7 +20,20 @@ export default {
       return Response.redirect(dest, 301);
     }
 
-    // Serve static assets for main domain
-    return env.ASSETS.fetch(request);
+    // Browsers request /favicon.ico by default; the published tree only has PNG icons.
+    if (url.pathname === '/favicon.ico') {
+      url.pathname = '/assets/images/wp-content/themes/octaloop/assets/images/Favicon.png';
+      request = new Request(url.toString(), request);
+    }
+
+    // Missing assets previously threw (Cloudflare 1101) instead of a clean 404.
+    try {
+      return await env.ASSETS.fetch(request);
+    } catch {
+      return new Response('Not Found', {
+        status: 404,
+        headers: { 'content-type': 'text/plain; charset=utf-8' },
+      });
+    }
   },
 };
