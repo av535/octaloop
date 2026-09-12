@@ -20,6 +20,11 @@ export default {
       return Response.redirect(dest, 301);
     }
 
+    // No careers page exists; old nav links produced Worker 1101.
+    if (url.pathname === '/careers' || url.pathname === '/careers/' || url.pathname === '/careers/index.html') {
+      return Response.redirect('https://octaloop.com/contact-us/', 301);
+    }
+
     // Browsers request /favicon.ico by default; the published tree only has PNG icons.
     if (url.pathname === '/favicon.ico') {
       url.pathname = '/assets/images/wp-content/themes/octaloop/assets/images/Favicon.png';
