@@ -18,6 +18,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Sync stylesheet and script to _site/
+        run: |
+          mkdir -p _site/assets/css _site/assets/js
+          cp -f assets/css/site.css _site/assets/css/site.css
+          cp -f assets/js/site.js _site/assets/js/site.js
+
       - name: Sync all HTML files to _site/
         run: |
           find . -name "*.html" \
