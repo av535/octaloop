@@ -23,18 +23,8 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://octaloop.com/case-studies/</loc>
+    <loc>https://octaloop.com/past-events/</loc>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://octaloop.com/case-studies/india-blockchain-tour/</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://octaloop.com/case-studies/metamorphosis/</loc>
-    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>

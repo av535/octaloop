@@ -23,7 +23,7 @@
     });
   }
 
-  var form = document.querySelector("#strategy-form");
+  var form = document.querySelector("#book-form");
   if (!form) return;
 
   var endpoint = "https://script.google.com/macros/s/AKfycbye43Z6vNU5yAreY6KMdDMTbLXRcnocqmhOSjA65vDIsOx3hAIWiMPPMWcd78y5x5K0/exec";
@@ -34,18 +34,20 @@
     if (form.querySelector("[name='company_website']").value) return;
 
     var data = new FormData(form);
-    var eventName = data.get("event") || "";
-    var timing = data.get("timing") || "";
+    var website = data.get("website") || "";
+    var category = data.get("category") || "";
+    var goal = data.get("goal") || "";
     var note = data.get("note") || "";
+    var pricing = goal === "Event growth" ? "retainer + commission" : "retainer";
     var payload = {
-      formType: "strategyCall",
+      formType: "bookCall",
       name: data.get("name"),
-      company: data.get("company"),
+      company: category,
       email: data.get("email"),
-      website: data.get("website") || "",
-      service: data.get("service"),
-      budget: timing,
-      message: "Event: " + eventName + "\nTiming: " + timing + "\n\n" + note
+      website: website,
+      service: goal,
+      budget: pricing,
+      message: "Website: " + website + "\nCategory: " + category + "\nGoal: " + goal + "\n\n" + note
     };
 
     var button = form.querySelector("button[type='submit']");
@@ -62,12 +64,12 @@
       form.reset();
       status.className = "form-status ok";
       status.textContent = "Request sent. If you do not hear back, email events@octaloop.com.";
-      button.textContent = "Book a strategy call";
+      button.textContent = "Book a call";
       button.disabled = false;
     }).catch(function () {
       status.className = "form-status err";
       status.textContent = "That did not send. Email events@octaloop.com and we will pick it up.";
-      button.textContent = "Book a strategy call";
+      button.textContent = "Book a call";
       button.disabled = false;
     });
   });
