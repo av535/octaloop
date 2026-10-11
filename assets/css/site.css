@@ -462,3 +462,21 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--yellow); bo
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Services tabs */
+.svc-tabs { display: flex; gap: 8px; border-bottom: 1px solid var(--line-strong); margin-bottom: 32px; overflow-x: auto; overflow-y: hidden; }
+.svc-tab { padding: 12px 22px; font-weight: 600; text-decoration: none; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.svc-tab:hover { color: var(--text); }
+.svc-tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--yellow); }
+.svc-tab:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+.js-tabs .svc-panel[hidden] { display: none; }
+.svc-panel { scroll-margin-top: calc(var(--header) + 16px); padding-bottom: 48px; }
+.svc-head h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 6px 0 12px; }
+.svc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.svc-block { border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.svc-block h3 { margin-bottom: 8px; }
+.svc-steps { padding-left: 20px; display: grid; gap: 6px; margin-top: 12px; }
+.svc-cta { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background: var(--black); color: var(--white); border-radius: 12px; padding: 24px; }
+.placeholder { color: var(--muted); font-style: italic; }
+.svc-cta .placeholder { color: var(--muted-light); }
+@media (max-width: 720px) { .svc-grid { grid-template-columns: 1fr; } .svc-tab { padding: 10px 14px; } }
