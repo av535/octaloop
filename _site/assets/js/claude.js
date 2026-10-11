@@ -1,4 +1,5 @@
 (function(){
+  if(/^\/services\/?$/.test(location.pathname)&&/^#(events|event-growth)$/.test(location.hash)){location.replace('/event-growth/');return;}
   var hb=document.getElementById('hamburger'), menu=document.getElementById('mobile-menu');
   if(hb){hb.addEventListener('click',function(){
     var open=menu.classList.toggle('open'); hb.setAttribute('aria-expanded',open);
