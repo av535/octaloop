@@ -18,6 +18,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://octaloop.com/aeo/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://octaloop.com/indiablockchaintour/</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
