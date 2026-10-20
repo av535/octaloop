@@ -379,34 +379,10 @@ html :where(.is-position-sticky){
     <hr style="width:90%">
 </div>
 </div>		
-<div class="row">
-			<div class="col-md-3 col-4 col-lg-2 loop-1">
-				<img src="../assets/images/wp-content/themes/octaloop/assets/images/loop-1.png" alt="Octaloop" width="auto" height="auto">
-			</div>
-			<div class="col-lg-8 col-md-6 col-sm-6">
-				<div class="top-heading">
-					<span class="highlight">We need to talk.</span>
-				</div>
-				<div class="top-sub-heading">
-					Communication delivers information, conversation delivers personality.
-					<br>
-					We love a good conversation -- but enough about us.
-					<br>
-					Drop us an email below so we can start talking about you.
-				</div>
-				<div class="write-to-us" style="margin-top:24px;text-align:center">
-					<p class="write-label">Write to us:</p>
-					<p>For event enquiries: <a href="mailto:events@octaloop.com">events@octaloop.com</a></p>
-					<p>For general enquiries: <a href="mailto:contact@octaloop.com">contact@octaloop.com</a></p>
-				</div>
-			</div>
+<div class="contact-hero-compact">
+			<h1 class="top-heading"><span class="highlight">We need to talk.</span></h1>
+			<p class="contact-hero-sub">Tell us what you're working on. We read every message and reply within 48 hours.</p>
 		</div>
-		<div class="row justify-content-end">
-			<div class="col-md-3 col-8 col-lg-3 loop-2">
-				<img src="../assets/images/wp-content/themes/octaloop/assets/images/loop-4.png" alt="Octaloop" loading="lazy" width="auto" height="auto">
-			</div>
-		</div>
-		
 	</div>
 
 <!-- Contact form (moved from /services/) -->
@@ -583,6 +559,16 @@ html :where(.is-position-sticky){
 
 
 .gtm-contact-wrap .contact{color:#fff}
+
+.contact-page .section-1{min-height:0 !important;height:auto !important;padding-bottom:0 !important}
+.contact-hero-compact{text-align:center;padding:28px 20px 8px}
+.contact-hero-compact .top-heading{font-size:64px;line-height:1;margin:0 0 10px !important;padding:0 !important;height:auto !important}
+.contact-hero-sub{color:rgba(255,255,255,.7);font-size:17px;margin:0 auto;max-width:620px}
+.gtm-contact-wrap .contact{padding-top:32px !important}
+.gtm-contact-wrap .contact-inner{align-items:start}
+.contact-write p{margin:.25rem 0;color:rgba(255,255,255,.75)}
+.contact-write a{color:#ffb001}
+@media(max-width:900px){.contact-hero-compact .top-heading{font-size:44px}.contact-hero-compact{padding:16px 16px 0}.gtm-contact-wrap .contact{padding-top:20px !important}.contact-lede{display:contents}.contact-lede>*{order:1}.gtm-contact-wrap .contact-form{order:2}.contact-lede .contact-bullets,.contact-write{order:3}.gtm-contact-wrap .contact-inner{gap:1rem !important}.contact-lede>.section-label:first-child,.contact-lede h2{display:none}.contact-lede p{margin:0}}
 </style>
 <div class="gtm-contact-wrap">
 <section class="contact" id="contact">
@@ -591,12 +577,17 @@ html :where(.is-position-sticky){
       <div class="contact-lede">
         <div class="section-label">Get In Touch</div>
         <h2>Tell us what you need.<br><span style="color: var(--orange);">Let's talk.</span></h2>
-        <p>Tell us about your company and what you're trying to achieve, whether that's <a href="/aeo/" style="color:#ffb001">AEO</a>, <a href="/pr/" style="color:#ffb001">PR</a>, paid ads or <a href="/events/" style="color:#ffb001">events</a>. We'll come back to you within 48 hours with an honest assessment of what's possible..</p>
+        <p>Tell us about your company and what you're trying to achieve, whether that's <a href="/aeo/" style="color:#ffb001">AEO</a>, <a href="/pr/" style="color:#ffb001">PR</a>, paid ads or <a href="/events/" style="color:#ffb001">events</a>. We'll come back to you within 48 hours with an honest assessment of what's possible.</p>
         <ul class="contact-bullets">
           <li>No commitment required for the first call</li>
           <li>Direct response from the founding team</li>
           <li>We'll tell you if we're not the right fit</li>
         </ul>
+        <div class="contact-write">
+          <div class="section-label" style="margin-top:1.5rem">Write to us</div>
+          <p>Events: <a href="mailto:events@octaloop.com">events@octaloop.com</a></p>
+          <p>General: <a href="mailto:contact@octaloop.com">contact@octaloop.com</a></p>
+        </div>
       </div> 
       <form class="contact-form" id="gtmForm" onsubmit="handleFormSubmit(event)">
         <div class="form-row">
@@ -610,14 +601,8 @@ html :where(.is-position-sticky){
         <select name="service" required>
           <option value="" disabled selected>What are you looking for? *</option>
           <option>AEO (AI search visibility)</option>
-          <option>Paid Ads</option>
-          <option>Events &amp; Conferences</option>
           <option>PR &amp; Media</option>
-          <option>Government Relations</option>
-          <option>Partnership Development</option>
-          <option>Community Building</option>
-          <option>KOL &amp; Influencer</option>
-          <option>Other / Not sure yet</option>
+          <option>Events &amp; Conferences</option>
         </select>
         <select name="budget" required>
           <option value="" disabled selected>What's your budget per month? *</option>
