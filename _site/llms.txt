@@ -4,6 +4,7 @@
 
 ## Services
 - [AEO](https://octaloop.com/aeo/): Getting brands named and cited in ChatGPT, Perplexity, Gemini and Google AI Overviews.
+- [PR](https://octaloop.com/pr/): Earned media for tech brands: bylines, features and roundup placements.
 - [Events](https://octaloop.com/events/): India Blockchain Tour (26 City Stops since 2016) and Metamorphosis, India's Premier Web3 x AI Gala.
 - [Past events](https://octaloop.com/past-events/)
 - [Contact](https://octaloop.com/contact-us/)

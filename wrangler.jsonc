@@ -7,7 +7,9 @@
     "enabled": true
   },
   "assets": {
-    "directory": "_site"
+    "directory": "_site",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   "build": {
     "command": "echo 'Using pre-built _site'"
