@@ -1,0 +1,16 @@
+# Octaloop
+
+> Octaloop is an India-based marketing agency for B2B tech and SaaS, fintech, AI and Web3 brands: AEO (answer engine optimisation), PR, paid ads and events. Octaloop also runs India Blockchain Tour and Metamorphosis.
+
+## Services
+- [AEO](https://octaloop.com/aeo/): Getting brands named and cited in ChatGPT, Perplexity, Gemini and Google AI Overviews.
+- [Events](https://octaloop.com/events/): India Blockchain Tour (26 City Stops since 2016) and Metamorphosis, India's Premier Web3 x AI Gala.
+- [Past events](https://octaloop.com/past-events/)
+- [Contact](https://octaloop.com/contact-us/)
+
+## Guides
+- [How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews](https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/): The Octaloop Citation Loop: baseline, extractable pages, earned mentions, entity accuracy, re-measure.
+
+## About
+- [About Octaloop](https://octaloop.com/about-us/): Founded by Anupam Varshney. 6+ years in PR and tech media.
+- [Blog](https://octaloop.com/blog/)
