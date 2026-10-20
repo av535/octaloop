@@ -1100,6 +1100,22 @@
             border: 0
         }
     </style>
+
+<style id="logo-carousel-fix">
+.homepage .section-4 .slick-slide{margin:0 10px}
+.homepage .section-4 .box{display:flex !important;align-items:center;justify-content:center;height:96px;padding:16px 24px;border-radius:28px}
+.homepage .section-4 .box img{width:auto !important;max-width:100%;max-height:52px;height:auto;object-fit:contain;margin:0 auto}
+@media (max-width:767px){
+ .customer-logos{padding:0 40px !important}
+ .homepage .section-4 .slick-slide{margin:0 6px}
+ .homepage .section-4 .row > .col-9{flex:0 0 100%;max-width:100%}
+ .homepage .section-4 .box{height:auto;padding:0;background:transparent !important;border-radius:0}
+ .homepage .section-4 .box img{width:100% !important;max-height:64px;border-radius:10px}
+ .customer-logos .custom-arrow{width:32px;height:32px;font-size:16px !important}
+ .customer-logos .slick-prev{left:4px !important}
+ .customer-logos .slick-next{right:4px !important}
+}
+</style>
 </head>
 
 <body>
@@ -2485,10 +2501,11 @@
                 arrows: true,
                 dots: false,
                 pauseOnHover: true,
+                prevArrow: '<button type="button" class="slick-prev custom-arrow" aria-label="Previous logos"><i class="fa fa-arrow-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next custom-arrow" aria-label="Next logos"><i class="fa fa-arrow-right"></i></button>',
                 responsive: [
                     { breakpoint: 992, settings: { slidesToShow: 3 } },
-                    { breakpoint: 768, settings: { slidesToShow: 2 } },
-                    { breakpoint: 576, settings: { slidesToShow: 1 } },
+                    { breakpoint: 768, settings: { slidesToShow: 2 } }
                 ],
             });
         });
@@ -2551,24 +2568,6 @@
                 ]
             });
         });
-
-
-
-
-        $('.customer-logos').not('.slick-initialized').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: true,
-    // Add these two lines exactly as shown:
-    prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fa fa-arrow-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fa fa-arrow-right"></i></button>',
-    responsive: [
-        { breakpoint: 768, settings: { slidesToShow: 4 } },
-        { breakpoint: 520, settings: { slidesToShow: 3 } }
-    ]
-});
     </script>
 
 
