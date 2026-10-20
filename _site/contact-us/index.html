@@ -366,7 +366,6 @@ html :where(.is-position-sticky){
         </li>
 					<li class="nav-item"><a href="/aeo/" class="nav-link" style="color: white !important;">AEO</a></li>
 					<li class="nav-item"><a href="/events/" class="nav-link" style="color: white !important;">Events</a></li>
-					<li class="nav-item"><a href="/services/" class="nav-link" style="color: white !important;">India GTM</a></li>
 					<li class="nav-item"><a href="/blog/" class="nav-link" style="color: white !important;">Blog</a></li>
 					<li class="nav-item"><a href="/past-events/" class="nav-link" style="color: white !important;">Past Events</a></li>
 					<li class="nav-item"><a href="/about-us/" class="nav-link" style="color: white !important;">About Us</a></li>
@@ -380,8 +379,6 @@ html :where(.is-position-sticky){
     <a href="/aeo/">AEO</a>
     <hr style="width:90%">
     <a href="/events/">EVENTS</a>
-    <hr style="width:90%">
-    <a href="/services/">INDIA GTM</a>
     <hr style="width:90%">
     <a href="/blog/">BLOG</a>
     <hr style="width:90%">
@@ -422,6 +419,311 @@ html :where(.is-position-sticky){
 		</div>
 		
 	</div>
+
+<!-- Contact form (moved from /services/) -->
+<style>
+  .gtm-contact-wrap {
+    --orange: #ffb001;
+    --dark: #0a0a0a;
+    --dark2: #111111;
+    --light: #f7f7f7;
+    --white: #ffffff;
+    --muted: rgba(255,255,255,0.55);
+    --card-border: rgba(255,255,255,0.08);
+    --radius: 12px;
+  }
+  .container-gtm {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  .success-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 9999;
+  }
+
+  .success-popup.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .success-popup-content {
+    background: #fff;
+    padding: 30px 30px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    /* background: #4ade80; */
+    color: white;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-popup-content h2 {
+    margin-bottom: 12px;
+    font-size: 42px;
+    color: #4b5563;
+  }
+
+  .success-popup-content p {
+    font-size: 20px;
+    color: #4b5563;
+  }
+  /* ── Contact Form ── */
+  .contact {
+    background: var(--dark2);
+    padding: 5rem 1.5rem;
+    border-top: 1px solid var(--card-border);
+  }
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: flex-start;
+  }
+  .contact-lede h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.05;
+    margin: 0 0 1.25rem;
+  }
+  .contact-lede p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .contact-lede .contact-bullets {
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .contact-lede .contact-bullets li {
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .contact-lede .contact-bullets li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+    flex-shrink: 0;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.85rem 1.1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .contact-form select { color: rgba(255,255,255,0.6); cursor: pointer; }
+  .contact-form select option { background: #111; color: #fff; }
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus { border-color: rgba(255,176,1,0.5); }
+  .contact-form textarea { resize: vertical; min-height: 120px; }
+  .contact-form .submit-btn {
+    background: var(--orange);
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 2rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    align-self: flex-start;
+  }
+  .contact-form .submit-btn:hover { background: #e6a000; transform: translateY(-1px); }
+  @media (max-width: 900px) {
+    .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+
+.gtm-contact-wrap .contact{color:#fff}
+</style>
+<div class="gtm-contact-wrap">
+<section class="contact" id="contact">
+  <div class="container-gtm">
+    <div class="contact-inner">
+      <div class="contact-lede">
+        <div class="section-label">Get In Touch</div>
+        <h2>Tell us what you need.<br><span style="color: var(--orange);">Let's talk.</span></h2>
+        <p>Tell us about your company and what you're trying to achieve, whether that's AEO, PR, paid ads or events. We'll come back to you within 48 hours with an honest assessment of what's possible..</p>
+        <ul class="contact-bullets">
+          <li>No commitment required for the first call</li>
+          <li>Direct response from the founding team</li>
+          <li>We'll tell you if we're not the right fit</li>
+        </ul>
+      </div> 
+      <form class="contact-form" id="gtmForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name *" required>
+          <input type="text" name="company" placeholder="Company name *" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Work email *" required>
+          <input type="text" name="website" placeholder="Company website *" required>
+        </div>
+        <select name="service" required>
+          <option value="" disabled selected>What are you looking for? *</option>
+          <option>AEO (AI search visibility)</option>
+          <option>Paid Ads</option>
+          <option>Events &amp; Conferences</option>
+          <option>PR &amp; Media</option>
+          <option>Government Relations</option>
+          <option>Partnership Development</option>
+          <option>Community Building</option>
+          <option>KOL &amp; Influencer</option>
+          <option>Other / Not sure yet</option>
+        </select>
+        <select name="budget" required>
+          <option value="" disabled selected>What's your budget per month? *</option>
+          <option value="upto-10k">Up to $10k</option>
+          <option value="10k-25k">$10k – $25k</option>
+          <option value="25k-50k">$25k – $50k</option>
+          <option value="50k-100k">$50k – $100k</option>
+          <option value="100k+">$100k+</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your goals, timeline, and any context that would help us prepare for the conversation..."></textarea>
+        <button type="submit" class="submit-btn">Send message <i class="fa fa-arrow-right" style="font-size:0.85em; margin-left:4px;"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
+<div id="successPopup" class="success-popup">
+  <div class="success-popup-content">
+    <div class="success-icon">✅</div>
+    <h2>Congratulations!</h2>
+    <p>Your message has been submitted successfully.</p>
+  </div>
+</div>
+<script>
+  /* ── Contact form handler ── */
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('.submit-btn');
+    const data = new FormData(form);
+    const body = {
+      formType: "gtmForm",
+
+      name: data.get('name'),
+      company: data.get('company'),
+      email: data.get('email'),
+      website: data.get('website'),
+      service: data.get('service'),
+      budget: data.get('budget'),
+      message: data.get('message'),
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    // =========================
+    // GOOGLE SHEET STORAGE
+    // =========================
+
+  // fetch("https://script.google.com/macros/s/AKfycbyO9ICxd8hO1mZ_kh4Tc0Rnk6xOEBa6rjBT7YxFxk8Wiocqkrpqq2ix0gAWplEbBYNs/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbye43Z6vNU5yAreY6KMdDMTbLXRcnocqmhOSjA65vDIsOx3hAIWiMPPMWcd78y5x5K0/exec", {
+    method: "POST",
+    body: JSON.stringify(body),
+    })
+    .then(() => {
+      console.log("Stored in Google Sheet");
+    })
+    .catch((err) => {
+      console.error("Sheet Error:", err);
+    });
+
+  // GOOGLE SHEET STORAGE - END
+
+    /* Mailto fallback — replace with your form endpoint if available */
+    
+    // const subject = encodeURIComponent('India GTM Inquiry — ' + body.company);
+    // const bodyText = encodeURIComponent(
+    //   'Name: ' + body.name + '\n' +
+    //   'Company: ' + body.company + '\n' +
+    //   'Email: ' + body.email + '\n' +
+    //   'Website: ' + body.website + '\n' +
+    //   'Looking for: ' + body.service + '\n\n' +
+    //   body.message
+    // );
+    // window.location.href = 'mailto:hello@octaloop.com?subject=' + subject + '&body=' + bodyText;
+    
+
+    setTimeout(function () {
+      btn.disabled = false;
+      btn.innerHTML = 'Message sent! <i class="fa fa-check" style="font-size:0.85em; margin-left:4px;"></i>';
+
+      // Show popup
+      const popup = document.getElementById("successPopup");
+      popup.classList.add("show");
+
+      // Reset form
+      form.reset();
+
+      // Hide popup after 2 seconds
+      setTimeout(() => {
+        popup.classList.remove("show");
+      }, 2000);
+    }, 1500);
+  }
+</script>
 	<footer id="footer-call">
     <div class="container-fluid">
         
@@ -450,7 +752,6 @@ html :where(.is-position-sticky){
                     <ul class="pages">
                     <!-- <li><a href="https://octaloop.com/journal">Blog</a></li> -->
                     <li><a href="https://octaloop.com/about-us">About Us</a></li>
-                    <li><a href="https://octaloop.com/services">India GTM</a></li>
                     <li><a href="https://octaloop.com/events">Events</a></li>
                         <li><a href="https://octaloop.com/person-of-the-year-2025">Person of the Year</a></li>
                     <li><a href="https://octaloop.com/contact-us">Contact Us</a></li>
