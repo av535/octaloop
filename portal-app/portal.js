@@ -209,16 +209,9 @@ function dashboardBody(client, d, v, tab, base) {
     <td data-l=""><a class="btn sm" href="${BASE}/reports/${r.id}/download">Download</a></td></tr>`).join('');
   const head = `<div class="eb">Client dashboard</div><h1>${esc(client.name)}</h1>${tabsBar(base, tab)}`;
   if (tab === 'progress') return head + progressView(esc, v, v.prompts || {}, base, v.period);
-  if (tab === 'worklog') return head + worklogView(esc, v);
-  if (tab === 'trends') return head + trendsView(esc, v);
-  return head + `<div class="kpis k6"><div class="kpi"><b>${pct(men)}</b><span>Mention rate in AI answers</span></div><div class="kpi"><b>${pct(cit)}</b><span>Citation rate (your site linked)</span></div>
-  ${outcomesKpis(esc, v)}</div>
-  <p class="note" style="margin-top:-8px">${total} tracked prompts · ${live} PR placements live</p>
-  <section class="card"><h2>AEO: AI answer visibility</h2><p class="muted">Whether AI engines name you (mentioned) and link your site (cited) for the buyer prompts we track.</p>
-  ${total ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Prompt</th><th>Engine</th><th>Mentioned</th><th>Cited</th><th>Position</th><th>Cited page</th><th>Checked</th></tr></thead><tbody>${aeoRows}</tbody></table></div>` : '<p class="muted">No prompts tracked yet.</p>'}</section>
-  <section class="card"><h2>PR: placements</h2>
+  if (tab === 'trends') return head + trendsView(esc, v) + `<section class="card"><h2>AI-referral traffic by AI tool</h2>${outcomesTable(esc, v)}</section>`;
+  return head + `<section class="card"><h2>PR placements</h2>
   ${d.pr.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Publication</th><th>Title</th><th>Date</th><th>Status</th><th>Article</th></tr></thead><tbody>${prRows}</tbody></table></div>` : '<p class="muted">No placements yet.</p>'}</section>
-  <section class="card"><h2>${SHOW_CLIENT_LEADS ? 'Outcomes: AI-referral traffic, demos and leads' : 'Outcomes: AI-referral traffic'}</h2>${outcomesTable(esc, v)}</section>
   <section class="card"><h2>Reports</h2>
   ${d.reports.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Report</th><th>Size</th><th>Uploaded</th><th></th></tr></thead><tbody>${repRows}</tbody></table></div>` : '<p class="muted">No reports uploaded yet.</p>'}</section>`;
 }
@@ -300,9 +293,11 @@ async function viewDashboard(req, env, sess, url) {
   if (sess.role === 'admin') adminBar = `<div class="admin-bar">Admin view of <b>${esc(client.name)}</b>'s dashboard (what the client sees). <a href="${BASE}/admin/clients/${client.id}">Manage this client →</a></div>`;
   const d = await clientData(env, client.id);
   const v = await loadV2(env, client.id);
-  const tab = ['progress', 'overview', 'worklog', 'trends'].includes(url.searchParams.get('tab')) ? url.searchParams.get('tab') : 'progress';
-  v.period = (url.searchParams.get('p') || '').slice(0, 12);
+  const rawTab = url.searchParams.get('tab');
   const base = sess.role === 'admin' ? `${BASE}/dashboard/?client=${client.id}` : `${BASE}/dashboard/`;
+  if (rawTab === 'overview' || rawTab === 'worklog') return redirect(`${base}${base.includes('?') ? '&' : '?'}tab=progress`);
+  const tab = ['progress', 'trends', 'pr'].includes(rawTab) ? rawTab : 'progress';
+  v.period = (url.searchParams.get('p') || '').slice(0, 12);
   return html(page(client.name, dashboardBody(client, d, v, tab, base), sess, { demo: client.is_demo, adminBar }));
 }
 
