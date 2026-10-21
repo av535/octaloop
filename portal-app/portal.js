@@ -1,7 +1,7 @@
 // Octaloop client portal — Cloudflare Worker module (D1 for data, KV for report files)
 // Mounted at /portal/ by worker.js. Requires env.PORTAL_DB (D1) and env.PORTAL_FILES (KV).
 
-import { loadV2, V2_CSS, tabsBar, outcomesKpis, outcomesTable, worklogView, trendsView, adminV2Sections, adminV2Post } from './v2.js';
+import { SHOW_CLIENT_LEADS, loadV2, V2_CSS, tabsBar, outcomesKpis, outcomesTable, worklogView, trendsView, adminV2Sections, adminV2Post } from './v2.js';
 
 const BASE = '/portal';
 const SESSION_COOKIE = '__Host-octaloop_portal';
@@ -217,7 +217,7 @@ function dashboardBody(client, d, v, tab, base) {
   ${total ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Prompt</th><th>Engine</th><th>Mentioned</th><th>Cited</th><th>Position</th><th>Cited page</th><th>Checked</th></tr></thead><tbody>${aeoRows}</tbody></table></div>` : '<p class="muted">No prompts tracked yet.</p>'}</section>
   <section class="card"><h2>PR: placements</h2>
   ${d.pr.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Publication</th><th>Title</th><th>Date</th><th>Status</th><th>Article</th></tr></thead><tbody>${prRows}</tbody></table></div>` : '<p class="muted">No placements yet.</p>'}</section>
-  <section class="card"><h2>Outcomes: AI-referral traffic, demos and leads</h2>${outcomesTable(esc, v)}</section>
+  <section class="card"><h2>${SHOW_CLIENT_LEADS ? 'Outcomes: AI-referral traffic, demos and leads' : 'Outcomes: AI-referral traffic'}</h2>${outcomesTable(esc, v)}</section>
   <section class="card"><h2>Reports</h2>
   ${d.reports.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Report</th><th>Size</th><th>Uploaded</th><th></th></tr></thead><tbody>${repRows}</tbody></table></div>` : '<p class="muted">No reports uploaded yet.</p>'}</section>`;
 }
