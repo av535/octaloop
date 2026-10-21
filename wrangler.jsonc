@@ -18,6 +18,8 @@
     "nodejs_compat"
   ],
   "main": "worker.js",
+  "d1_databases": [{ "binding": "PORTAL_DB", "database_name": "octaloop-portal", "database_id": "5db3cf23-b7a1-4c87-a532-027dc7dc57f7" }],
+  "kv_namespaces": [{ "binding": "PORTAL_FILES", "id": "43620d461ce0410e8918118f25a35f9b" }],
   "routes": [
     { "pattern": "octaloop.com/*", "zone_name": "octaloop.com" },
     { "pattern": "www.octaloop.com/*", "zone_name": "octaloop.com" },
