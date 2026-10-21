@@ -1,6 +1,9 @@
 // Portal v2: work log, outcomes (AI-referral traffic / demos / leads), trends + Day 0 baseline, GA4 sync.
 import { ga4Configured, ga4ServiceEmail, ga4SyncWeek } from './ga4.js';
 
+// Flag: show leads and demos in the CLIENT view. Data, admin fields and GA4 pull stay on regardless.
+export const SHOW_CLIENT_LEADS = false;
+
 export const WL_CATEGORIES = ['Pitches sent', 'Placements won', 'Pages fixed', 'Prompts audited', 'Content published', 'Outreach', 'Reporting', 'Other'];
 export const WL_STATUSES = ['Done', 'In progress', 'Planned', 'Blocked'];
 
@@ -44,7 +47,7 @@ export const V2_CSS = `
 .tle .cat{color:var(--g);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
 .charts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.chart{background:var(--c2);border:1px solid var(--line);border-radius:12px;padding:14px}
 .chart h3{font-size:20px}.chart svg{width:100%;height:auto;display:block}
-.callouts{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:18px}
+.callouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
 .co{background:var(--c2);border:1px solid var(--line);border-left:3px solid var(--g);border-radius:10px;padding:12px}
 .co small{color:var(--mut);display:block;font-size:12px}.co b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:30px;line-height:1.1}
 .note{font-size:13px;color:var(--mut)}
@@ -69,16 +72,16 @@ function deltaTag(cur, prev, suf = '', lowerIsBetter = false) {
 export function outcomesKpis(esc, v) {
   const o = v.outcomes; const last = o[o.length - 1], prev = o[o.length - 2];
   const cell = (k, label) => `<div class="kpi"><b>${last ? nz(last[k]) : '—'}</b><span>${label}${last ? ` · week of ${esc(last.week)}` : ''}</span>${last && prev ? deltaTag(last[k], prev[k]) : ''}</div>`;
-  return `${cell('ai_sessions', 'AI-referral sessions')}${cell('demos', 'Demos')}${cell('leads', 'Leads')}`;
+  return cell('ai_sessions', 'AI-referral sessions') + (SHOW_CLIENT_LEADS ? cell('demos', 'Demos') + cell('leads', 'Leads') : '');
 }
 
 export function outcomesTable(esc, v) {
   if (!v.outcomes.length) return '<p class="muted">No outcome data yet. Weekly AI-referral traffic, demos and leads will appear here.</p>';
   const rows = [...v.outcomes].reverse().map((r) => {
     let br = ''; try { const j = JSON.parse(r.ai_breakdown || '{}'); br = Object.entries(j).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${esc(k)} ${n}`).join(' · '); } catch (e) {}
-    return `<tr><td data-l="Week">${esc(fmtWeek(r.week))}</td><td data-l="AI sessions">${nz(r.ai_sessions)}</td><td data-l="By source">${br || '—'}</td><td data-l="Demos">${nz(r.demos)}</td><td data-l="Leads">${nz(r.leads)}</td><td data-l="Source"><span class="pill">${esc(r.source)}</span></td></tr>`;
+    return `<tr><td data-l="Week">${esc(fmtWeek(r.week))}</td><td data-l="AI sessions">${nz(r.ai_sessions)}</td><td data-l="By source">${br || '—'}</td>${SHOW_CLIENT_LEADS ? `<td data-l="Demos">${nz(r.demos)}</td><td data-l="Leads">${nz(r.leads)}</td>` : ''}<td data-l="Source"><span class="pill">${esc(r.source)}</span></td></tr>`;
   }).join('');
-  return `<div class="scroll"><table class="tbl stack"><thead><tr><th>Week</th><th>AI-referral sessions</th><th>By source</th><th>Demos</th><th>Leads</th><th>Source</th></tr></thead><tbody>${rows}</tbody></table></div>
+  return `<div class="scroll"><table class="tbl stack"><thead><tr><th>Week</th><th>AI-referral sessions</th><th>By source</th>${SHOW_CLIENT_LEADS ? '<th>Demos</th><th>Leads</th>' : ''}<th>Source</th></tr></thead><tbody>${rows}</tbody></table></div>
   <p class="note">AI-referral sessions = visits referred by AI assistants (chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com, claude.ai and similar).</p>`;
 }
 
@@ -133,15 +136,15 @@ export function trendsView(esc, v) {
   if (!sn.length && !oc.length) return '<section class="card"><h2>Trends</h2><p class="muted">No baseline or weekly snapshots yet.</p></section>';
   return `<section class="card"><div class="eb">Progress</div><h2>Day 0 vs now</h2>
     <p class="muted">${base ? `Day 0 baseline: week of ${esc(fmtWeek(base.week))}.` : 'No baseline set yet.'} ${latest ? `Latest snapshot: week of ${esc(fmtWeek(latest.week))}.` : ''}</p>
-    <div class="callouts">${co('Mention rate', 'mention_rate', '%')}${co('Citation rate', 'citation_rate', '%')}${co('PR placements live', 'placements')}${co('AI-referral sessions / wk', 'ai_sessions')}${co('Leads / wk', 'leads')}</div>
+    <div class="callouts">${co('Mention rate', 'mention_rate', '%')}${co('Citation rate', 'citation_rate', '%')}${co('PR placements live', 'placements')}${co('AI-referral sessions / wk', 'ai_sessions')}${SHOW_CLIENT_LEADS ? co('Leads / wk', 'leads') : ''}</div>
     ${base && base.avg_position != null ? `<p class="note">Average answer position: ${nz(base.avg_position)} at Day 0 → ${nz(now.avg_position)} now (lower is better).</p>` : ''}
     <div class="charts">
       <div class="chart"><h3>Mention rate</h3>${svgChart(esc, series('mention_rate'), '%')}</div>
       <div class="chart"><h3>Citation rate</h3>${svgChart(esc, series('citation_rate'), '%')}</div>
       <div class="chart"><h3>PR placements live</h3>${svgChart(esc, series('placements'))}</div>
       <div class="chart"><h3>AI-referral sessions / week</h3>${svgChart(esc, oseries('ai_sessions'))}</div>
-      <div class="chart"><h3>Leads / week</h3>${svgChart(esc, oseries('leads'))}</div>
-      <div class="chart"><h3>Demos / week</h3>${svgChart(esc, oseries('demos'))}</div>
+      ${SHOW_CLIENT_LEADS ? `<div class="chart"><h3>Leads / week</h3>${svgChart(esc, oseries('leads'))}</div>
+      <div class="chart"><h3>Demos / week</h3>${svgChart(esc, oseries('demos'))}</div>` : ''}
     </div></section>`;
 }
 
