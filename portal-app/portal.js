@@ -1,6 +1,8 @@
 // Octaloop client portal — Cloudflare Worker module (D1 for data, KV for report files)
 // Mounted at /portal/ by worker.js. Requires env.PORTAL_DB (D1) and env.PORTAL_FILES (KV).
 
+import { loadV2, V2_CSS, tabsBar, outcomesKpis, outcomesTable, worklogView, trendsView, adminV2Sections, adminV2Post } from './v2.js';
+
 const BASE = '/portal';
 const SESSION_COOKIE = '__Host-octaloop_portal';
 const SESSION_TTL = 12 * 60 * 60; // seconds
@@ -153,7 +155,7 @@ details summary{cursor:pointer;color:var(--g);font-weight:700}
 @media(max-width:760px){h1{font-size:34px}.kpis{grid-template-columns:1fr 1fr}.wrap{padding:20px 14px 50px}.top{padding:12px 14px}
  .tbl.stack thead{display:none}.tbl.stack tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.tbl.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:4px 2px}
  .tbl.stack td::before{content:attr(data-l);color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex:0 0 40%}}
-</style></head><body>
+${V2_CSS}</style></head><body>
 ${opts.demo ? '<div class="demo">DEMO DATA — this is a sample client for testing, not a real customer</div>' : ''}
 <header class="top"><a class="brand" href="${BASE}/"><img src="/assets/images/wp-content/themes/octaloop/assets/images/Logo-white.png" alt="Octaloop"><span>Client portal</span></a>${nav}</header>
 ${opts.adminBar || ''}
@@ -190,7 +192,7 @@ async function clientData(env, cid) {
 }
 const fmtSize = (n) => n > 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB';
 
-function dashboardBody(client, d) {
+function dashboardBody(client, d, v, tab, base) {
   const total = d.aeo.length, men = d.aeo.filter((r) => r.mentioned).length, cit = d.aeo.filter((r) => r.cited).length;
   const live = d.pr.filter((r) => r.status === 'Live').length;
   const pct = (a) => total ? Math.round((a / total) * 100) + '%' : '—';
@@ -205,13 +207,17 @@ function dashboardBody(client, d) {
     <td data-l="Article">${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Read ↗</a>` : '—'}</td></tr>`).join('');
   const repRows = d.reports.map((r) => `<tr><td data-l="Report">${esc(r.filename)}</td><td data-l="Size">${fmtSize(r.size)}</td><td data-l="Uploaded">${esc(String(r.uploaded_at).slice(0, 10))}</td>
     <td data-l=""><a class="btn sm" href="${BASE}/reports/${r.id}/download">Download</a></td></tr>`).join('');
-  return `<div class="eb">Client dashboard</div><h1>${esc(client.name)}</h1>
-  <div class="kpis"><div class="kpi"><b>${total}</b><span>Tracked prompts</span></div><div class="kpi"><b>${pct(men)}</b><span>Mention rate in AI answers</span></div>
-  <div class="kpi"><b>${pct(cit)}</b><span>Citation rate (your site linked)</span></div><div class="kpi"><b>${live}</b><span>PR placements live</span></div></div>
+  const head = `<div class="eb">Client dashboard</div><h1>${esc(client.name)}</h1>${tabsBar(base, tab)}`;
+  if (tab === 'worklog') return head + worklogView(esc, v);
+  if (tab === 'trends') return head + trendsView(esc, v);
+  return head + `<div class="kpis k6"><div class="kpi"><b>${pct(men)}</b><span>Mention rate in AI answers</span></div><div class="kpi"><b>${pct(cit)}</b><span>Citation rate (your site linked)</span></div>
+  ${outcomesKpis(esc, v)}</div>
+  <p class="note" style="margin-top:-8px">${total} tracked prompts · ${live} PR placements live</p>
   <section class="card"><h2>AEO: AI answer visibility</h2><p class="muted">Whether AI engines name you (mentioned) and link your site (cited) for the buyer prompts we track.</p>
   ${total ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Prompt</th><th>Engine</th><th>Mentioned</th><th>Cited</th><th>Position</th><th>Cited page</th><th>Checked</th></tr></thead><tbody>${aeoRows}</tbody></table></div>` : '<p class="muted">No prompts tracked yet.</p>'}</section>
   <section class="card"><h2>PR: placements</h2>
   ${d.pr.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Publication</th><th>Title</th><th>Date</th><th>Status</th><th>Article</th></tr></thead><tbody>${prRows}</tbody></table></div>` : '<p class="muted">No placements yet.</p>'}</section>
+  <section class="card"><h2>Outcomes: AI-referral traffic, demos and leads</h2>${outcomesTable(esc, v)}</section>
   <section class="card"><h2>Reports</h2>
   ${d.reports.length ? `<div class="scroll"><table class="tbl stack"><thead><tr><th>Report</th><th>Size</th><th>Uploaded</th><th></th></tr></thead><tbody>${repRows}</tbody></table></div>` : '<p class="muted">No reports uploaded yet.</p>'}</section>`;
 }
@@ -292,7 +298,10 @@ async function viewDashboard(req, env, sess, url) {
   if (sess.role !== 'admin' && client.id !== sess.client_id) return forbidden();
   if (sess.role === 'admin') adminBar = `<div class="admin-bar">Admin view of <b>${esc(client.name)}</b>'s dashboard (what the client sees). <a href="${BASE}/admin/clients/${client.id}">Manage this client →</a></div>`;
   const d = await clientData(env, client.id);
-  return html(page(client.name, dashboardBody(client, d), sess, { demo: client.is_demo, adminBar }));
+  const v = await loadV2(env, client.id);
+  const tab = ['overview', 'worklog', 'trends'].includes(url.searchParams.get('tab')) ? url.searchParams.get('tab') : 'overview';
+  const base = sess.role === 'admin' ? `${BASE}/dashboard/?client=${client.id}` : `${BASE}/dashboard/`;
+  return html(page(client.name, dashboardBody(client, d, v, tab, base), sess, { demo: client.is_demo, adminBar }));
 }
 
 async function downloadReport(req, env, sess, id) {
@@ -335,6 +344,7 @@ async function adminClient(req, env, sess, cid, flash) {
   const client = await getClient(env, cid);
   if (!client) return notFound();
   const d = await clientData(env, client.id);
+  const v2 = await loadV2(env, client.id);
   const users = (await env.PORTAL_DB.prepare('SELECT id, email, name, active, last_login FROM users WHERE client_id = ? ORDER BY email').bind(client.id).all()).results || [];
   const C = csrfField(sess), P = `${BASE}/admin/clients/${client.id}`;
   const userRows = users.map((u) => `<tr><td data-l="Email">${esc(u.email)}</td><td data-l="Name">${esc(u.name)}</td>
@@ -391,6 +401,7 @@ async function adminClient(req, env, sess, cid, flash) {
     <div style="grid-column:span 2"><label>CSV columns: publication, title, date, url, status</label><input type="file" name="file" accept=".csv,text/csv" required></div><div><button>Import</button></div></form></details>
    <div class="scroll"><table class="tbl"><tbody>${prRows || '<tr><td class="muted">No placements yet.</td></tr>'}</tbody></table></div></section>
 
+  ${adminV2Sections(esc, C, P, v2, env)}
   <section class="card"><h2>Reports</h2><form method="post" action="${P}/reports" enctype="multipart/form-data" class="grid">${C}
     <div style="grid-column:span 2"><label>File (PDF, XLSX, DOCX, PPTX, CSV, PNG, JPG, ZIP; max 25 MB)</label><input type="file" name="file" required></div><div><button>Upload</button></div></form>
    <div class="scroll" style="margin-top:14px"><table class="tbl stack"><thead><tr><th>File</th><th>Size</th><th>Uploaded</th><th></th></tr></thead><tbody>${repRows || '<tr><td colspan="4" class="muted">No reports yet.</td></tr>'}</tbody></table></div></section>`;
@@ -493,6 +504,10 @@ async function adminPost(req, env, sess, parts) {
     const v = prVals(form); if (!v[0]) return flashTo(P, 'Error: publication required.');
     await db.prepare('UPDATE pr_placements SET publication=?, title=?, pub_date=?, url=?, status=? WHERE id = ? AND client_id = ?').bind(...v, Number(sub), cid).run();
     return flashTo(P, 'Placement saved.');
+  }
+  if (['worklog', 'outcomes', 'ga4', 'snapshots'].includes(kind)) {
+    const r = await adminV2Post(env, sess, cid, kind, sub, form, { P, flashTo, parseCSV, safeUrl, audit });
+    return r || notFound();
   }
   if (kind === 'reports' && !sub) {
     const file = form.get('file');
