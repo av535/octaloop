@@ -1,5 +1,7 @@
 // Portal v2: work log, outcomes (AI-referral traffic / demos / leads), trends + Day 0 baseline, GA4 sync.
 import { ga4Configured, ga4ServiceEmail, ga4SyncWeek } from './ga4.js';
+import { loadPrompts, progressView, adminPromptsEditor, adminPromptsPost, captureCurrent, PROGRESS_CSS } from './progress.js';
+export { progressView, PROGRESS_CSS };
 
 // Flag: show leads and demos in the CLIENT view. Data, admin fields and GA4 pull stay on regardless.
 export const SHOW_CLIENT_LEADS = false;
@@ -29,7 +31,7 @@ export async function loadV2(env, cid) {
     db.prepare('SELECT * FROM snapshots WHERE client_id = ? ORDER BY week ASC').bind(cid).all(),
     db.prepare('SELECT * FROM client_settings WHERE client_id = ?').bind(cid).first(),
   ]);
-  return { worklog: wl.results || [], outcomes: oc.results || [], snapshots: sn.results || [], settings: st || {} };
+  return { worklog: wl.results || [], outcomes: oc.results || [], snapshots: sn.results || [], settings: st || {}, prompts: await loadPrompts(env, cid) };
 }
 
 export const V2_CSS = `
@@ -57,7 +59,7 @@ export const V2_CSS = `
 
 export function tabsBar(base, tab) {
   const t = (k, l) => `<a class="${tab === k ? 'on' : ''}" href="${base}${base.includes('?') ? '&' : '?'}tab=${k}">${l}</a>`;
-  return `<nav class="tabs">${t('overview', 'Overview')}${t('worklog', 'Work log')}${t('trends', 'Trends')}</nav>`;
+  return `<nav class="tabs">${t('progress', 'Progress')}${t('overview', 'Overview')}${t('worklog', 'Work log')}${t('trends', 'Trends')}</nav>`;
 }
 
 function deltaTag(cur, prev, suf = '', lowerIsBetter = false) {
@@ -157,7 +159,7 @@ export function trendsView(esc, v) {
 }
 
 // ---------- admin UI ----------
-export function adminV2Sections(esc, C, P, v, env) {
+export function adminV2Sections(esc, C, P, v, env, selSnap) {
   const opt = (arr, cur) => arr.map((s) => `<option${s === cur ? ' selected' : ''}>${esc(s)}</option>`).join('');
   const wlRows = v.worklog.map((e) => `<tr><td><form method="post" action="${P}/worklog/${e.id}" class="grid">${C}
     <div><label>Week (any date)</label><input name="week" type="date" value="${esc(e.week)}" required></div>
@@ -229,12 +231,14 @@ export function adminV2Sections(esc, C, P, v, env) {
     <div><label>Avg position</label><input name="avg_position"></div><div><label>Placements live</label><input name="placements"></div><div><label>AI sessions</label><input name="ai_sessions"></div>
     <div><label>Demos</label><input name="demos"></div><div><label>Leads</label><input name="leads"></div>
     <div><label><input type="checkbox" name="is_baseline" value="1" style="width:auto"> Day 0 baseline</label></div><div><button>Save snapshot</button></div></form></details>
-   <div class="scroll"><table class="tbl"><tbody>${snRows || '<tr><td class="muted">No snapshots yet.</td></tr>'}</tbody></table></div></section>`;
+   <div class="scroll"><table class="tbl"><tbody>${snRows || '<tr><td class="muted">No snapshots yet.</td></tr>'}</tbody></table></div></section>
+  ${adminPromptsEditor(esc, C, P, v, v.prompts || {}, selSnap)}`;
 }
 
 // ---------- admin POST ----------
-export async function adminV2Post(env, sess, cid, kind, sub, form, h) {
+export async function adminV2Post(env, sess, cid, kind, sub, form, h, parts = []) {
   const db = env.PORTAL_DB; const { P, flashTo, parseCSV, safeUrl, audit } = h;
+  if (kind === 'sp' && /^\d+$/.test(sub || '')) return adminPromptsPost(env, sess, cid, sub, parts[4], parts[5], form, h);
   const wlVals = (f) => [weekOf(f.get('week')), WL_CATEGORIES.includes(String(f.get('category'))) ? String(f.get('category')) : 'Other',
     String(f.get('description') || '').trim().slice(0, 500), optInt(f.get('qty') ?? f.get('count')), safeUrl(f.get('link')),
     WL_STATUSES.includes(String(f.get('status'))) ? String(f.get('status')) : 'Done'];
@@ -308,6 +312,8 @@ export async function adminV2Post(env, sess, cid, kind, sub, form, h) {
         VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(client_id, week) DO UPDATE SET is_baseline=excluded.is_baseline, mention_rate=excluded.mention_rate, citation_rate=excluded.citation_rate,
         avg_position=excluded.avg_position, placements=excluded.placements, ai_sessions=excluded.ai_sessions, demos=excluded.demos, leads=excluded.leads, positions_json=excluded.positions_json`)
         .bind(cid, w, isB, mr, cr, ap, live.n, oc?.ai_sessions ?? null, oc?.demos ?? null, oc?.leads ?? null, JSON.stringify(aeo.map((a) => ({ prompt: a.prompt, engine: a.engine, position: a.position, mentioned: a.mentioned, cited: a.cited })))).run();
+      const gs = await db.prepare('SELECT id FROM snapshots WHERE client_id = ? AND week = ?').bind(cid, w).first();
+      if (gs) await captureCurrent(db, cid, gs.id);
       if (isB) await db.prepare("INSERT INTO client_settings (client_id, onboarded_on) VALUES (?, ?) ON CONFLICT(client_id) DO UPDATE SET onboarded_on = excluded.onboarded_on").bind(cid, w).run();
       await audit(env, sess, 'snapshot_generate', `${cid}:${w}`); return flashTo(P, `Snapshot generated for week of ${w}${isB ? ' (Day 0 baseline)' : ''}.`);
     }
@@ -318,7 +324,7 @@ export async function adminV2Post(env, sess, cid, kind, sub, form, h) {
         ai_sessions=excluded.ai_sessions, demos=excluded.demos, leads=excluded.leads, is_baseline=excluded.is_baseline`).bind(cid, w, ...v).run();
       return flashTo(P, `Snapshot saved for week of ${w}.`); }
     if (/^\d+$/.test(sub)) {
-      if (form.get('op') === 'delete') { await db.prepare('DELETE FROM snapshots WHERE id = ? AND client_id = ?').bind(+sub, cid).run(); return flashTo(P, 'Snapshot deleted.'); }
+      if (form.get('op') === 'delete') { await db.batch([db.prepare('DELETE FROM snapshot_prompts WHERE snapshot_id = ? AND client_id = ?').bind(+sub, cid), db.prepare('DELETE FROM snapshots WHERE id = ? AND client_id = ?').bind(+sub, cid)]); return flashTo(P, 'Snapshot deleted.'); }
       const w = weekOf(form.get('week')); if (!w) return flashTo(P, 'Error: week required.');
       const v = snVals(form); if (v[7]) await clearBase();
       try { await db.prepare('UPDATE snapshots SET week=?, mention_rate=?, citation_rate=?, avg_position=?, placements=?, ai_sessions=?, demos=?, leads=?, is_baseline=? WHERE id = ? AND client_id = ?').bind(w, ...v, +sub, cid).run(); }

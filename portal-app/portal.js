@@ -1,7 +1,7 @@
 // Octaloop client portal — Cloudflare Worker module (D1 for data, KV for report files)
 // Mounted at /portal/ by worker.js. Requires env.PORTAL_DB (D1) and env.PORTAL_FILES (KV).
 
-import { SHOW_CLIENT_LEADS, loadV2, V2_CSS, tabsBar, outcomesKpis, outcomesTable, worklogView, trendsView, adminV2Sections, adminV2Post } from './v2.js';
+import { SHOW_CLIENT_LEADS, progressView, PROGRESS_CSS, loadV2, V2_CSS, tabsBar, outcomesKpis, outcomesTable, worklogView, trendsView, adminV2Sections, adminV2Post } from './v2.js';
 
 const BASE = '/portal';
 const SESSION_COOKIE = '__Host-octaloop_portal';
@@ -155,7 +155,7 @@ details summary{cursor:pointer;color:var(--g);font-weight:700}
 @media(max-width:760px){h1{font-size:34px}.kpis{grid-template-columns:1fr 1fr}.wrap{padding:20px 14px 50px}.top{padding:12px 14px}
  .tbl.stack thead{display:none}.tbl.stack tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.tbl.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:4px 2px}
  .tbl.stack td::before{content:attr(data-l);color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex:0 0 40%}}
-${V2_CSS}</style></head><body>
+${V2_CSS}${PROGRESS_CSS}</style></head><body>
 ${opts.demo ? '<div class="demo">DEMO DATA — this is a sample client for testing, not a real customer</div>' : ''}
 <header class="top"><a class="brand" href="${BASE}/"><img src="/assets/images/wp-content/themes/octaloop/assets/images/Logo-white.png" alt="Octaloop"><span>Client portal</span></a>${nav}</header>
 ${opts.adminBar || ''}
@@ -208,6 +208,7 @@ function dashboardBody(client, d, v, tab, base) {
   const repRows = d.reports.map((r) => `<tr><td data-l="Report">${esc(r.filename)}</td><td data-l="Size">${fmtSize(r.size)}</td><td data-l="Uploaded">${esc(String(r.uploaded_at).slice(0, 10))}</td>
     <td data-l=""><a class="btn sm" href="${BASE}/reports/${r.id}/download">Download</a></td></tr>`).join('');
   const head = `<div class="eb">Client dashboard</div><h1>${esc(client.name)}</h1>${tabsBar(base, tab)}`;
+  if (tab === 'progress') return head + progressView(esc, v, v.prompts || {}, base, v.period);
   if (tab === 'worklog') return head + worklogView(esc, v);
   if (tab === 'trends') return head + trendsView(esc, v);
   return head + `<div class="kpis k6"><div class="kpi"><b>${pct(men)}</b><span>Mention rate in AI answers</span></div><div class="kpi"><b>${pct(cit)}</b><span>Citation rate (your site linked)</span></div>
@@ -299,7 +300,8 @@ async function viewDashboard(req, env, sess, url) {
   if (sess.role === 'admin') adminBar = `<div class="admin-bar">Admin view of <b>${esc(client.name)}</b>'s dashboard (what the client sees). <a href="${BASE}/admin/clients/${client.id}">Manage this client →</a></div>`;
   const d = await clientData(env, client.id);
   const v = await loadV2(env, client.id);
-  const tab = ['overview', 'worklog', 'trends'].includes(url.searchParams.get('tab')) ? url.searchParams.get('tab') : 'overview';
+  const tab = ['progress', 'overview', 'worklog', 'trends'].includes(url.searchParams.get('tab')) ? url.searchParams.get('tab') : 'progress';
+  v.period = (url.searchParams.get('p') || '').slice(0, 12);
   const base = sess.role === 'admin' ? `${BASE}/dashboard/?client=${client.id}` : `${BASE}/dashboard/`;
   return html(page(client.name, dashboardBody(client, d, v, tab, base), sess, { demo: client.is_demo, adminBar }));
 }
@@ -401,7 +403,7 @@ async function adminClient(req, env, sess, cid, flash) {
     <div style="grid-column:span 2"><label>CSV columns: publication, title, date, url, status</label><input type="file" name="file" accept=".csv,text/csv" required></div><div><button>Import</button></div></form></details>
    <div class="scroll"><table class="tbl"><tbody>${prRows || '<tr><td class="muted">No placements yet.</td></tr>'}</tbody></table></div></section>
 
-  ${adminV2Sections(esc, C, P, v2, env)}
+  ${adminV2Sections(esc, C, P, v2, env, new URL(req.url).searchParams.get('snap'))}
   <section class="card"><h2>Reports</h2><form method="post" action="${P}/reports" enctype="multipart/form-data" class="grid">${C}
     <div style="grid-column:span 2"><label>File (PDF, XLSX, DOCX, PPTX, CSV, PNG, JPG, ZIP; max 25 MB)</label><input type="file" name="file" required></div><div><button>Upload</button></div></form>
    <div class="scroll" style="margin-top:14px"><table class="tbl stack"><thead><tr><th>File</th><th>Size</th><th>Uploaded</th><th></th></tr></thead><tbody>${repRows || '<tr><td colspan="4" class="muted">No reports yet.</td></tr>'}</tbody></table></div></section>`;
@@ -505,8 +507,8 @@ async function adminPost(req, env, sess, parts) {
     await db.prepare('UPDATE pr_placements SET publication=?, title=?, pub_date=?, url=?, status=? WHERE id = ? AND client_id = ?').bind(...v, Number(sub), cid).run();
     return flashTo(P, 'Placement saved.');
   }
-  if (['worklog', 'outcomes', 'ga4', 'snapshots'].includes(kind)) {
-    const r = await adminV2Post(env, sess, cid, kind, sub, form, { P, flashTo, parseCSV, safeUrl, audit });
+  if (['worklog', 'outcomes', 'ga4', 'snapshots', 'sp'].includes(kind)) {
+    const r = await adminV2Post(env, sess, cid, kind, sub, form, { P, flashTo, parseCSV, safeUrl, audit }, parts);
     return r || notFound();
   }
   if (kind === 'reports' && !sub) {
