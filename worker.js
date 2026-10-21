@@ -1,6 +1,10 @@
 import { handlePortal } from './portal-app/portal.js';
+import { ga4SyncAll } from './portal-app/ga4.js';
 
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(ga4SyncAll(env));
+  },
   async fetch(request, env) {
     const url = new URL(request.url);
     const hostname = url.hostname;
