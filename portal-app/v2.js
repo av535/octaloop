@@ -59,7 +59,7 @@ export const V2_CSS = `
 
 export function tabsBar(base, tab) {
   const t = (k, l) => `<a class="${tab === k ? 'on' : ''}" href="${base}${base.includes('?') ? '&' : '?'}tab=${k}">${l}</a>`;
-  return `<nav class="tabs">${t('progress', 'Progress')}${t('overview', 'Overview')}${t('worklog', 'Work log')}${t('trends', 'Trends')}</nav>`;
+  return `<nav class="tabs">${t('progress', 'Progress')}${t('trends', 'Trends')}${t('pr', 'PR &amp; Reports')}</nav>`;
 }
 
 function deltaTag(cur, prev, suf = '', lowerIsBetter = false) {
@@ -144,10 +144,8 @@ export function trendsView(esc, v) {
     return weeks.map((w) => { const o = oc.find((x) => x.week === w); const val = o && o[k] != null ? o[k] : (w === baseWeek && base ? base[k] : null); return { x: w, y: val, base: w === baseWeek }; });
   };
   if (!sn.length && !oc.length) return '<section class="card"><h2>Trends</h2><p class="muted">No baseline or weekly snapshots yet.</p></section>';
-  return `<section class="card"><div class="eb">Progress</div><h2>Day 0 vs now</h2>
+  return `<section class="card"><div class="eb">Trends</div><h2>Week by week</h2>
     <p class="muted">${base ? `Day 0 baseline: week of ${esc(fmtWeek(base.week))}.` : 'No baseline set yet.'} ${latest ? `Latest snapshot: week of ${esc(fmtWeek(latest.week))}.` : ''}</p>
-    <div class="callouts">${co('Mention rate', 'mention_rate', '%')}${co('Citation rate', 'citation_rate', '%')}${co('PR placements live', 'placements')}${co('AI-referral sessions / wk', 'ai_sessions')}${SHOW_CLIENT_LEADS ? co('Leads / wk', 'leads') : ''}</div>
-    ${base && base.avg_position != null ? `<p class="note">Average answer position: ${nz(base.avg_position)} at Day 0 → ${nz(now.avg_position)} now (lower is better).</p>` : ''}
     <div class="charts">
       <div class="chart"><h3>Mention rate</h3>${svgChart(esc, series('mention_rate'), '%')}</div>
       <div class="chart"><h3>Citation rate</h3>${svgChart(esc, series('citation_rate'), '%')}</div>
