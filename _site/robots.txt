@@ -1,23 +1,31 @@
 User-agent: GPTBot
 Allow: /
+Disallow: /portal/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /portal/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /portal/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /portal/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /portal/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /portal/
 
 User-agent: *
+Disallow: /portal/
 Allow: /
+Disallow: /portal/
 
 # Don't index utility/template files
 Disallow: /blog/post-template.html

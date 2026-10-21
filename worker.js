@@ -1,3 +1,5 @@
+import { handlePortal } from './portal-app/portal.js';
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -23,6 +25,12 @@ export default {
       return new Response('User-agent: *\nDisallow: /\n', {
         headers: { 'content-type': 'text/plain; charset=utf-8', 'x-robots-tag': 'noindex, nofollow' },
       });
+    }
+
+    // Client portal (/portal/) — only active where D1/KV bindings exist (staging for now)
+    if (url.pathname === '/portal' || url.pathname.startsWith('/portal/')) {
+      const pr = await handlePortal(request, env);
+      if (pr) return pr;
     }
 
     // IBT microsite moved to its own domain

@@ -1,0 +1,13 @@
+{
+  // Staging worker (testing.octaloop.com) incl. client portal bindings. Deploy: npx wrangler deploy --config portal-app/wrangler.testing.jsonc
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "octaloop-testing",
+  "account_id": "4ec1f0e100565db185c280ea8a149600",
+  "compatibility_date": "2025-09-27",
+  "main": "../worker.js",
+  "assets": { "directory": "../_site", "binding": "ASSETS", "run_worker_first": true },
+  "workers_dev": true,
+  "routes": [{ "pattern": "testing.octaloop.com", "custom_domain": true }],
+  "d1_databases": [{ "binding": "PORTAL_DB", "database_name": "octaloop-portal-staging", "database_id": "7a557d55-0d14-432c-b0f3-98988b7ad703" }],
+  "kv_namespaces": [{ "binding": "PORTAL_FILES", "id": "2a95cb05dae749459960d75963b9296a" }]
+}
