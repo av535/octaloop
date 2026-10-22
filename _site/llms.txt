@@ -10,6 +10,7 @@
 - [Contact](https://octaloop.com/contact-us/)
 
 ## Guides
+- [Metamorphosis'26 Recap: India's Web3 x AI Summit in Hyderabad](https://octaloop.com/blog/metamorphosis-2026-hyderabad-recap/): T-Hub, 26–27 Sep 2026: speakers, partners, themes and what five editions taught us about growing a tech event.
 - [Digital PR for AEO: How Earned Media Gets You Cited by AI](https://octaloop.com/blog/digital-pr-for-aeo/): Which publications AI engines cite, and a step-by-step digital PR plan for B2B SaaS.
 - [AEO vs GEO vs SEO: What a B2B SaaS Founder Actually Needs to Know](https://octaloop.com/blog/aeo-vs-geo-vs-seo/): Definitions, comparison table and which to prioritise by stage.
 - [How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews](https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/): The Octaloop Citation Loop: baseline, extractable pages, earned mentions, entity accuracy, re-measure.
