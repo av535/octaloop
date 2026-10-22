@@ -489,6 +489,7 @@ footer {
 					<li class="nav-item"><a href="/aeo/" class="nav-link" style="color: white !important;">AEO</a></li>
 					<li class="nav-item"><a href="/pr/" class="nav-link" style="color: white !important;">PR</a></li>
 					<li class="nav-item"><a href="/events/" class="nav-link" style="color: white !important;">Events</a></li>
+					<li class="nav-item"><a href="/blog/" class="nav-link" style="color: white !important;">Blog</a></li>
 					<li class="nav-item"><a href="/past-events/" class="nav-link" style="color: white !important;">Past Events</a></li>
 					<li class="nav-item"><a href="/about-us/" class="nav-link" style="color: white !important;">About Us</a></li>
 					<li class="nav-item"><a href="/contact-us/" class="nav-link button-contact" style="background-color: #ffb001;">Contact Us</a></li>
@@ -502,6 +503,8 @@ footer {
     <a href="/pr/">PR</a>
     <hr style="width:90%">
     <a href="/events/">EVENTS</a>
+    <hr style="width:90%">
+    <a href="/blog/">BLOG</a>
     <hr style="width:90%">
     <a href="/past-events/">PAST EVENTS</a>
     <hr style="width:90%">
@@ -520,7 +523,7 @@ footer {
             <!-- <button class="toggleBtn" onclick="showEvent(1)">Exclusive Blockchain Events</button> -->
             <button class="toggleBtn" onclick="showEvent(1)">Flagship Event: Metamorphosis</button>
             <button class="toggleBtn" onclick="showEvent(2)">Flagship Event: India Blockchain Tour</button>
-            <button class="toggleBtn" onclick="showEvent(3)">Hackathons</button>
+            <button class="toggleBtn" onclick="showEvent(3)">Meetups</button>
           </div>
         </div>
       </div>
@@ -750,12 +753,6 @@ footer {
                 </a>
                           </div> -->
 
-                      <div class="event" id="event11">
-              <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/268260844/"><h2 class="ev-h">U Turn Foundation Presents HEMP 2020 (X-Event)</h2></a>
-              <p>
-                29th Feb 2020<br/>
-                At Radisson Blu Marina, Connaught Circus, New Delhi, Central Delhi, Delhi NCR, 110001              </p>
-                          </div>
 
                       <div class="event" id="event10">
               <a href="https://www.meetup.com/Everything-Bitcoin-Delhi/events/252894758/"><h2 class="ev-h">Bear-to-Bull Market Meetup</h2></a>
@@ -918,13 +915,6 @@ footer {
               </div>
             </div>
 
-                      <div class="timeline-element">
-              <p class="timeline-date">2020</p>
-              <div class="d-flex flex-column align-items-center">
-                <div class="timeline-line"></div>
-                <div class="timeline-circle" onclick="scrollto(&quot;event11&quot;)"></div>
-              </div>
-            </div>
 
                       <div class="timeline-element">
               <p class="timeline-date">2018</p>
@@ -1075,13 +1065,6 @@ footer {
               <div class="d-flex flex-column align-items-center">
                 <div class="timeline-line"></div>
                 <div class="timeline-circle" onclick="scrollto(&quot;event12&quot;)"></div>
-              </div>
-            </div>
-                      <div class="timeline-element">
-              <p class="timeline-date">29th Feb 2020</p>
-              <div class="d-flex flex-column align-items-center">
-                <div class="timeline-line"></div>
-                <div class="timeline-circle" onclick="scrollto(&quot;event11&quot;)"></div>
               </div>
             </div>
                       <div class="timeline-element">
@@ -1257,8 +1240,8 @@ footer {
             }
         } 
         else if (seq === 3) {
-            // Hackathons
-            if ([10, 11, 9, 8, 6, 7, 5, 4, 3, 2, 1, 0].includes(idNum)) {
+            // Meetups
+            if ([10, 9, 8, 6, 7, 5, 4, 3, 2, 1, 0].includes(idNum)) {
                 shouldShow = true;
             }
         }
