@@ -6,8 +6,11 @@
 - [AEO](https://octaloop.com/aeo/): Getting brands named and cited in ChatGPT, Perplexity, Gemini and Google AI Overviews.
 - [Pricing](https://octaloop.com/pricing/): All prices in USD: free AI-visibility snapshot, $750 audit, $3,000 pilot, retainers from $3,500/mo, PR from $400 per placement.
 - [PR](https://octaloop.com/pr/): Earned media for tech brands: bylines, features and roundup placements.
+- [India GTM services](https://octaloop.com/services/): India market entry for global tech companies: events, PR, government relations and community building.
 - [Events](https://octaloop.com/events/): India Blockchain Tour (26 City Stops since 2016) and Metamorphosis, India's Premier Web3 x AI Gala.
 - [Past events](https://octaloop.com/past-events/)
+- [Person of the Year in Web3 2025](https://octaloop.com/person-of-the-year-2025/)
+- [Person of the Year in Web3 2024](https://octaloop.com/person-of-the-year-2024/)
 - [Contact](https://octaloop.com/contact-us/)
 
 ## Guides
@@ -17,6 +20,17 @@
 - [AEO vs GEO vs SEO: What a B2B SaaS Founder Actually Needs to Know](https://octaloop.com/blog/aeo-vs-geo-vs-seo/): Definitions, comparison table and which to prioritise by stage.
 - [How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews](https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/): The Octaloop Citation Loop: baseline, extractable pages, earned mentions, entity accuracy, re-measure.
 
+## Event archive
+- [4 Blockchain Ideas from the DecentralHacks Hackathon](https://octaloop.com/blog/blockchain-ideas-from-the-decentralhacks-hackathon/)
+- [Content Marketing in Blockchain: Building a Community](https://octaloop.com/blog/content-marketing-in-blockchain/)
+- [Crypto Events: Why You Shouldn't Attend](https://octaloop.com/blog/crypto-events-why-you-shouldnt-attend/)
+- [Metamorphosis 2022 and the India Blockchain Tour](https://octaloop.com/blog/metamorphosis-2022-and-the-india-blockchain-tour/)
+- [DecentralHacks 2021 & the Road to Metamorphosis 3.0](https://octaloop.com/blog/metamorphosis-three/)
+- [The Road to Metamorphosis II & DecentralHacks](https://octaloop.com/blog/road-to-metamorphosis-two-and-decentralhacks/)
+- [Unblock 2021's Winning Hackathon DApps](https://octaloop.com/blog/unblock-2021/)
+
 ## About
 - [About Octaloop](https://octaloop.com/about-us/): Founded by Anupam Varshney. 6+ years in PR and tech media.
 - [Blog](https://octaloop.com/blog/)
+- [Privacy policy](https://octaloop.com/privacypolicy)
+- [Terms and conditions](https://octaloop.com/termsandconditions)
