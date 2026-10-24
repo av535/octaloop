@@ -34,178 +34,181 @@
   <link rel="stylesheet" href="/blog/styles.css"/>
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://octaloop.com/#organization",
+   "name": "Octaloop",
+   "url": "https://octaloop.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png"
+   },
+   "description": "Octaloop is an AEO (answer engine optimisation) and PR agency for B2B SaaS, fintech and tech companies. We secure guaranteed earned media placements and improve on-site content so brands get named in ChatGPT, Perplexity, Gemini and Google AI Overviews. We also run the India Blockchain Tour and Metamorphosis events.",
+   "founder": {
+    "@id": "https://octaloop.com/#anupam"
+   },
+   "email": "contact@octaloop.com",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+   },
+   "areaServed": [
     {
-      "@type": "Organization",
-      "@id": "https://octaloop.com/#organization",
-      "name": "Octaloop",
-      "url": "https://octaloop.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png"
-      },
-      "description": "India-based AEO (answer engine optimisation) and PR agency helping B2B tech and SaaS companies get cited in ChatGPT, Perplexity and Google AI Overviews.",
-      "founder": {
-        "@id": "https://octaloop.com/#anupam"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IN"
-      },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "India"
-        },
-        {
-          "@type": "Country",
-          "name": "United States"
-        }
-      ],
-      "knowsAbout": [
-        "Answer engine optimization",
-        "Generative engine optimization",
-        "AI search visibility",
-        "Digital PR",
-        "Event marketing"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/company/octaloop/"
-      ]
+     "@type": "Country",
+     "name": "United States"
     },
     {
-      "@type": "Person",
-      "@id": "https://octaloop.com/#anupam",
-      "name": "Anupam Varshney",
-      "jobTitle": "Founder",
-      "worksFor": {
-        "@id": "https://octaloop.com/#organization"
-      },
-      "description": "6+ years in PR and tech media; bylines in Forbes, VentureBeat, Cointelegraph, Hackernoon, CoinMarketCap.",
-      "sameAs": [
-        "https://cointelegraph.com/authors/anupam-varshney"
-      ],
-      "url": "https://octaloop.com/about-us/"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#article",
-      "headline": "How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews: The Founder's Playbook",
-      "description": "A founder's playbook for getting your SaaS cited in ChatGPT, Perplexity and AI Overviews: baseline, extractable pages, earned mentions, entity fixes.",
-      "datePublished": "2026-10-20",
-      "dateModified": "2026-10-20",
-      "author": {
-        "@id": "https://octaloop.com/#anupam"
-      },
-      "publisher": {
-        "@id": "https://octaloop.com/#organization"
-      },
-      "mainEntityOfPage": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/",
-      "inLanguage": "en",
-      "image": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png",
-      "url": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/",
-      "breadcrumb": {
-        "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#breadcrumb"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I get my SaaS mentioned in ChatGPT?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Find the buyer questions where ChatGPT names your competitors, then get mentioned on the pages it cites for those questions (roundups, review sites, Reddit, press). At the same time, publish clear comparison and pricing pages on your own site. Re-check monthly, running each question several times."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to show up in AI answers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Practitioners report that Perplexity can pick up fresh pages within days, while reliable ChatGPT mentions usually take weeks to months and depend on third-party coverage. Plan on 8 to 12 weeks before judging the trend."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do llms.txt and schema markup get you cited?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not on their own. Practitioners report no measurable citation gains from llms.txt. Accurate schema mainly helps engines describe you correctly once you're already mentioned."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is AEO different from SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AEO builds on SEO, especially for Google AI Overviews, which draw on Google's normal ranking systems. The extra work is making pages easy to quote and earning third-party mentions, which ranking a page never required."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I measure AI search visibility without expensive tools?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Run 20 unbranded buyer questions on four engines, three times each, and count a mention only if it appears in two of the three runs. Log \"named\" and \"linked\" separately, and track each engine on its own."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes a good AEO agency?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A good AEO agency has a clear measurement method, shows the cited sources it will target, can earn third-party mentions (PR, roundups, reviews) rather than only editing your pages, and reports results engine by engine. Ask for a 90-day plan before you sign."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I choose an AEO agency in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Look for an agency in India that measures visibility on the engines your buyers actually use, including US-market prompts if you sell globally. It should show real case studies, have its own PR or outreach capability, and work in your time zone. Octaloop is an India-based AEO and PR agency serving SaaS clients in India and the US."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can a new startup get cited without domain authority?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, on narrower questions. Perplexity's live search gives fresh, well-structured pages a chance, and borrowed authority from roundups, Reddit and podcasts fills the gap while your own domain builds trust."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://octaloop.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://octaloop.com/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews: The Founder's Playbook",
-          "item": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/"
-        }
-      ]
+     "@type": "Country",
+     "name": "India"
     }
-  ]
+   ],
+   "knowsAbout": [
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "AI search visibility",
+    "Digital PR",
+    "Earned media",
+    "Event marketing"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/octaloop/",
+    "https://www.facebook.com/Octaloop-100192491368630"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://octaloop.com/#anupam",
+   "name": "Anupam Varshney",
+   "jobTitle": "Founder",
+   "url": "https://octaloop.com/about-us/",
+   "worksFor": {
+    "@id": "https://octaloop.com/#organization"
+   },
+   "sameAs": [
+    "https://cointelegraph.com/authors/anupam-varshney",
+    "https://coinmarketcap.com/academy/author/anupam-varshney"
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#article",
+   "headline": "How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews: The Founder's Playbook",
+   "description": "A founder's playbook for getting your SaaS cited in ChatGPT, Perplexity and AI Overviews: baseline, extractable pages, earned mentions, entity fixes.",
+   "datePublished": "2026-10-20",
+   "dateModified": "2026-10-20",
+   "author": {
+    "@id": "https://octaloop.com/#anupam"
+   },
+   "publisher": {
+    "@id": "https://octaloop.com/#organization"
+   },
+   "mainEntityOfPage": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/",
+   "inLanguage": "en",
+   "image": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png",
+   "url": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/",
+   "breadcrumb": {
+    "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#breadcrumb"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I get my SaaS mentioned in ChatGPT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Find the buyer questions where ChatGPT names your competitors, then get mentioned on the pages it cites for those questions (roundups, review sites, Reddit, press). At the same time, publish clear comparison and pricing pages on your own site. Re-check monthly, running each question several times."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to show up in AI answers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Practitioners report that Perplexity can pick up fresh pages within days, while reliable ChatGPT mentions usually take weeks to months and depend on third-party coverage. Plan on 8 to 12 weeks before judging the trend."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do llms.txt and schema markup get you cited?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not on their own. Practitioners report no measurable citation gains from llms.txt. Accurate schema mainly helps engines describe you correctly once you're already mentioned."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is AEO different from SEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AEO builds on SEO, especially for Google AI Overviews, which draw on Google's normal ranking systems. The extra work is making pages easy to quote and earning third-party mentions, which ranking a page never required."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I measure AI search visibility without expensive tools?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Run 20 unbranded buyer questions on four engines, three times each, and count a mention only if it appears in two of the three runs. Log \"named\" and \"linked\" separately, and track each engine on its own."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What makes a good AEO agency?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A good AEO agency has a clear measurement method, shows the cited sources it will target, can earn third-party mentions (PR, roundups, reviews) rather than only editing your pages, and reports results engine by engine. Ask for a 90-day plan before you sign."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I choose an AEO agency in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Look for an agency in India that measures visibility on the engines your buyers actually use, including US-market prompts if you sell globally. It should show real case studies, have its own PR or outreach capability, and work in your time zone. Octaloop is an India-based AEO and PR agency serving SaaS clients in India and the US."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a new startup get cited without domain authority?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, on narrower questions. Perplexity's live search gives fresh, well-structured pages a chance, and borrowed authority from roundups, Reddit and podcasts fills the gap while your own domain builds trust."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://octaloop.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://octaloop.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How to Get Your SaaS Mentioned in ChatGPT, Perplexity and Google AI Overviews: The Founder's Playbook",
+     "item": "https://octaloop.com/blog/get-saas-mentioned-in-chatgpt-perplexity-ai-overviews/"
+    }
+   ]
+  }
+ ]
 }
-  </script>
+</script>
   <style>
     .container,.container-fluid{width:100%;padding-right:0;padding-left:0}
     .short-answer{background:#fff8e6;border-left:4px solid #ffb001;padding:16px 20px;border-radius:8px;margin:0 0 24px}

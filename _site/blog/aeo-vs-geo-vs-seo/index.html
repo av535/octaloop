@@ -34,186 +34,191 @@
   <link rel="stylesheet" href="/blog/styles.css"/>
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://octaloop.com/#organization",
+   "name": "Octaloop",
+   "url": "https://octaloop.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png"
+   },
+   "description": "Octaloop is an AEO (answer engine optimisation) and PR agency for B2B SaaS, fintech and tech companies. We secure guaranteed earned media placements and improve on-site content so brands get named in ChatGPT, Perplexity, Gemini and Google AI Overviews. We also run the India Blockchain Tour and Metamorphosis events.",
+   "founder": {
+    "@id": "https://octaloop.com/#anupam"
+   },
+   "email": "contact@octaloop.com",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+   },
+   "areaServed": [
     {
-      "@type": "Organization",
-      "@id": "https://octaloop.com/#organization",
-      "name": "Octaloop",
-      "url": "https://octaloop.com/",
-      "logo": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png",
-      "description": "India-based AEO (answer engine optimisation) and PR agency helping B2B tech and SaaS companies get cited in ChatGPT, Perplexity and Google AI Overviews.",
-      "founder": {
-        "@id": "https://octaloop.com/#anupam"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IN"
-      },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "India"
-        },
-        {
-          "@type": "Country",
-          "name": "United States"
-        }
-      ],
-      "knowsAbout": [
-        "Answer engine optimization",
-        "Generative engine optimization",
-        "AI search visibility",
-        "Digital PR",
-        "Event marketing"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/company/octaloop/"
-      ]
+     "@type": "Country",
+     "name": "United States"
     },
     {
-      "@type": "Person",
-      "@id": "https://octaloop.com/#anupam",
-      "name": "Anupam Varshney",
-      "jobTitle": "Founder",
-      "worksFor": {
-        "@id": "https://octaloop.com/#organization"
-      },
-      "description": "6+ years in PR and tech media; bylines in Forbes, VentureBeat, Cointelegraph, Hackernoon, CoinMarketCap.",
-      "sameAs": [
-        "https://cointelegraph.com/authors/anupam-varshney",
-        "https://coinmarketcap.com/academy/author/anupam-varshney"
-      ],
-      "url": "https://octaloop.com/about-us/"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#article",
-      "headline": "AEO vs GEO vs SEO: What a B2B SaaS Founder Actually Needs to Know",
-      "description": "AEO, GEO and SEO explained for B2B SaaS founders: one-line definitions, a comparison table, 2026 data on AI search, and which to prioritise at your stage.",
-      "datePublished": "2026-10-21",
-      "dateModified": "2026-10-21",
-      "author": {
-        "@id": "https://octaloop.com/#anupam"
-      },
-      "publisher": {
-        "@id": "https://octaloop.com/#organization"
-      },
-      "mainEntityOfPage": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/",
-      "inLanguage": "en",
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "Answer engine optimization"
-        },
-        {
-          "@type": "Thing",
-          "name": "Generative engine optimization"
-        },
-        {
-          "@type": "Thing",
-          "name": "Search engine optimization"
-        }
-      ],
-      "url": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/",
-      "image": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png",
-      "wordCount": 1984
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the difference between AEO and SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SEO gets your pages ranked in search results so buyers click through. AEO gets your brand named and cited inside AI-generated answers from tools like ChatGPT, Perplexity and Google AI Overviews. SEO is the foundation; AEO adds quotable pages and mentions on the third-party sources AI engines cite."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is GEO the same as AEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In practice, yes. Both describe earning visibility in AI-generated answers. GEO was formalised in a 2024 academic paper, and some practitioners use it to stress how AI represents your brand, but most marketers use the two terms interchangeably."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is SEO dead because of AI search?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Google says appearing in AI Overviews and AI Mode needs no special optimisation beyond normal Search best practices, so SEO remains the entry ticket for Google's AI features. What's changed is that ranking alone earns fewer clicks and doesn't decide most of what ChatGPT cites."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does ranking on Google get you cited by ChatGPT?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not reliably. Ahrefs found only about 12% of URLs cited by ChatGPT, Gemini and Copilot ranked in Google's top 10 for the same prompt. Perplexity's citations overlap with Google's top 10 more often, at nearly one in three."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which should a startup do first, AEO or SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Fix basic SEO hygiene first (crawlable, server-rendered, answer-first pages), then put most effort into AEO on narrow buyer questions you can realistically win. A new domain is unlikely to outrank incumbents for broad terms quickly, but it can earn citations on specific prompts."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you measure AEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Run a fixed set of unbranded buyer questions on each engine, several times each, and track mention rate, citation rate, share of voice and accuracy. Add AI referral traffic from your analytics and a \"How did you hear about us?\" field on demo forms."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best AEO agency for B2B SaaS?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The best AEO agency for a B2B SaaS company measures visibility engine by engine, shows the cited sources it will target, and can earn third-party mentions through PR and outreach rather than only editing your pages. Octaloop is an India-based AEO and PR agency that works with SaaS companies in India and the US."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a good AEO agency in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Look for an Indian agency that tests US-market prompts if you sell globally, has its own PR capability, and shares real, dated case studies. Octaloop is an India-based AEO and PR agency serving B2B tech and SaaS clients in India and the US."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://octaloop.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://octaloop.com/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "AEO vs GEO vs SEO",
-          "item": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/"
-        }
-      ]
+     "@type": "Country",
+     "name": "India"
     }
-  ]
+   ],
+   "knowsAbout": [
+    "Answer engine optimization",
+    "Generative engine optimization",
+    "AI search visibility",
+    "Digital PR",
+    "Earned media",
+    "Event marketing"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/octaloop/",
+    "https://www.facebook.com/Octaloop-100192491368630"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://octaloop.com/#anupam",
+   "name": "Anupam Varshney",
+   "jobTitle": "Founder",
+   "url": "https://octaloop.com/about-us/",
+   "worksFor": {
+    "@id": "https://octaloop.com/#organization"
+   },
+   "sameAs": [
+    "https://cointelegraph.com/authors/anupam-varshney",
+    "https://coinmarketcap.com/academy/author/anupam-varshney"
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#article",
+   "headline": "AEO vs GEO vs SEO: What a B2B SaaS Founder Actually Needs to Know",
+   "description": "AEO, GEO and SEO explained for B2B SaaS founders: one-line definitions, a comparison table, 2026 data on AI search, and which to prioritise at your stage.",
+   "datePublished": "2026-10-21",
+   "dateModified": "2026-10-21",
+   "author": {
+    "@id": "https://octaloop.com/#anupam"
+   },
+   "publisher": {
+    "@id": "https://octaloop.com/#organization"
+   },
+   "mainEntityOfPage": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/",
+   "inLanguage": "en",
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Answer engine optimization"
+    },
+    {
+     "@type": "Thing",
+     "name": "Generative engine optimization"
+    },
+    {
+     "@type": "Thing",
+     "name": "Search engine optimization"
+    }
+   ],
+   "url": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/",
+   "image": "https://octaloop.com/assets/images/wp-content/themes/octaloop/assets/images/Logo.png",
+   "wordCount": 1984
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the difference between AEO and SEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO gets your pages ranked in search results so buyers click through. AEO gets your brand named and cited inside AI-generated answers from tools like ChatGPT, Perplexity and Google AI Overviews. SEO is the foundation; AEO adds quotable pages and mentions on the third-party sources AI engines cite."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is GEO the same as AEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In practice, yes. Both describe earning visibility in AI-generated answers. GEO was formalised in a 2024 academic paper, and some practitioners use it to stress how AI represents your brand, but most marketers use the two terms interchangeably."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is SEO dead because of AI search?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Google says appearing in AI Overviews and AI Mode needs no special optimisation beyond normal Search best practices, so SEO remains the entry ticket for Google's AI features. What's changed is that ranking alone earns fewer clicks and doesn't decide most of what ChatGPT cites."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does ranking on Google get you cited by ChatGPT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not reliably. Ahrefs found only about 12% of URLs cited by ChatGPT, Gemini and Copilot ranked in Google's top 10 for the same prompt. Perplexity's citations overlap with Google's top 10 more often, at nearly one in three."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which should a startup do first, AEO or SEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Fix basic SEO hygiene first (crawlable, server-rendered, answer-first pages), then put most effort into AEO on narrow buyer questions you can realistically win. A new domain is unlikely to outrank incumbents for broad terms quickly, but it can earn citations on specific prompts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you measure AEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Run a fixed set of unbranded buyer questions on each engine, several times each, and track mention rate, citation rate, share of voice and accuracy. Add AI referral traffic from your analytics and a \"How did you hear about us?\" field on demo forms."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the best AEO agency for B2B SaaS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The best AEO agency for a B2B SaaS company measures visibility engine by engine, shows the cited sources it will target, and can earn third-party mentions through PR and outreach rather than only editing your pages. Octaloop is an India-based AEO and PR agency that works with SaaS companies in India and the US."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a good AEO agency in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Look for an Indian agency that tests US-market prompts if you sell globally, has its own PR capability, and shares real, dated case studies. Octaloop is an India-based AEO and PR agency serving B2B tech and SaaS clients in India and the US."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://octaloop.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://octaloop.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AEO vs GEO vs SEO",
+     "item": "https://octaloop.com/blog/aeo-vs-geo-vs-seo/"
+    }
+   ]
+  }
+ ]
 }
 </script>
   <style>
