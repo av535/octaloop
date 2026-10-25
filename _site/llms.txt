@@ -11,6 +11,7 @@
 - [Contact](https://octaloop.com/contact-us/)
 
 ## Guides
+- [Founder-Led Marketing on LinkedIn for B2B SaaS: 2026 Data and Playbook](https://octaloop.com/blog/founder-led-marketing-linkedin-b2b/): Does founder-led marketing on LinkedIn work for B2B SaaS? 2026 benchmarks on reach, cadence and formats, five post types that work, and how to turn posts into pipeline and AI citations.
 - [How to Run Meetups People Keep Coming Back To (2026)](https://octaloop.com/blog/how-to-organize-meetups-build-community/): How to turn one meetup into a series: a founder's playbook for organizing tech meetups, cutting no-shows, and building a community that lasts.
 - [Why ChatGPT Describes Your Startup Wrong (and How to Fix It)](https://octaloop.com/blog/chatgpt-wrong-information-about-company/): ChatGPT has wrong or outdated facts about your company? 2026 data on what AI gets wrong about B2B brands, where the errors come from, and a step-by-step fix list.
 - [B2B SaaS Marketing Channels That Work in 2026](https://octaloop.com/blog/b2b-saas-marketing-channels-2026/): 2026 buyer and marketer data on which B2B channels work, plus a stage-by-stage channel map for SaaS founders.
