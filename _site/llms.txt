@@ -11,6 +11,7 @@
 - [Contact](https://octaloop.com/contact-us/)
 
 ## Guides
+- [Startup PR on a Budget: How B2B SaaS Founders Get Press (2026)](https://octaloop.com/blog/startup-pr-b2b-saas-on-a-budget/): How B2B SaaS founders get press without a $10k/month agency: what counts as news, a DIY pitching workflow based on 2026 journalist surveys, and DIY vs freelancer vs agency costs.
 - [How to Revive a Dead Slack or WhatsApp Community (2026)](https://octaloop.com/blog/revive-dead-online-community/): A step-by-step plan to revive a quiet Slack or WhatsApp community without spamming members: diagnose, reset, add rituals, meet in person, measure.
 - [How Long Does AEO Take? Realistic Timelines by Engine (2026)](https://octaloop.com/blog/how-long-does-aeo-take/): How long AEO takes to work, from 2026 studies: first AI citations in days to weeks, steady visibility in about 3 months. Timelines by engine and 90-day milestones.
 - [Founder-Led Marketing on LinkedIn for B2B SaaS: 2026 Data and Playbook](https://octaloop.com/blog/founder-led-marketing-linkedin-b2b/): Does founder-led marketing on LinkedIn work for B2B SaaS? 2026 benchmarks on reach, cadence and formats, five post types that work, and how to turn posts into pipeline and AI citations.
