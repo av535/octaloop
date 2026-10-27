@@ -42,7 +42,12 @@
   </url>
   <url>
     <loc>https://octaloop.com/blog/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://octaloop.com/blog/cold-email-b2b-saas-2026/</loc>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
