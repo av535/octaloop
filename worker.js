@@ -42,6 +42,13 @@ export default {
       return Response.redirect('https://indiablockchaintour.com/', 301);
     }
 
+    // Former slug for the new-domain AEO guide
+    if (url.pathname === '/blog/aeo-new-startups' || url.pathname === '/blog/aeo-new-startups/') {
+      const dest = new URL('/blog/aeo-for-new-startups/', url);
+      dest.search = url.search;
+      return Response.redirect(dest.toString(), 301);
+    }
+
     let res;
     try {
       res = await env.ASSETS.fetch(request);
