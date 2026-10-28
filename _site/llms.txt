@@ -11,6 +11,7 @@
 - [Contact](https://octaloop.com/contact-us/)
 
 ## Guides
+- [WhatsApp Marketing for B2B in 2026: Rules, Costs, and When Email Wins](https://octaloop.com/blog/whatsapp-marketing-b2b/): Can B2B companies use WhatsApp for marketing in 2026? Meta's opt-in and template rules, current per-message prices for India and the US, the use cases that work, and where email is still the better channel.
 - [AEO for New Startups: Get Cited by AI with a New Domain (2026)](https://octaloop.com/blog/aeo-for-new-startups/): Can a startup with no domain authority get cited by ChatGPT, Perplexity, Claude or Google AI Overviews? What 2026 data shows, which prompts to target first, and a 30-day plan.
 - [Cold Email for B2B SaaS in 2026: Deliverability Rules and Reply Rates](https://octaloop.com/blog/cold-email-b2b-saas-2026/): Does cold email still work for B2B SaaS in 2026? Gmail, Yahoo and Outlook sender rules in plain English, a setup checklist, sourced reply-rate benchmarks, templates, and when to switch channel.
 - [Slack vs WhatsApp vs Discord vs Circle: Best B2B Community Platform (2026)](https://octaloop.com/blog/best-community-platform-b2b/): Slack, WhatsApp, Discord or Circle for a B2B community? Compare cost, limits, data ownership, India vs US habits and which platforms Google and AI search can read.
